@@ -1,0 +1,43 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "ekotsk"
+version = "${version}"
+displayName = "Epic Knights of the Seven Kingdoms"
+authors = "Witchkings"
+description = '''
+An Epic Knights addon which adds various weapons, armor sets and remarkable items from the world of George Martin's
+"A Song of Ice and Fire"!
+'''
+#logoFile = ""
+
+[[dependencies.ekotsk]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ekotsk]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ekotsk]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.ekotsk]]
+modId="magistuarmory"
+mandatory=true
+versionRange="[9.24,)"
+ordering="AFTER"
+side="BOTH"
