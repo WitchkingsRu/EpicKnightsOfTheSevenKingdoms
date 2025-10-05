@@ -1,0 +1,25 @@
+package net.ekotsk.misc;
+
+import com.magistuarmory.misc.HeraldryRegistry;
+import dev.architectury.registry.registries.DeferredRegister;
+import dev.architectury.registry.registries.RegistrySupplier;
+import net.ekotsk.ASOIAFMod;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.level.block.entity.BannerPattern;
+
+public class ModBannerPatterns {
+    public static final DeferredRegister<BannerPattern> PATTERNS = DeferredRegister.create(ASOIAFMod.MOD_ID, Registries.BANNER_PATTERN);
+
+    public static final RegistrySupplier<BannerPattern> SPEAR_PATTERN = add("spear");
+
+
+    public static RegistrySupplier<BannerPattern> add(String name) {
+        HeraldryRegistry.register(name);
+        return PATTERNS.register(name, () -> new BannerPattern(name));
+    }
+
+    public static void init()
+    {
+        PATTERNS.register();
+    }
+}

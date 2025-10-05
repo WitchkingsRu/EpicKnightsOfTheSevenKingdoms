@@ -39,5 +39,5 @@ side = "BOTH"
 modId="magistuarmory"
 mandatory=true
 versionRange="[9.24,)"
-ordering="AFTER"
+ordering="NONE"
 side="BOTH"
