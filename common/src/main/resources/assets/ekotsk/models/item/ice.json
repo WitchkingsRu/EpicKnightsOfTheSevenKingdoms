@@ -11,26 +11,26 @@
     "thirdperson_righthand": {
       "rotation": [-46, -90, 0],
       "translation": [0, 13.75, 0.95],
-      "scale": [3, 3, 1.25]
+      "scale": [2, 2, 1]
     },
     "thirdperson_lefthand": {
       "rotation": [-50, 90, 0],
       "translation": [0, 13.75, 0.2],
-      "scale": [3, 3, 1.25]
+      "scale": [2, 2, 1]
     },
     "firstperson_righthand": {
       "rotation": [0, -90, 30],
       "translation": [1.13, 10, -0.12],
-      "scale": [2.5, 2.5, 1.25]
+      "scale": [1.75, 1.75, 1]
     },
     "firstperson_lefthand": {
       "rotation": [180, 90, 150],
       "translation": [1.13, 10, -0.38],
-      "scale": [2.5, 2.5, 1.25]
+      "scale": [1.75, 1.75, 1]
     },
     "ground": {
       "translation": [0, 4.25, 0],
-      "scale": [1.7, 1.7, 0.76875]
+      "scale": [1.1, 1.1, 0.46875]
     }
   }
 }

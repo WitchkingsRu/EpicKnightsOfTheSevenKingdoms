@@ -8,9 +8,9 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BannerPattern;
 
 public class ModBannerPatterns {
-    public static final DeferredRegister<BannerPattern> PATTERNS = DeferredRegister.create(ASOIAFMod.MOD_ID, Registries.BANNER_PATTERN);
+    public static final DeferredRegister<BannerPattern> PATTERNS;
 
-    public static final RegistrySupplier<BannerPattern> SPEAR_PATTERN = add("spear");
+    public static final RegistrySupplier<BannerPattern> SPEAR_PATTERN;
 
 
     public static RegistrySupplier<BannerPattern> add(String name) {
@@ -21,5 +21,9 @@ public class ModBannerPatterns {
     public static void init()
     {
         PATTERNS.register();
+    }
+    static {
+        PATTERNS = DeferredRegister.create(ASOIAFMod.MOD_ID, Registries.BANNER_PATTERN);
+        SPEAR_PATTERN = add("spear");
     }
 }
