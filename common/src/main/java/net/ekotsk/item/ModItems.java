@@ -16,12 +16,13 @@ import net.minecraft.world.item.Tiers;
 
 public class ModItems extends ModItemsProvider {
     public static ModItems INSTANCE = new ModItems();
-    public static ModItemTier VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 2, 4062, 10.0F, 4.0F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 5);
+    public static ModItemTier VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 4, 10800, 11.0F, 4.5F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 5);
 
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> ICE = INSTANCE.addMedievalWeaponItem("ice", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
 
 
     public static final RegistrySupplier<Item> SPEAR_PATTERN = INSTANCE.addIngredientItem("spear_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SPEAR_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> DORNISH_SUN_PATTERN = INSTANCE.addIngredientItem("dornish_sun_pattern", () -> new BannerPatternItem(ModBannerPatternTags.DORNISH_SUN_PATTERN, new Item.Properties().stacksTo(1)));
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);

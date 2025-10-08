@@ -27,6 +27,7 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.ICE);
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SPEAR_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.DORNISH_SUN_PATTERN);
     }
 
 }
