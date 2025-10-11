@@ -12,6 +12,8 @@ public class ModBannerPatterns {
 
     public static final RegistrySupplier<BannerPattern> SPEAR_PATTERN;
     public static final RegistrySupplier<BannerPattern> DORNISH_SUN_PATTERN;
+    public static final RegistrySupplier<BannerPattern> STARK;
+    public static final RegistrySupplier<BannerPattern> KRAKEN;
 
 
     public static RegistrySupplier<BannerPattern> add(String name) {
@@ -27,5 +29,7 @@ public class ModBannerPatterns {
         PATTERNS = DeferredRegister.create(ASOIAFMod.MOD_ID, Registries.BANNER_PATTERN);
         SPEAR_PATTERN = add("spear");
         DORNISH_SUN_PATTERN = add("dornish_sun");
+        STARK = add("stark");
+        KRAKEN = add("kraken");
     }
 }

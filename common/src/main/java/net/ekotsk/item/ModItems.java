@@ -4,11 +4,13 @@ import com.magistuarmory.api.item.ModItemsProvider;
 import com.magistuarmory.item.MedievalWeaponItem;
 import com.magistuarmory.item.ModItemTier;
 import com.magistuarmory.item.WeaponTypes;
+import com.magistuarmory.item.armor.MedievalArmorItem;
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.RegistrySupplier;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
 import net.ekotsk.ASOIAFMod;
 import net.ekotsk.misc.ModBannerPatternTags;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BannerPatternItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.tags.BlockTags;
@@ -20,9 +22,16 @@ public class ModItems extends ModItemsProvider {
 
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> ICE = INSTANCE.addMedievalWeaponItem("ice", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_HELMET = INSTANCE.addMedievalArmorItem("lannister_helmet", ModArmorTypes.LANNISTER_HELMET, ArmorItem.Type.HELMET, new Item.Properties());
+
+
 
     public static final RegistrySupplier<Item> SPEAR_PATTERN = INSTANCE.addIngredientItem("spear_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SPEAR_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> DORNISH_SUN_PATTERN = INSTANCE.addIngredientItem("dornish_sun_pattern", () -> new BannerPatternItem(ModBannerPatternTags.DORNISH_SUN_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> STARK_PATTERN = INSTANCE.addIngredientItem("stark_pattern", () -> new BannerPatternItem(ModBannerPatternTags.STARK_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> KRAKEN_PATTERN = INSTANCE.addIngredientItem("kraken_pattern", () -> new BannerPatternItem(ModBannerPatternTags.KRAKEN_PATTERN, new Item.Properties().stacksTo(1)));
+
+
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);
