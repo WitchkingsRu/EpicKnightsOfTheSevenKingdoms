@@ -28,6 +28,7 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.ICE);
 
         append(ASOIAF_ARMOR, ModItems.LANNISTER_HELMET);
+        append(ASOIAF_ARMOR, ModItems.LANNISTER_CHESTPLATE);
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SPEAR_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.DORNISH_SUN_PATTERN);
