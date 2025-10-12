@@ -29,6 +29,7 @@ public class ModCreativeTabs {
 
         append(ASOIAF_ARMOR, ModItems.LANNISTER_HELMET);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.FANCY_BOOTS);
 

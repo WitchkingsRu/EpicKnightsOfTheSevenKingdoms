@@ -24,6 +24,7 @@ public class ModItems extends ModItemsProvider {
 
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_HELMET = INSTANCE.addMedievalArmorItem("lannister_helmet", ModArmorTypes.LANNISTER_HELMET, ArmorItem.Type.HELMET, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_CHESTPLATE = INSTANCE.addMedievalArmorItem("lannister_chestplate", ModArmorTypes.LANNISTER_CHESTPLATE, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LORD_CHESTPLATE = INSTANCE.addMedievalArmorItem("lannister_lord_chestplate", ModArmorTypes.LANNISTER_LORD_CHESTPLATE, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LEGGINGS = INSTANCE.addMedievalArmorItem("lannister_leggings", ModArmorTypes.LANNISTER_LEGGINGS, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> FANCY_BOOTS = INSTANCE.addMedievalArmorItem("fancy_boots", ModArmorTypes.FANCY_BOOTS, ArmorItem.Type.BOOTS, new Item.Properties());
 
