@@ -13,6 +13,7 @@ public class ModBannerPatterns {
     public static final RegistrySupplier<BannerPattern> SPEAR_PATTERN;
     public static final RegistrySupplier<BannerPattern> DORNISH_SUN_PATTERN;
     public static final RegistrySupplier<BannerPattern> STARK;
+    public static final RegistrySupplier<BannerPattern> LANNISTER;
     public static final RegistrySupplier<BannerPattern> KRAKEN;
 
 
@@ -31,5 +32,6 @@ public class ModBannerPatterns {
         DORNISH_SUN_PATTERN = add("dornish_sun");
         STARK = add("stark");
         KRAKEN = add("kraken");
+        LANNISTER = add("lannister");
     }
 }
