@@ -15,6 +15,11 @@ public class ModBannerPatterns {
     public static final RegistrySupplier<BannerPattern> STARK;
     public static final RegistrySupplier<BannerPattern> LANNISTER;
     public static final RegistrySupplier<BannerPattern> KRAKEN;
+    public static final RegistrySupplier<BannerPattern> TARGARYEN;
+    public static final RegistrySupplier<BannerPattern> STAG;
+    public static final RegistrySupplier<BannerPattern> ARRYN;
+    public static final RegistrySupplier<BannerPattern> ROSE;
+    public static final RegistrySupplier<BannerPattern> FISH;
 
 
     public static RegistrySupplier<BannerPattern> add(String name) {
@@ -33,5 +38,12 @@ public class ModBannerPatterns {
         STARK = add("stark");
         KRAKEN = add("kraken");
         LANNISTER = add("lannister");
+        TARGARYEN = add("targaryen");
+        STAG = add("stag");
+        ARRYN = add("arryn");
+        ROSE = add("rose");
+        FISH = add("fish");
+
+
     }
 }

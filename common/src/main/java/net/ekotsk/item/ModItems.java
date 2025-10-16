@@ -37,6 +37,11 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> STARK_PATTERN = INSTANCE.addIngredientItem("stark_pattern", () -> new BannerPatternItem(ModBannerPatternTags.STARK_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> KRAKEN_PATTERN = INSTANCE.addIngredientItem("kraken_pattern", () -> new BannerPatternItem(ModBannerPatternTags.KRAKEN_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> LANNISTER_PATTERN = INSTANCE.addIngredientItem("lannister_pattern", () -> new BannerPatternItem(ModBannerPatternTags.LANNISTER_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> TARGARYEN_PATTERN = INSTANCE.addIngredientItem("targaryen_pattern", () -> new BannerPatternItem(ModBannerPatternTags.TARGARYEN_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> STAG_PATTERN = INSTANCE.addIngredientItem("stag_pattern", () -> new BannerPatternItem(ModBannerPatternTags.STAG_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> ARRYN_PATTERN = INSTANCE.addIngredientItem("arryn_pattern", () -> new BannerPatternItem(ModBannerPatternTags.ARRYN_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> ROSE_PATTERN = INSTANCE.addIngredientItem("rose_pattern", () -> new BannerPatternItem(ModBannerPatternTags.ROSE_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> FISH_PATTERN = INSTANCE.addIngredientItem("fish_pattern", () -> new BannerPatternItem(ModBannerPatternTags.FISH_PATTERN, new Item.Properties().stacksTo(1)));
 
 
 
