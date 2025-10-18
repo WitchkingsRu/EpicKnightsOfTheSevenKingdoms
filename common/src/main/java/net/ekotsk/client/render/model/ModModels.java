@@ -1,9 +1,12 @@
 package net.ekotsk.client.render.model;
 
 import com.magistuarmory.api.client.render.model.ModModelsProvider;
+import com.magistuarmory.client.render.model.decoration.SurcoatModel;
 import net.ekotsk.ASOIAFMod;
 import net.ekotsk.client.render.model.armor.*;
+import net.minecraft.client.model.geom.LayerDefinitions;
 import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.resources.ResourceLocation;
 
 public class ModModels extends ModModelsProvider {
@@ -16,6 +19,9 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation LANNISTER_LORD_HELMET_LAYER_LOCATION = INSTANCE.addArmorModel("lannister_lord_helmet", LannisterHelmetModel::createLayer);
     public static final ModelLayerLocation LANNISTER_LORD_LEGGINGS_LAYER_LOCATION = INSTANCE.addArmorModel("lannister_lord_leggings", LannisterLeggingsModel::createLayer);
 
+    public static final LayerDefinition HAND_SIGN = SurcoatModel.createLayer();
+    public static final ModelLayerLocation HAND_SIGN_LOCATION = INSTANCE.addArmorModel("hand_sign", SurcoatModel::createLayer);
+    public static final ModelLayerLocation HAND_SIGN_DECORATION_LOCATION = INSTANCE.addDecorationModel("hand_sign", () -> HAND_SIGN);
 
 
     public static final ModelLayerLocation FANCY_BOOTS_LAYER_LOCATION = INSTANCE.addArmorModel("fancy_boots", FancyBootsModel::createLayer);

@@ -5,6 +5,7 @@ import com.magistuarmory.item.MedievalWeaponItem;
 import com.magistuarmory.item.ModItemTier;
 import com.magistuarmory.item.WeaponTypes;
 import com.magistuarmory.item.armor.MedievalArmorItem;
+import com.magistuarmory.item.armor.WearableArmorDecorationItem;
 import dev.architectury.platform.Platform;
 import dev.architectury.registry.registries.RegistrySupplier;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
@@ -29,6 +30,8 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LEGGINGS = INSTANCE.addMedievalArmorItem("lannister_leggings", ModArmorTypes.LANNISTER_LEGGINGS, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LORD_LEGGINGS = INSTANCE.addMedievalArmorItem("lannister_lord_leggings", ModArmorTypes.LANNISTER_LORD_LEGGINGS, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> FANCY_BOOTS = INSTANCE.addMedievalArmorItem("fancy_boots", ModArmorTypes.FANCY_BOOTS, ArmorItem.Type.BOOTS, new Item.Properties());
+
+    public static final @Nullable RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN = INSTANCE.addWearableArmorDecorationItem("hand_sign", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
 
 
 
