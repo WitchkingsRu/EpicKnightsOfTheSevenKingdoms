@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ekotsk:item/fancy_cape",
+    "layer1": "ekotsk:item/fancy_cape_overlay"
+  }
+}

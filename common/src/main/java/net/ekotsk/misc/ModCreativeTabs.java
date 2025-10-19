@@ -35,7 +35,8 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_LEGGINGS);
 
-        append(ASOIAF_ARMOR, ModItems.HAND_SIGN);
+        append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SPEAR_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.DORNISH_SUN_PATTERN);

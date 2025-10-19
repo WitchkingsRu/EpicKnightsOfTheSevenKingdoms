@@ -1,6 +1,7 @@
 package net.ekotsk.item;
 
 import com.magistuarmory.api.item.ModItemsProvider;
+import com.magistuarmory.item.DyeableArmorDecorationItem;
 import com.magistuarmory.item.MedievalWeaponItem;
 import com.magistuarmory.item.ModItemTier;
 import com.magistuarmory.item.WeaponTypes;
@@ -11,6 +12,7 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
 import net.ekotsk.ASOIAFMod;
 import net.ekotsk.misc.ModBannerPatternTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BannerPatternItem;
 import net.minecraft.world.item.Item;
@@ -31,8 +33,8 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LORD_LEGGINGS = INSTANCE.addMedievalArmorItem("lannister_lord_leggings", ModArmorTypes.LANNISTER_LORD_LEGGINGS, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> FANCY_BOOTS = INSTANCE.addMedievalArmorItem("fancy_boots", ModArmorTypes.FANCY_BOOTS, ArmorItem.Type.BOOTS, new Item.Properties());
 
-    public static final @Nullable RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN = INSTANCE.addWearableArmorDecorationItem("hand_sign", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
-
+    public static final RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN_DECORATION = INSTANCE.addWearableArmorDecorationItem("hand_sign_decoration", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final RegistrySupplier<DyeableArmorDecorationItem> FANCY_CAPE_DECORATION = INSTANCE.addDyeableArmorDecorationItem("fancy_cape_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "fancy_cape"), new Item.Properties(), ArmorItem.Type.CHESTPLATE, 0xFFFFFF));
 
 
     public static final RegistrySupplier<Item> SPEAR_PATTERN = INSTANCE.addIngredientItem("spear_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SPEAR_PATTERN, new Item.Properties().stacksTo(1)));

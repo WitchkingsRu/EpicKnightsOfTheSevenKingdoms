@@ -17,5 +17,7 @@ public class ModArmorTypes {
     public static final ArmorType FANCY_BOOTS = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "fancy_boots"), new ResourceLocation("ekotsk:fancy_boots"), 0.0f, 0.0f, new Integer[] { 200, 0, 0, 0 }, new Integer[] { 3, 0, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, true, Platform.isForge() ? "forge:leather" : "c:leather");
 
     //public static final ArmorType HAND_SIGN = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "hand_sign"), new ResourceLocation("ekotsk:hand_sign"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 0 }, new Integer[] { 0, 0, 0, 0 }, 0, SoundEvents.ARMOR_EQUIP_DIAMOND, true, Platform.isForge() ? "forge:ingots/bronze" : "c:bronze_ingots");
-    public static final ArmorType HAND_SIGN = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "hand_sign"), new ResourceLocation("ekotsk:hand_sign"), 0.0f, 0.0f, new Integer[] { 0, 0, 180, 0 }, new Integer[] { 0, 0, 2, 0 }, 9, SoundEvents.ARMOR_EQUIP_IRON, true, Platform.isForge() ? "forge:ingots/bronze" : "c:bronze_ingots");
+    public static final ArmorType HAND_SIGN = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "hand_sign"), new ResourceLocation("ekotsk:hand_sign"), 0.0f, 0.0f, new Integer[] { 0, 0, 180, 0 }, new Integer[] { 0, 0, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_DIAMOND, true, Platform.isForge() ? "forge:ingots/bronze" : "c:bronze_ingots");
+    public static final ArmorType FANCY_CAPE = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "cape"), new ResourceLocation("ekotsk:cape"), 0.0f, 0.0f, new Integer[] { 0, 0, 180, 0 }, new Integer[] { 0, 0, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, true, Platform.isForge() ? "forge:ingots/bronze" : "c:bronze_ingots");
+
 }
