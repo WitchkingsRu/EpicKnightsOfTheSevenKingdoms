@@ -26,6 +26,18 @@ public class ModCreativeTabs {
     public static void init() {
         TABS.register();
         append(ASOIAF_WEAPONS, ModItems.ICE);
+        append(ASOIAF_WEAPONS, ModItems.BLACKFYRE);
+        append(ASOIAF_WEAPONS, ModItems.AEGON_DAGGER);
+        append(ASOIAF_WEAPONS, ModItems.CRAB_PINCER);
+        append(ASOIAF_WEAPONS, ModItems.DAWN);
+        append(ASOIAF_WEAPONS, ModItems.LAMENTATION);
+        append(ASOIAF_WEAPONS, ModItems.LONGCLAW);
+        append(ASOIAF_WEAPONS, ModItems.NIGHTFALL);
+        append(ASOIAF_WEAPONS, ModItems.OATHKEEPER);
+        append(ASOIAF_WEAPONS, ModItems.RED_RAIN);
+        append(ASOIAF_WEAPONS, ModItems.ROBERT_HAMMER);
+        append(ASOIAF_WEAPONS, ModItems.TRUTH);
+        append(ASOIAF_WEAPONS, ModItems.VIGILANCE);
 
         append(ASOIAF_ARMOR, ModItems.LANNISTER_HELMET);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_CHESTPLATE);
