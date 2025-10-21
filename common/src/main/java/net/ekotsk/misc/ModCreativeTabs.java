@@ -25,9 +25,10 @@ public class ModCreativeTabs {
 
     public static void init() {
         TABS.register();
-        append(ASOIAF_WEAPONS, ModItems.ICE);
-        append(ASOIAF_WEAPONS, ModItems.BLACKFYRE);
         append(ASOIAF_WEAPONS, ModItems.AEGON_DAGGER);
+        append(ASOIAF_WEAPONS, ModItems.BLACKFYRE);
+        append(ASOIAF_WEAPONS, ModItems.DARK_SISTER);
+        append(ASOIAF_WEAPONS, ModItems.ICE);
         append(ASOIAF_WEAPONS, ModItems.CRAB_PINCER);
         append(ASOIAF_WEAPONS, ModItems.DAWN);
         append(ASOIAF_WEAPONS, ModItems.LAMENTATION);
@@ -49,6 +50,8 @@ public class ModCreativeTabs {
 
         append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.AEGON_CROWN_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.DRAGON_DECORATION);
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SPEAR_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.DORNISH_SUN_PATTERN);

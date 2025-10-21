@@ -1,10 +1,7 @@
 package net.ekotsk.item;
 
 import com.magistuarmory.api.item.ModItemsProvider;
-import com.magistuarmory.item.DyeableArmorDecorationItem;
-import com.magistuarmory.item.MedievalWeaponItem;
-import com.magistuarmory.item.ModItemTier;
-import com.magistuarmory.item.WeaponTypes;
+import com.magistuarmory.item.*;
 import com.magistuarmory.item.armor.MedievalArmorItem;
 import com.magistuarmory.item.armor.WearableArmorDecorationItem;
 import dev.architectury.platform.Platform;
@@ -25,6 +22,7 @@ public class ModItems extends ModItemsProvider {
 
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> ICE = INSTANCE.addMedievalWeaponItem("ice", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> BLACKFYRE = INSTANCE.addMedievalWeaponItem("blackfyre", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> DARK_SISTER = INSTANCE.addMedievalWeaponItem("dark_sister", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> AEGON_DAGGER = INSTANCE.addMedievalWeaponItem("aegon_dagger", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.STILETTO);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> CRAB_PINCER = INSTANCE.addMedievalWeaponItem("crab_pincer", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.LOCHABER_AXE);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> DAWN = INSTANCE.addMedievalWeaponItem("dawn", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
@@ -47,7 +45,9 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> FANCY_BOOTS = INSTANCE.addMedievalArmorItem("fancy_boots", ModArmorTypes.FANCY_BOOTS, ArmorItem.Type.BOOTS, new Item.Properties());
 
     public static final RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN_DECORATION = INSTANCE.addWearableArmorDecorationItem("hand_sign_decoration", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final RegistrySupplier<WearableArmorDecorationItem> AEGON_CROWN_DECORATION = INSTANCE.addWearableArmorDecorationItem("aegon_crown_decoration", ModArmorTypes.AEGON_CROWN, ArmorItem.Type.HELMET, new Item.Properties());
     public static final RegistrySupplier<DyeableArmorDecorationItem> FANCY_CAPE_DECORATION = INSTANCE.addDyeableArmorDecorationItem("fancy_cape_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "fancy_cape"), new Item.Properties(), ArmorItem.Type.CHESTPLATE, 0xFFFFFF));
+    public static final RegistrySupplier<ArmorDecorationItem> DRAGON_DECORATION = INSTANCE.addArmorDecorationItem("dragon_decoration", () -> new ArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "dragon"), new Item.Properties(), ArmorItem.Type.HELMET));
 
 
     public static final RegistrySupplier<Item> SPEAR_PATTERN = INSTANCE.addIngredientItem("spear_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SPEAR_PATTERN, new Item.Properties().stacksTo(1)));

@@ -2,13 +2,15 @@ package net.ekotsk.client.render.model;
 
 import com.magistuarmory.api.client.render.model.ModModelsProvider;
 import com.magistuarmory.client.render.model.decoration.SurcoatModel;
+import dev.architectury.platform.Mod;
 import net.ekotsk.ASOIAFMod;
 import net.ekotsk.client.render.model.armor.*;
+import net.ekotsk.client.render.model.decoration.AegonCrownHelmetModel;
+import net.ekotsk.client.render.model.decoration.AegonCrownModel;
 import net.ekotsk.client.render.model.decoration.CapeModel;
-import net.minecraft.client.model.geom.LayerDefinitions;
+import net.ekotsk.client.render.model.decoration.DragonDecorationModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
-import net.minecraft.resources.ResourceLocation;
 
 public class ModModels extends ModModelsProvider {
     public static ModModels INSTANCE = new ModModels(ASOIAFMod.MOD_ID);
@@ -22,8 +24,13 @@ public class ModModels extends ModModelsProvider {
 
     public static final LayerDefinition HAND_SIGN = SurcoatModel.createLayer();
     public static final LayerDefinition FANCY_CAPE = CapeModel.createLayer();
+    public static final LayerDefinition DRAGON = DragonDecorationModel.createLayer();
     public static final ModelLayerLocation HAND_SIGN_LOCATION = INSTANCE.addArmorModel("hand_sign", SurcoatModel::createLayer);
     public static final ModelLayerLocation HAND_SIGN_DECORATION_LOCATION = INSTANCE.addDecorationModel("hand_sign", SurcoatModel::createLayer);
+
+    public static final ModelLayerLocation AEGON_CROWN_LOCATION = INSTANCE.addArmorModel("aegon_crown", AegonCrownModel::createLayer);
+    public static final ModelLayerLocation AEGON_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("aegon_crown", AegonCrownHelmetModel::createLayer);
+    public static final ModelLayerLocation DRAGON_DECORATION_LOCATION = INSTANCE.addDecorationModel("dragon", () -> DRAGON);
 
     public static final ModelLayerLocation FANCY_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fancy_cape", () -> FANCY_CAPE);
 
