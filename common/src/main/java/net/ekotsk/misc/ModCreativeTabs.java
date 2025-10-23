@@ -47,6 +47,10 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_HELMET);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_HELMET);
+        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_BOOTS);
 
         append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);

@@ -44,6 +44,12 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LORD_LEGGINGS = INSTANCE.addMedievalArmorItem("lannister_lord_leggings", ModArmorTypes.LANNISTER_LORD_LEGGINGS, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> FANCY_BOOTS = INSTANCE.addMedievalArmorItem("fancy_boots", ModArmorTypes.FANCY_BOOTS, ArmorItem.Type.BOOTS, new Item.Properties());
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> VALYRIAN_STEEL_HELMET = INSTANCE.addMedievalArmorItem("valyrian_steel_helmet", ModArmorTypes.VALYRIAN_STEEL_HELMET, ArmorItem.Type.HELMET, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> VALYRIAN_STEEL_CHESTPLATE = INSTANCE.addMedievalArmorItem("valyrian_steel_chestplate", ModArmorTypes.VALYRIAN_STEEL_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> VALYRIAN_STEEL_LEGGINGS = INSTANCE.addMedievalArmorItem("valyrian_steel_leggings", ModArmorTypes.VALYRIAN_STEEL_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> VALYRIAN_STEEL_BOOTS = INSTANCE.addMedievalArmorItem("valyrian_steel_boots", ModArmorTypes.VALYRIAN_STEEL_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
+
     public static final RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN_DECORATION = INSTANCE.addWearableArmorDecorationItem("hand_sign_decoration", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final RegistrySupplier<WearableArmorDecorationItem> AEGON_CROWN_DECORATION = INSTANCE.addWearableArmorDecorationItem("aegon_crown_decoration", ModArmorTypes.AEGON_CROWN, ArmorItem.Type.HELMET, new Item.Properties());
     public static final RegistrySupplier<DyeableArmorDecorationItem> FANCY_CAPE_DECORATION = INSTANCE.addDyeableArmorDecorationItem("fancy_cape_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "fancy_cape"), new Item.Properties(), ArmorItem.Type.CHESTPLATE, 0xFFFFFF));

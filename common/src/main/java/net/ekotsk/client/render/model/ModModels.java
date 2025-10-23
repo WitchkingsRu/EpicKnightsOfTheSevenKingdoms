@@ -22,6 +22,9 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation LANNISTER_LORD_HELMET_LAYER_LOCATION = INSTANCE.addArmorModel("lannister_lord_helmet", LannisterHelmetModel::createLayer);
     public static final ModelLayerLocation LANNISTER_LORD_LEGGINGS_LAYER_LOCATION = INSTANCE.addArmorModel("lannister_lord_leggings", LannisterLeggingsModel::createLayer);
 
+    public static final ModelLayerLocation VALYRIAN_STEEL_HELMET_LAYER_LOCATION = INSTANCE.addArmorModel("valyrian_steel_helmet", ValyrianHelmetModel::createLayer);
+    public static final ModelLayerLocation VALYRIAN_STEEL_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("valyrian_steel_armor", ValyrianArmorModel::createLayer);
+
     public static final LayerDefinition HAND_SIGN = SurcoatModel.createLayer();
     public static final LayerDefinition FANCY_CAPE = CapeModel.createLayer();
     public static final LayerDefinition DRAGON = DragonDecorationModel.createLayer();
