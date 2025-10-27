@@ -26,13 +26,13 @@ public class ValyrianArmorModel {
 
         PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(24, 16).mirror().addBox(-2.1F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.0F)).mirror(false), PartPose.offset(2.0F, 12.0F, 0.0F));
 
-        PartDefinition cube_r1 = left_leg.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(44, 46).mirror().addBox(-2.1F, -5.0F, -1.2F, 4.0F, 8.0F, 6.0F, new CubeDeformation(0.5F)).mirror(false), PartPose.offsetAndRotation(1.4F, 4.25F, -1.8F, 0.0F, 0.0F, -0.1309F));
+        PartDefinition cube_r1 = left_leg.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(44, 46).mirror().addBox(-2.1F, -5.0F, -1.2F, 4.0F, 8.0F, 6.0F, new CubeDeformation(0.3F)).mirror(false), PartPose.offsetAndRotation(1.4F, 4.25F, -1.8F, 0.0F, 0.0F, -0.1309F));
 
         PartDefinition LeftFoot2 = left_leg.addOrReplaceChild("LeftFoot2", CubeListBuilder.create().texOffs(29, 56).mirror().addBox(1.3F, -4.0F, -2.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(1.01F)).mirror(false), PartPose.offset(-3.4F, 12.25F, 0.0F));
 
         PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(24, 16).addBox(-1.9F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.0F)), PartPose.offset(-2.0F, 12.0F, 0.0F));
 
-        PartDefinition cube_r2 = right_leg.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(44, 46).addBox(-1.9F, -5.0F, -1.2F, 4.0F, 8.0F, 6.0F, new CubeDeformation(0.5F)), PartPose.offsetAndRotation(-1.4F, 4.25F, -1.8F, 0.0F, 0.0F, 0.1309F));
+        PartDefinition cube_r2 = right_leg.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(44, 46).addBox(-1.9F, -5.0F, -1.2F, 4.0F, 8.0F, 6.0F, new CubeDeformation(0.3F)), PartPose.offsetAndRotation(-1.4F, 4.25F, -1.8F, 0.0F, 0.0F, 0.1309F));
 
         PartDefinition RightFoot = right_leg.addOrReplaceChild("RightFoot", CubeListBuilder.create().texOffs(29, 56).addBox(-3.9F, 17.25F, -2.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(1.01F)), PartPose.offset(2.0F, -9.0F, 0.0F));
 

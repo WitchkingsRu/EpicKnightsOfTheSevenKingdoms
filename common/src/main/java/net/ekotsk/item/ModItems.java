@@ -19,22 +19,25 @@ import net.minecraft.world.item.Tiers;
 public class ModItems extends ModItemsProvider {
     public static ModItems INSTANCE = new ModItems();
     public static ModItemTier VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 5, 10800, 11.0F, 5.5F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 6);
+    public static ModItemTier FINE_VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 5, 10800, 12.0F, 6.0F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 6);
+    public static ModItemTier WEAK_VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 5, 10800, 10.0F, 5.0F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 6);
 
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> ICE = INSTANCE.addMedievalWeaponItem("ice", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> BLACKFYRE = INSTANCE.addMedievalWeaponItem("blackfyre", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> DARK_SISTER = INSTANCE.addMedievalWeaponItem("dark_sister", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> BLACKFYRE = INSTANCE.addMedievalWeaponItem("blackfyre", new Item.Properties(), FINE_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> DARK_SISTER = INSTANCE.addMedievalWeaponItem("dark_sister", new Item.Properties(), FINE_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> AEGON_DAGGER = INSTANCE.addMedievalWeaponItem("aegon_dagger", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.STILETTO);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> CRAB_PINCER = INSTANCE.addMedievalWeaponItem("crab_pincer", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.LOCHABER_AXE);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> DAWN = INSTANCE.addMedievalWeaponItem("dawn", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> CRAB_PINCER = INSTANCE.addMedievalWeaponItem("crab_pincer", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.LOCHABER_AXE);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> DAWN = INSTANCE.addMedievalWeaponItem("dawn", new Item.Properties(), FINE_VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LAMENTATION = INSTANCE.addMedievalWeaponItem("lamentation", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LONGCLAW = INSTANCE.addMedievalWeaponItem("longclaw", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> NIGHTFALL = INSTANCE.addMedievalWeaponItem("nightfall", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ESTOC);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> OATHKEEPER = INSTANCE.addMedievalWeaponItem("oathkeeper", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> RED_RAIN = INSTANCE.addMedievalWeaponItem("red_rain", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> ROBERT_HAMMER = INSTANCE.addMedievalWeaponItem("robert_hammer", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.LUCERNE_HAMMER);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> OATHKEEPER = INSTANCE.addMedievalWeaponItem("oathkeeper", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> RED_RAIN = INSTANCE.addMedievalWeaponItem("red_rain", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> ROBERT_HAMMER = INSTANCE.addMedievalWeaponItem("robert_hammer", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.LUCERNE_HAMMER);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> TRUTH = INSTANCE.addMedievalWeaponItem("truth", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> VIGILANCE = INSTANCE.addMedievalWeaponItem("vigilance", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
-
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> LADY_FORLORN = INSTANCE.addMedievalWeaponItem("lady_forlorn", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> HEARTSBANE = INSTANCE.addMedievalWeaponItem("heartsbane", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
 
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_HELMET = INSTANCE.addMedievalArmorItem("lannister_helmet", ModArmorTypes.LANNISTER_HELMET, ArmorItem.Type.HELMET, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LORD_HELMET = INSTANCE.addMedievalArmorItem("lannister_lord_helmet", ModArmorTypes.LANNISTER_LORD_HELMET, ArmorItem.Type.HELMET, new Item.Properties());
