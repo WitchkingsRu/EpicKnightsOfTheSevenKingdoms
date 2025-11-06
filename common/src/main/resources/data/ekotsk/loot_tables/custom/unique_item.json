@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ekotsk:ice",
+          "conditions": [
+            {
+              "condition": "ekotsk:unique_item",
+              "unique_id": "ekotsk:unique_artifact_global"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

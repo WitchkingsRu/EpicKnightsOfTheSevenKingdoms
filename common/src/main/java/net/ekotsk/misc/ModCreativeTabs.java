@@ -11,9 +11,13 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+
+import java.util.function.Supplier;
 
 import static com.magistuarmory.misc.ModCreativeTabs.append;
 import static com.magistuarmory.misc.ModCreativeTabs.createTab;
+import static dev.architectury.registry.CreativeTabRegistry.appendStack;
 
 public class ModCreativeTabs {
     static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(ASOIAFMod.MOD_ID, Registries.CREATIVE_MODE_TAB);
@@ -43,19 +47,23 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.HEARTSBANE);
 
         append(ASOIAF_ARMOR, ModItems.LANNISTER_HELMET);
-        append(ASOIAF_ARMOR, ModItems.LANNISTER_CHESTPLATE);
+        appendStack(ASOIAF_ARMOR, LANNISTER_CHESTPLATE_SUPPLIER);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.FANCY_BOOTS);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_HELMET);
-        append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_CHESTPLATE);
+        appendStack(ASOIAF_ARMOR, LANNISTER_LORD_CHESTPLATE_SUPPLIER);
         append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_HELMET);
         append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_BOOTS);
 
         append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CAPE_DECORATION);
         append(ASOIAF_ARMOR, ModItems.AEGON_CROWN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.DRAGON_DECORATION);
 
@@ -71,5 +79,8 @@ public class ModCreativeTabs {
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.FISH_PATTERN);
 
     }
-
+    static Supplier<ItemStack> LANNISTER_CHESTPLATE_SUPPLIER
+            = () -> ModItems.getDecoratedStack(ModItems.LANNISTER_CHESTPLATE, ModItems.LANNISTER_CAPE_DECORATION);
+    static Supplier<ItemStack> LANNISTER_LORD_CHESTPLATE_SUPPLIER
+            = () -> ModItems.getDecoratedStack(ModItems.LANNISTER_LORD_CHESTPLATE, ModItems.LANNISTER_CAPE_DECORATION);
 }
