@@ -23,6 +23,7 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation VALYRIAN_STEEL_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("valyrian_steel_armor", ValyrianArmorModel::createLayer);
 
     public static final ModelLayerLocation NIGHT_WATCH_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("night_watch_armor",NightsWatchArmorModel::createLayer);
+    public static final ModelLayerLocation NORTH_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("northern_armor",NorthernArmorModel::createLayer);
 
     public static final LayerDefinition HAND_SIGN = SurcoatModel.createLayer();
     public static final LayerDefinition FANCY_CAPE = CapeModel.createLayer();

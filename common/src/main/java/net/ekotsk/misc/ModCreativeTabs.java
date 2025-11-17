@@ -60,6 +60,9 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.NORTHERN_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.NORTHERN_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.NORTHERN_BOOTS);
 
         append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
