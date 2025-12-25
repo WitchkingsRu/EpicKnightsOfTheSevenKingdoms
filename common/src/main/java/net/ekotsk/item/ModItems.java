@@ -38,6 +38,7 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> VIGILANCE = INSTANCE.addMedievalWeaponItem("vigilance", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LADY_FORLORN = INSTANCE.addMedievalWeaponItem("lady_forlorn", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> HEARTSBANE = INSTANCE.addMedievalWeaponItem("heartsbane", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> SANDOQ = INSTANCE.addMedievalWeaponItem("sandoq", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
 
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_HELMET = INSTANCE.addMedievalArmorItem("lannister_helmet", ModArmorTypes.LANNISTER_HELMET, ArmorItem.Type.HELMET, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LORD_HELMET = INSTANCE.addMedievalArmorItem("lannister_lord_helmet", ModArmorTypes.LANNISTER_LORD_HELMET, ArmorItem.Type.HELMET, new Item.Properties());

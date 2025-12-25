@@ -45,6 +45,7 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.VIGILANCE);
         append(ASOIAF_WEAPONS, ModItems.LADY_FORLORN);
         append(ASOIAF_WEAPONS, ModItems.HEARTSBANE);
+        append(ASOIAF_WEAPONS, ModItems.SANDOQ);
 
         append(ASOIAF_ARMOR, ModItems.LANNISTER_HELMET);
         appendStack(ASOIAF_ARMOR, LANNISTER_CHESTPLATE_SUPPLIER);
