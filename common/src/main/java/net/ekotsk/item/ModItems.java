@@ -61,6 +61,11 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NORTHERN_LEGGINGS = INSTANCE.addMedievalArmorItem("northern_leggings", ModArmorTypes.NORTHERN_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NORTHERN_BOOTS = INSTANCE.addMedievalArmorItem("northern_boots", ModArmorTypes.NORTHERN_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_HELMET = INSTANCE.addMedievalArmorItem("gold_cloak_helmet", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_CHESTPLATE = INSTANCE.addMedievalArmorItem("gold_cloak_chestplate", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_LEGGINGS = INSTANCE.addMedievalArmorItem("gold_cloak_leggings", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_BOOTS = INSTANCE.addMedievalArmorItem("gold_cloak_boots", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
     public static final RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN_DECORATION = INSTANCE.addWearableArmorDecorationItem("hand_sign_decoration", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final RegistrySupplier<WearableArmorDecorationItem> AEGON_CROWN_DECORATION = INSTANCE.addWearableArmorDecorationItem("aegon_crown_decoration", ModArmorTypes.AEGON_CROWN, ArmorItem.Type.HELMET, new Item.Properties());
     public static final RegistrySupplier<DyeableArmorDecorationItem> FANCY_CAPE_DECORATION = INSTANCE.addDyeableArmorDecorationItem("fancy_cape_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "fancy_cape"), new Item.Properties(), ArmorItem.Type.CHESTPLATE, 0xFFFFFF));
