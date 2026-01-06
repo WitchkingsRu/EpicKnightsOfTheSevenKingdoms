@@ -29,6 +29,8 @@ public class ModModels extends ModModelsProvider {
     public static final LayerDefinition HAND_SIGN = SurcoatModel.createLayer();
     public static final LayerDefinition FANCY_CAPE = CapeModel.createLayer();
     public static final LayerDefinition NIGHT_WATCH_CAPE = NightsWatchCapeModel.createLayer();
+    public static final LayerDefinition GOLD_CLOAK_LEFT = GoldCloakLeftDecoModel.createLayer();
+    public static final LayerDefinition GOLD_CLOAK_RIGHT = GoldCloakRightDecoModel.createLayer();
     public static final LayerDefinition DRAGON = DragonDecorationModel.createLayer();
     public static final ModelLayerLocation HAND_SIGN_LOCATION = INSTANCE.addArmorModel("hand_sign", SurcoatModel::createLayer);
     public static final ModelLayerLocation HAND_SIGN_DECORATION_LOCATION = INSTANCE.addDecorationModel("hand_sign", SurcoatModel::createLayer);
@@ -39,7 +41,8 @@ public class ModModels extends ModModelsProvider {
 
     public static final ModelLayerLocation FANCY_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fancy_cape", () -> FANCY_CAPE);
     public static final ModelLayerLocation NIGHT_WATCH_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("night_watch_cape", () -> NIGHT_WATCH_CAPE);
-
+    public static final ModelLayerLocation GOLD_CLOAK_LEFT_DECORATION_LOCATION = INSTANCE.addDecorationModel("gold_cloak_left", () -> GOLD_CLOAK_LEFT);
+    public static final ModelLayerLocation GOLD_CLOAK_RIGHT_DECORATION_LOCATION = INSTANCE.addDecorationModel("gold_cloak_right", () -> GOLD_CLOAK_RIGHT);
     public static final ModelLayerLocation FANCY_BOOTS_LAYER_LOCATION = INSTANCE.addArmorModel("fancy_boots", FancyBootsModel::createLayer);
 
 

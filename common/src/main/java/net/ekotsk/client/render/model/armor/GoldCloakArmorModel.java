@@ -33,19 +33,15 @@ public class GoldCloakArmorModel {
 				.texOffs(48, 39).mirror().addBox(1.0F, 4.0F, -2.0F, 2.0F, 0.0F, 4.0F, new CubeDeformation(1.2F)).mirror(false)
 				.texOffs(40, 58).mirror().addBox(2.0F, -1.5F, -2.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.8F)).mirror(false), PartPose.offset(5.0F, 2.0F, 0.0F));
 
-		PartDefinition cloak = left_arm.addOrReplaceChild("cloak", CubeListBuilder.create(), PartPose.offset(-5.0F, -2.0F, 0.0F));
-
-		PartDefinition cube_r1 = cloak.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(47, 16).addBox(-1.3F, -15.5F, -0.5F, 3.0F, 16.0F, 5.0F, new CubeDeformation(1.0F)), PartPose.offsetAndRotation(9.0F, 15.0F, -2.0F, 0.0F, 0.0F, -0.0873F));
-
 		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 48).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.0F))
 				.texOffs(16, 58).addBox(-2.0F, 10.5F, -2.0F, 4.0F, 2.0F, 4.0F, new CubeDeformation(1.2F)), PartPose.offset(-1.9F, 12.0F, 0.0F));
 
-		PartDefinition cube_r2 = right_leg.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 35).addBox(-4.0F, -5.5F, -1.0F, 5.0F, 6.0F, 6.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(0.0F, 6.0F, -2.0F, 0.0F, 0.0F, 0.1309F));
+		PartDefinition cube_r1 = right_leg.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 35).addBox(-4.0F, -5.5F, -1.0F, 5.0F, 6.0F, 6.0F, new CubeDeformation(0.1F)), PartPose.offsetAndRotation(0.0F, 6.0F, -2.0F, 0.0F, 0.0F, 0.1309F));
 
 		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 48).mirror().addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(1.0F)).mirror(false)
 				.texOffs(16, 58).addBox(-2.0F, 10.5F, -2.0F, 4.0F, 2.0F, 4.0F, new CubeDeformation(1.2F)), PartPose.offset(1.9F, 12.0F, 0.0F));
 
-		PartDefinition cube_r3 = left_leg.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(0, 35).mirror().addBox(-1.0F, -5.5F, -1.0F, 5.0F, 6.0F, 6.0F, new CubeDeformation(0.1F)).mirror(false), PartPose.offsetAndRotation(0.0F, 6.0F, -2.0F, 0.0F, 0.0F, -0.1309F));
+		PartDefinition cube_r2 = left_leg.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 35).mirror().addBox(-1.0F, -5.5F, -1.0F, 5.0F, 6.0F, 6.0F, new CubeDeformation(0.1F)).mirror(false), PartPose.offsetAndRotation(0.0F, 6.0F, -2.0F, 0.0F, 0.0F, -0.1309F));
 
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
