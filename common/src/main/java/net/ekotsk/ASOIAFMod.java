@@ -7,8 +7,6 @@ import net.ekotsk.misc.ModBannerPatterns;
 import net.ekotsk.misc.ModCreativeTabs;
 import net.fabricmc.api.EnvType;
 
-import static com.mojang.text2speech.Narrator.LOGGER;
-
 public final class ASOIAFMod {
     public static final String MOD_ID = "ekotsk";
 
@@ -19,5 +17,6 @@ public final class ASOIAFMod {
         ModCreativeTabs.init();
         if (Platform.getEnv() == EnvType.CLIENT)
             ModModels.INSTANCE.init(ModItems.INSTANCE);
+        ModLootEntries.register();
     }
 }
