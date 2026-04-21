@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:ice",
+  "item": "ekotsk:ice",
+  "structures": [
+    "minecraft:desert_pyramid",
+    "minecraft:shipwreck_treasure"
+  ],
+  "weight": 10
+}

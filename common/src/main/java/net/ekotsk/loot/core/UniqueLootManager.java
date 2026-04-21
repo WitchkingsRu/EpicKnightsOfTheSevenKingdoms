@@ -1,10 +1,15 @@
 package net.ekotsk.loot.core;
 
 import net.ekotsk.ASOIAFMod;
+import net.ekotsk.loot.api.UniqueLootStorage;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class UniqueLootManager {
@@ -15,47 +20,47 @@ public class UniqueLootManager {
         return INSTANCE;
     }
 
-    private UniqueLootEntry entry;
+    private final Map<ResourceLocation, UniqueLootEntry> entries = new HashMap<>();
 
-    public void init(Item item) {
-        System.out.println("[UniqueLoot] ⚙️ UniqueLootManager.init() ENTER");
-        System.out.println("[UniqueLoot] ⚙️ item param: " + item);
-        System.out.println("[UniqueLoot] ⚙️ INSTANCE: " + INSTANCE);
-
-        if (item == null) {
-            System.out.println("[UniqueLoot] ❌ item is NULL — aborting init!");
-            return;
-        }
-
-        entry = new UniqueLootEntry(
-                new ResourceLocation(ASOIAFMod.MOD_ID, "unique_sword"),
-                new ItemStack(item),
-                Set.of(new ResourceLocation("minecraft", "desert_pyramid"))
-        );
-
-        System.out.println("[UniqueLoot] ✅ Manager initialized");
-        System.out.println("[UniqueLoot] ✅ entry.structures: " + entry.structures);
-        System.out.println("[UniqueLoot] ⚙️ UniqueLootManager.init() EXIT");
+    public void register(UniqueLootEntry entry) {
+        entries.put(entry.getId(), entry);
     }
 
-    public UniqueLootEntry tryRoll(ResourceLocation structure) {
-        System.out.println("[UniqueLoot] === tryRoll DEBUG ===");
-        System.out.println("[UniqueLoot] structure param: " + structure);
-        System.out.println("[UniqueLoot] entry is null: " + (entry == null));
+    public void clear() {
+        entries.clear();
+    }
 
-        if (entry != null) {
-            System.out.println("[UniqueLoot] entry.id: " + entry.getId());
-            System.out.println("[UniqueLoot] entry.structures: " + entry.structures);
-            System.out.println("[UniqueLoot] isAllowedIn result: " + entry.isAllowedIn(structure));
+    public UniqueLootEntry roll(ResourceLocation structure,
+                                RandomSource random,
+                                UniqueLootStorage storage) {
+
+        List<UniqueLootEntry> candidates = entries.values().stream()
+                .filter(e -> e.isAllowedIn(structure))
+                .filter(e -> !storage.isClaimed(e.getId()))
+                .toList();
+
+        if (candidates.isEmpty()) return null;
+
+        int totalWeight = candidates.stream().mapToInt(UniqueLootEntry::getWeight).sum();
+        int roll = random.nextInt(totalWeight);
+
+        int current = 0;
+        for (UniqueLootEntry entry : candidates) {
+            current += entry.getWeight();
+            if (roll < current) {
+                return entry;
+            }
         }
 
-        if (entry != null && entry.isAllowedIn(structure)) {
-            System.out.println("[UniqueLoot] Entry allowed: " + entry.getId());
-            return entry;
-        }
-
-        System.out.println("[UniqueLoot] No valid entry");
-        System.out.println("[UniqueLoot] === END DEBUG ===");
         return null;
+    }
+
+    private boolean storageAlreadyClaimed(UniqueLootStorage storage, UniqueLootEntry entry) {
+        // 🔥 добавим новый метод позже
+        return !storage.tryClaim(entry.getId()); // TEMP (ниже исправим)
+    }
+
+    public int size() {
+        return entries.size();
     }
 }

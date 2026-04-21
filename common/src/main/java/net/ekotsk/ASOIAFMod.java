@@ -17,6 +17,6 @@ public final class ASOIAFMod {
         ModCreativeTabs.init();
         if (Platform.getEnv() == EnvType.CLIENT)
             ModModels.INSTANCE.init(ModItems.INSTANCE);
-        ModLootEntries.register();
+        //ModLootEntries.register();
     }
 }

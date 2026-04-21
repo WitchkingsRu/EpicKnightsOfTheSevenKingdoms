@@ -17,24 +17,33 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import java.util.function.Consumer;
 
 public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
-
+    private final ResourceLocation structure;
     // ✅ РОВНО 4 параметра, как требует simpleBuilder
-    public UniqueLootPoolEntry(int weight, int quality,
+    public UniqueLootPoolEntry(int weight,
+                               int quality,
                                LootItemCondition[] conditions,
-                               LootItemFunction[] functions) {
+                               LootItemFunction[] functions,
+                               ResourceLocation structure) {
         super(weight, quality, conditions, functions);
+        this.structure = structure;
     }
 
     @Override
     protected void createItemStack(Consumer<ItemStack> output, LootContext context) {
+
         ServerLevel level = context.getLevel();
         if (level == null) return;
 
-        ResourceLocation structure = new ResourceLocation("minecraft", "desert_pyramid");
-        UniqueLootEntry entry = UniqueLootManager.get().tryRoll(structure);
+        UniqueLootStorage storage = UniqueLootPlatform.getStorage(level);
+
+        UniqueLootEntry entry = UniqueLootManager.get().roll(
+                structure,
+                context.getRandom(),
+                storage
+        );
+
         if (entry == null) return;
 
-        UniqueLootStorage storage = UniqueLootPlatform.getStorage(level);
         if (!storage.tryClaim(entry.getId())) return;
 
         output.accept(entry.createStack());
@@ -45,8 +54,8 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
         return ModLootEntries.uniqueLootEntry().get();
     }
 
-    // ✅ Теперь ссылается на конструктор с 4 аргументами
-    public static Builder<?> builder() {
-        return simpleBuilder(UniqueLootPoolEntry::new);
-    }
+//    // ✅ Теперь ссылается на конструктор с 4 аргументами
+//    public static Builder<?> builder() {
+//        return simpleBuilder(UniqueLootPoolEntry::new);
+//    }
 }

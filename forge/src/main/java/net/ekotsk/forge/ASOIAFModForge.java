@@ -1,13 +1,12 @@
 package net.ekotsk.forge;
 
 import dev.architectury.platform.forge.EventBuses;
-import net.ekotsk.item.ModItems;
-import net.ekotsk.loot.core.UniqueLootManager;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
 import net.ekotsk.ASOIAFMod;
+import net.ekotsk.loot.api.UniqueLootReloadListener;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.AddReloadListenerEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(ASOIAFMod.MOD_ID)
 public final class ASOIAFModForge {
@@ -15,35 +14,27 @@ public final class ASOIAFModForge {
     public ASOIAFModForge() {
         System.out.println("[UniqueLoot] 🔵 CONSTRUCTOR START");
 
-        // 1. Architectury
-        EventBuses.registerModEventBus(ASOIAFMod.MOD_ID, FMLJavaModLoadingContext.get().getModEventBus());
+        // 1. Architectury mod event bus
+        EventBuses.registerModEventBus(
+                ASOIAFMod.MOD_ID,
+                FMLJavaModLoadingContext.get().getModEventBus()
+        );
 
         // 2. Common init
         ASOIAFMod.init();
 
-        // 3. Регистрация loot entry
+        // 3. Loot entry registry (Forge impl)
         ModLootEntriesImpl.register();
 
-        // 4. ✅ ПРАВИЛЬНАЯ подписка на FMLCommonSetupEvent
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onCommonSetup);
+        // 4. Forge global event bus (ВАЖНО!)
+        MinecraftForge.EVENT_BUS.addListener(this::onReloadListeners);
 
         System.out.println("[UniqueLoot] 🔵 CONSTRUCTOR END");
     }
 
-    // ✅ Метод-обработчик (не нужно @SubscribeEvent!)
-    private void onCommonSetup(FMLCommonSetupEvent event) {
-        System.out.println("[UniqueLoot] 🟢 FMLCommonSetupEvent FIRED!");
+    private void onReloadListeners(AddReloadListenerEvent event) {
+        System.out.println("[UniqueLoot] 🟢 Registering reload listener");
 
-        var iceItem = ModItems.ICE.get();
-        System.out.println("[UniqueLoot] 🟢 ModItems.ICE.get() = " + iceItem);
-
-        if (iceItem == null) {
-            System.out.println("[UniqueLoot] ❌ ModItems.ICE.get() returned NULL");
-            return;
-        }
-
-        System.out.println("[UniqueLoot] 🟢 Calling UniqueLootManager.init()");
-        UniqueLootManager.get().init(iceItem);
-        System.out.println("[UniqueLoot] 🟢 init() completed");
+        event.addListener(new UniqueLootReloadListener());
     }
 }

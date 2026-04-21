@@ -6,14 +6,20 @@ import net.minecraft.world.item.ItemStack;
 import java.util.Set;
 
 public class UniqueLootEntry {
+
     private final ResourceLocation id;
     private final ItemStack stack;
-    final Set<ResourceLocation> structures;
+    private final Set<ResourceLocation> structures;
+    private final int weight;
 
-    public UniqueLootEntry(ResourceLocation id, ItemStack stack, Set<ResourceLocation> structures) {
+    public UniqueLootEntry(ResourceLocation id,
+                           ItemStack stack,
+                           Set<ResourceLocation> structures,
+                           int weight) {
         this.id = id;
         this.stack = stack;
         this.structures = structures;
+        this.weight = weight;
     }
 
     public ResourceLocation getId() {
@@ -26,5 +32,9 @@ public class UniqueLootEntry {
 
     public boolean isAllowedIn(ResourceLocation structure) {
         return structures.contains(structure);
+    }
+
+    public int getWeight() {
+        return weight;
     }
 }

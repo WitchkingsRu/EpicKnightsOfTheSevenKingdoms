@@ -23,7 +23,10 @@ public class UniqueLootSavedData extends SavedData implements UniqueLootStorage 
         setDirty();
         return true;
     }
-
+    @Override
+    public boolean isClaimed(ResourceLocation id) {
+        return claimed.contains(id);
+    }
     @Override
     public CompoundTag save(CompoundTag tag) {
         ListTag list = new ListTag();
