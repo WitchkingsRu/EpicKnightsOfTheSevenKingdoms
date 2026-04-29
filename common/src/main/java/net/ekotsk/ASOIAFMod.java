@@ -2,6 +2,7 @@ package net.ekotsk;
 
 import dev.architectury.platform.Platform;
 import net.ekotsk.client.render.model.ModModels;
+import net.ekotsk.init.CommonEvents;
 import net.ekotsk.item.ModItems;
 import net.ekotsk.misc.ModBannerPatterns;
 import net.ekotsk.misc.ModCreativeTabs;
@@ -14,9 +15,9 @@ public final class ASOIAFMod {
     public static void init() {
         ModBannerPatterns.init();
         ModItems.INSTANCE.init();
+        CommonEvents.init();
         ModCreativeTabs.init();
         if (Platform.getEnv() == EnvType.CLIENT)
             ModModels.INSTANCE.init(ModItems.INSTANCE);
-        //ModLootEntries.register();
     }
 }
