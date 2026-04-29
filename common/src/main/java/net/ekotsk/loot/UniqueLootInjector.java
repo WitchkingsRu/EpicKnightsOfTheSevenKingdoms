@@ -25,7 +25,7 @@ public class UniqueLootInjector {
     private static boolean shouldInject(String structure) {
         return switch (structure) {
             case "desert_pyramid",
-                 "shipwreck",
+                 "shipwreck_treasure",
                  "simple_dungeon",
                  "stronghold_corridor" -> true;
             default -> false;
