@@ -1,6 +1,7 @@
 package net.ekotsk.item;
 
 import com.magistuarmory.api.item.ModItemsProvider;
+import com.magistuarmory.item.ItemRegistryHelper;
 import com.magistuarmory.item.*;
 import com.magistuarmory.item.armor.MedievalArmorItem;
 import com.magistuarmory.item.armor.WearableArmorDecorationItem;
@@ -13,8 +14,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BannerPatternItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.world.item.Tiers;
 
 public class ModItems extends ModItemsProvider {
     public static ModItems INSTANCE = new ModItems();
