@@ -3,6 +3,7 @@ package net.ekotsk.item;
 import com.magistuarmory.api.item.ModItemsProvider;
 import com.magistuarmory.item.ItemRegistryHelper;
 import com.magistuarmory.item.*;
+import com.magistuarmory.item.armor.DyeableMedievalArmorItem;
 import com.magistuarmory.item.armor.MedievalArmorItem;
 import com.magistuarmory.item.armor.WearableArmorDecorationItem;
 import dev.architectury.platform.Platform;
@@ -64,6 +65,11 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_CHESTPLATE = INSTANCE.addMedievalArmorItem("gold_cloak_chestplate", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_LEGGINGS = INSTANCE.addMedievalArmorItem("gold_cloak_leggings", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_BOOTS = INSTANCE.addMedievalArmorItem("gold_cloak_boots", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_HELMET = INSTANCE.addDyeableMedievalArmorItem("dornish_helmet", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties(), 0xFF6A00);
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_CHESTPLATE = INSTANCE.addDyeableMedievalArmorItem("dornish_chestplate", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties(), 0xFF6A00);
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_LEGGINGS = INSTANCE.addMedievalArmorItem("dornish_leggings", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_BOOTS = INSTANCE.addMedievalArmorItem("dornish_boots", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
 
     public static final RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN_DECORATION = INSTANCE.addWearableArmorDecorationItem("hand_sign_decoration", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final RegistrySupplier<WearableArmorDecorationItem> AEGON_CROWN_DECORATION = INSTANCE.addWearableArmorDecorationItem("aegon_crown_decoration", ModArmorTypes.AEGON_CROWN, ArmorItem.Type.HELMET, new Item.Properties());
