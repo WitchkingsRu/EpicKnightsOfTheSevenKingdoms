@@ -66,6 +66,11 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_LEGGINGS = INSTANCE.addMedievalArmorItem("gold_cloak_leggings", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_BOOTS = INSTANCE.addMedievalArmorItem("gold_cloak_boots", ModArmorTypes.GOLD_CLOAK_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_HELMET = INSTANCE.addMedievalArmorItem("kingsguard_helmet", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_CHESTPLATE = INSTANCE.addMedievalArmorItem("kingsguard_chestplate", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_LEGGINGS = INSTANCE.addMedievalArmorItem("kingsguard_leggings", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_BOOTS = INSTANCE.addMedievalArmorItem("kingsguard_boots", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_HELMET = INSTANCE.addDyeableMedievalArmorItem("dornish_helmet", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties(), 0xFF6A00);
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_CHESTPLATE = INSTANCE.addDyeableMedievalArmorItem("dornish_chestplate", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties(), 0xFF6A00);
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_LEGGINGS = INSTANCE.addDyeableMedievalArmorItem("dornish_leggings", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties(),0xFF6A00);

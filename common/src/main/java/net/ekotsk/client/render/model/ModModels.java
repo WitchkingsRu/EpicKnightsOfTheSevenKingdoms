@@ -27,6 +27,8 @@ public class ModModels extends ModModelsProvider {
 
     public static final ModelLayerLocation GOLD_CLOAK_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("gold_cloak_armor",GoldCloakArmorModel::createLayer);
 
+    public static final ModelLayerLocation KINGSGUARD_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("kingsguard_armor",KingsguardArmorModel::createLayer);
+
     public static final LayerDefinition HAND_SIGN = SurcoatModel.createLayer();
     public static final LayerDefinition FANCY_CAPE = CapeModel.createLayer();
     public static final LayerDefinition NIGHT_WATCH_CAPE = NightsWatchCapeModel.createLayer();
