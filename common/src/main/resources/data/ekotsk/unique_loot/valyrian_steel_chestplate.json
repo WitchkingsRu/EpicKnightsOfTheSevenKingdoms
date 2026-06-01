@@ -1,0 +1,8 @@
+{
+  "id": "ekotsk:valyrian_steel_chestplate",
+  "item": "ekotsk:valyrian_steel_chestplate",
+  "structures": [
+    "minecraft:end_city_treasure"
+  ],
+  "weight": 10
+}
