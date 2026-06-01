@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ekotsk:item/lannister_helmet"
+    "layer0": "ekotsk:item/dornish_boots",
+    "layer1": "ekotsk:item/dornish_boots_overlay"
   }
 }
