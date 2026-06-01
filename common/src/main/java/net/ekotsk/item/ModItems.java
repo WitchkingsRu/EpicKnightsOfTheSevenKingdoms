@@ -57,6 +57,7 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NIGHT_WATCH_LEGGINGS = INSTANCE.addMedievalArmorItem("night_watch_leggings", ModArmorTypes.NIGHT_WATCH_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NIGHT_WATCH_BOOTS = INSTANCE.addMedievalArmorItem("night_watch_boots", ModArmorTypes.NIGHT_WATCH_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> NORTHERN_HELMET = INSTANCE.addMedievalArmorItem("northern_helmet", ModArmorTypes.NORTHERN_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NORTHERN_CHESTPLATE = INSTANCE.addMedievalArmorItem("northern_chestplate", ModArmorTypes.NORTHERN_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NORTHERN_LEGGINGS = INSTANCE.addMedievalArmorItem("northern_leggings", ModArmorTypes.NORTHERN_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NORTHERN_BOOTS = INSTANCE.addMedievalArmorItem("northern_boots", ModArmorTypes.NORTHERN_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());

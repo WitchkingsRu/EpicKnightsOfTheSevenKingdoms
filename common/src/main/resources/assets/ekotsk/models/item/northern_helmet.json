@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "ekotsk:item/gold_cloak_helmet"
+    "layer0": "ekotsk:item/northern_helmet"
   }
 }
