@@ -23,14 +23,12 @@ public class GoldCloakArmorModel {
 
 		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create().texOffs(22, 42).addBox(-3.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.9F))
 				.texOffs(40, 58).addBox(-4.0F, -1.5F, -2.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.7F))
-				.texOffs(48, 39).addBox(-3.0F, 4.0F, -2.0F, 2.0F, 0.0F, 4.0F, new CubeDeformation(1.05F))
 				.texOffs(40, 58).addBox(-3.0F, 8.0F, -2.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(1.05F))
 				.texOffs(52, 47).addBox(-3.0F, -2.0F, -2.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(1.0F)), PartPose.offset(-5.0F, 2.0F, 0.0F));
 
 		PartDefinition left_arm = partdefinition.addOrReplaceChild("left_arm", CubeListBuilder.create().texOffs(22, 42).addBox(-1.0F, -2.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.9F))
 				.texOffs(52, 47).mirror().addBox(1.0F, -2.0F, -2.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(1.0F)).mirror(false)
 				.texOffs(40, 58).mirror().addBox(1.0F, 8.0F, -2.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(1.05F)).mirror(false)
-				.texOffs(48, 39).mirror().addBox(1.0F, 4.0F, -2.0F, 2.0F, 0.0F, 4.0F, new CubeDeformation(1.05F)).mirror(false)
 				.texOffs(40, 58).mirror().addBox(2.0F, -1.5F, -2.0F, 2.0F, 2.0F, 4.0F, new CubeDeformation(0.7F)).mirror(false), PartPose.offset(5.0F, 2.0F, 0.0F));
 
 		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 48).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.9F))

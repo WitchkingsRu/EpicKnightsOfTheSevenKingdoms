@@ -71,6 +71,11 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_LEGGINGS = INSTANCE.addMedievalArmorItem("kingsguard_leggings", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_BOOTS = INSTANCE.addMedievalArmorItem("kingsguard_boots", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_2_HELMET = INSTANCE.addMedievalArmorItem("kingsguard_baratheon_helmet", ModArmorTypes.KINGSGUARD_2_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_2_CHESTPLATE = INSTANCE.addMedievalArmorItem("kingsguard_baratheon_chestplate", ModArmorTypes.KINGSGUARD_2_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_2_LEGGINGS = INSTANCE.addMedievalArmorItem("kingsguard_baratheon_leggings", ModArmorTypes.KINGSGUARD_2_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_2_BOOTS = INSTANCE.addMedievalArmorItem("kingsguard_baratheon_boots", ModArmorTypes.KINGSGUARD_2_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_HELMET = INSTANCE.addDyeableMedievalArmorItem("dornish_helmet", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties(), 0xFF6A00);
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_CHESTPLATE = INSTANCE.addDyeableMedievalArmorItem("dornish_chestplate", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties(), 0xFF6A00);
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_LEGGINGS = INSTANCE.addDyeableMedievalArmorItem("dornish_leggings", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties(),0xFF6A00);

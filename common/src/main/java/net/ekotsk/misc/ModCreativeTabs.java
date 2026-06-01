@@ -72,6 +72,10 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.KINGSGUARD_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.KINGSGUARD_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.KINGSGUARD_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_HELMET);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_BOOTS);
         append(ASOIAF_ARMOR, ModItems.DORNISH_HELMET);
         append(ASOIAF_ARMOR, ModItems.DORNISH_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.DORNISH_LEGGINGS);

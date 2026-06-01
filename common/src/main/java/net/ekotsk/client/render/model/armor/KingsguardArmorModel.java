@@ -10,7 +10,7 @@ public class KingsguardArmorModel {
         PartDefinition hat = partdefinition.addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.ZERO);
         PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -7.5F, -4.0F, 8.0F, 7.0F, 8.0F, new CubeDeformation(0.6F)), PartPose.offset(0.0F, -1.0F, 0.0F));
 
-        PartDefinition cube_r1 = head.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(56, 5).mirror().addBox(-1.51F, -7.0F, -0.5F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.5F)).mirror(false), PartPose.offsetAndRotation(1.0F, -9.0F, -4.0F, -1.5708F, 0.0F, 0.0F));
+        PartDefinition cube_r1 = head.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(56, 5).mirror().addBox(-1.51F, -7.0F, -0.5F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.4F)).mirror(false), PartPose.offsetAndRotation(1.0F, -9.0F, -4.0F, -1.5708F, 0.0F, 0.0F));
 
         PartDefinition cube_r2 = head.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(46, -6).mirror().addBox(-2.3418F, -2.2048F, -0.5F, 0.0F, 2.0F, 9.0F, new CubeDeformation(0.1F)).mirror(false), PartPose.offsetAndRotation(7.3418F, -0.7952F, -4.05F, 0.0F, 0.0F, -0.3491F));
 
@@ -22,19 +22,19 @@ public class KingsguardArmorModel {
 
         PartDefinition cube_r6 = head.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(34, 1).addBox(0.31F, -1.5F, -1.3F, 1.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.0F, -8.0F, -3.0F, 0.0F, 0.0F, 0.2618F));
 
-        PartDefinition cube_r7 = head.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(45, 11).addBox(0.602F, -3.0789F, -0.7F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.392F, -6.4726F, -4.6953F, -0.3491F, 0.0F, 0.2618F));
+        PartDefinition cube_r7 = head.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(45, 12).addBox(0.603F, -3.0789F, -0.7F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.2954F, -6.4985F, -4.6953F, -0.3491F, 0.0F, 0.2618F));
 
-        PartDefinition cube_r8 = head.addOrReplaceChild("cube_r8", CubeListBuilder.create().texOffs(48, 5).addBox(0.312F, -2.0F, -1.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.9368F, -7.7332F, 4.6235F, 0.48F, 0.0F, 0.2618F));
+        PartDefinition cube_r8 = head.addOrReplaceChild("cube_r8", CubeListBuilder.create().texOffs(48, 5).addBox(0.313F, -2.0F, -1.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.9081F, -7.6646F, 4.4654F, 0.3927F, 0.0F, 0.2618F));
 
-        PartDefinition cube_r9 = head.addOrReplaceChild("cube_r9", CubeListBuilder.create().texOffs(48, 5).addBox(-1.312F, -2.0F, -1.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.9368F, -7.7332F, 4.6235F, 0.48F, 0.0F, -0.2618F));
+        PartDefinition cube_r9 = head.addOrReplaceChild("cube_r9", CubeListBuilder.create().texOffs(48, 5).addBox(-1.313F, -2.0F, -1.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.9081F, -7.6646F, 4.4654F, 0.3927F, 0.0F, -0.2618F));
 
         PartDefinition cube_r10 = head.addOrReplaceChild("cube_r10", CubeListBuilder.create().texOffs(34, 1).addBox(-1.31F, -1.5F, -1.3F, 1.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-2.0F, -8.0F, -3.0F, 0.0F, 0.0F, -0.2618F));
 
-        PartDefinition cube_r11 = head.addOrReplaceChild("cube_r11", CubeListBuilder.create().texOffs(45, 11).addBox(-1.602F, -3.0789F, -0.7F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.392F, -6.4726F, -4.6953F, -0.3491F, 0.0F, -0.2618F));
+        PartDefinition cube_r11 = head.addOrReplaceChild("cube_r11", CubeListBuilder.create().texOffs(45, 12).addBox(-1.603F, -3.0789F, -0.7F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.2954F, -6.4985F, -4.6953F, -0.3491F, 0.0F, -0.2618F));
 
-        PartDefinition cube_r12 = head.addOrReplaceChild("cube_r12", CubeListBuilder.create().texOffs(52, 5).addBox(0.491F, -2.5F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.5F)), PartPose.offsetAndRotation(-1.0F, -6.8457F, 3.7242F, 0.3927F, 0.0F, 0.0F));
+        PartDefinition cube_r12 = head.addOrReplaceChild("cube_r12", CubeListBuilder.create().texOffs(52, 5).addBox(0.491F, -2.5F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.4F)), PartPose.offsetAndRotation(-1.0F, -6.8457F, 3.7242F, 0.3927F, 0.0F, 0.0F));
 
-        PartDefinition cube_r13 = head.addOrReplaceChild("cube_r13", CubeListBuilder.create().texOffs(60, 5).addBox(0.491F, -4.5F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.5F)), PartPose.offsetAndRotation(-1.0F, -4.9115F, -4.8282F, -0.2618F, 0.0F, 0.0F));
+        PartDefinition cube_r13 = head.addOrReplaceChild("cube_r13", CubeListBuilder.create().texOffs(60, 5).addBox(0.491F, -4.5F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.4F)), PartPose.offsetAndRotation(-1.0F, -4.9115F, -4.8282F, -0.2618F, 0.0F, 0.0F));
 
         PartDefinition cube_r14 = head.addOrReplaceChild("cube_r14", CubeListBuilder.create().texOffs(46, -9).addBox(-1.2F, -1.8F, -0.5F, 0.0F, 2.0F, 9.0F, new CubeDeformation(0.05F)), PartPose.offsetAndRotation(4.0F, 1.0F, 6.0F, 1.5708F, -1.2217F, -1.5708F));
 
@@ -64,9 +64,9 @@ public class KingsguardArmorModel {
 
         PartDefinition cube_r19 = left_arm.addOrReplaceChild("cube_r19", CubeListBuilder.create().texOffs(32, 33).mirror().addBox(-0.5F, -3.5F, -0.8F, 5.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(5.0F, 3.0F, 2.0F, 0.2182F, 1.5708F, 0.0F));
 
-        PartDefinition cube_r20 = left_arm.addOrReplaceChild("cube_r20", CubeListBuilder.create().texOffs(32, 36).mirror().addBox(-0.8F, -3.5F, -0.8F, 5.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 3.0F, 4.0F, 0.2182F, 0.0F, 0.0F));
+        PartDefinition cube_r20 = left_arm.addOrReplaceChild("cube_r20", CubeListBuilder.create().texOffs(33, 36).mirror().addBox(-0.3F, -3.5F, -0.8F, 4.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 3.0F, 4.0F, 0.2182F, 0.0F, 0.0F));
 
-        PartDefinition cube_r21 = left_arm.addOrReplaceChild("cube_r21", CubeListBuilder.create().texOffs(32, 36).mirror().addBox(-0.8F, -3.0F, -1.1F, 5.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(0.0F, 3.0F, -2.0F, -0.2182F, 0.0F, 0.0F));
+        PartDefinition cube_r21 = left_arm.addOrReplaceChild("cube_r21", CubeListBuilder.create().texOffs(33, 36).mirror().addBox(0.7F, -3.0F, -1.1F, 4.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offsetAndRotation(-1.0F, 3.0F, -2.0F, -0.2182F, 0.0F, 0.0F));
 
         PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.6F))
                 .texOffs(36, 37).addBox(0.2F, -1.0F, -2.51F, 2.0F, 4.0F, 5.0F, new CubeDeformation(0.42F))
