@@ -2,7 +2,7 @@
   "id": "ekotsk:ice",
   "item": "ekotsk:ice",
   "structures": [
-    "minecraft:shipwreck_treasure"
+    "minecraft:ancient_city_ice_box"
   ],
   "weight": 10
 }

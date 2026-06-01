@@ -1,0 +1,10 @@
+{
+  "id": "ekotsk:robert_hammer",
+  "item": "ekotsk:robert_hammer",
+  "structures": [
+    "minecraft:ancient_city",
+    "minecraft:stronghold_crossing",
+    "minecraft:bastion_treasure"
+  ],
+  "weight": 10
+}

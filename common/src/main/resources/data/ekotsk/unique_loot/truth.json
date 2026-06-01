@@ -1,0 +1,10 @@
+{
+  "id": "ekotsk:truth",
+  "item": "ekotsk:truth",
+  "structures": [
+    "minecraft:desert_pyramid",
+    "minecraft:jungle_temple",
+    "minecraft:shipwreck_treasure"
+  ],
+  "weight": 10
+}

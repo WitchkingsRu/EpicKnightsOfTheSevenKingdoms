@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:red_rain",
+  "item": "ekotsk:red_rain",
+  "structures": [
+    "minecraft:underwater_ruin_small",
+    "minecraft:underwater_ruin_large"
+  ],
+  "weight": 10
+}

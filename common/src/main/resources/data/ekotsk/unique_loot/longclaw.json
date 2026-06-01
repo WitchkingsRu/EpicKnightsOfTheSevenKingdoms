@@ -2,8 +2,8 @@
   "id": "ekotsk:longclaw",
   "item": "ekotsk:longclaw",
   "structures": [
-    "minecraft:desert_pyramid",
-    "minecraft:shipwreck_treasure"
+    "minecraft:end_city_treasure",
+    "minecraft:pillager_outpost"
   ],
   "weight": 10
 }

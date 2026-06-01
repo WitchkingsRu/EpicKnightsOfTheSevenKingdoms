@@ -1,0 +1,8 @@
+{
+  "id": "ekotsk:nightfall",
+  "item": "ekotsk:nightfall",
+  "structures": [
+    "minecraft:shipwreck_treasure"
+  ],
+  "weight": 10
+}

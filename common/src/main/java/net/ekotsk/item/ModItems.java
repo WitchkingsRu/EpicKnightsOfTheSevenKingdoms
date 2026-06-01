@@ -31,7 +31,7 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LAMENTATION = INSTANCE.addMedievalWeaponItem("lamentation", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LONGCLAW = INSTANCE.addMedievalWeaponItem("longclaw", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> NIGHTFALL = INSTANCE.addMedievalWeaponItem("nightfall", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ESTOC);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> OATHKEEPER = INSTANCE.addMedievalWeaponItem("oathkeeper", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> BRIGHTROAR = INSTANCE.addMedievalWeaponItem("brightroar", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> RED_RAIN = INSTANCE.addMedievalWeaponItem("red_rain", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> ROBERT_HAMMER = INSTANCE.addMedievalWeaponItem("robert_hammer", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.LUCERNE_HAMMER);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> TRUTH = INSTANCE.addMedievalWeaponItem("truth", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);

@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:heartsbane",
+  "item": "ekotsk:heartsbane",
+  "structures": [
+    "minecraft:woodland_mansion",
+    "minecraft:bastion_treasure"
+  ],
+  "weight": 10
+}

@@ -38,7 +38,7 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.LAMENTATION);
         append(ASOIAF_WEAPONS, ModItems.LONGCLAW);
         append(ASOIAF_WEAPONS, ModItems.NIGHTFALL);
-        append(ASOIAF_WEAPONS, ModItems.OATHKEEPER);
+        append(ASOIAF_WEAPONS, ModItems.BRIGHTROAR);
         append(ASOIAF_WEAPONS, ModItems.RED_RAIN);
         append(ASOIAF_WEAPONS, ModItems.ROBERT_HAMMER);
         append(ASOIAF_WEAPONS, ModItems.TRUTH);

@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:crab_pincer",
+  "item": "ekotsk:crab_pincer",
+  "structures": [
+    "minecraft:buried_treasure",
+    "minecraft:underwater_ruin_small"
+  ],
+  "weight": 10
+}
