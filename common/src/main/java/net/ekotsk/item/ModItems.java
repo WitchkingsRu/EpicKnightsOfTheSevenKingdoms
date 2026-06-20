@@ -72,6 +72,11 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> HOTD_KINGSGUARD_LEGGINGS = INSTANCE.addMedievalArmorItem("hotd_kingsguard_leggings", ModArmorTypes.HOTD_KINGSGUARD_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> HOTD_KINGSGUARD_BOOTS = INSTANCE.addMedievalArmorItem("hotd_kingsguard_boots", ModArmorTypes.HOTD_KINGSGUARD_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KOTSK_KINGSGUARD_HELMET = INSTANCE.addMedievalArmorItem("kotsk_kingsguard_helmet", ModArmorTypes.KOTSK_KINGSGUARD_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KOTSK_KINGSGUARD_CHESTPLATE = INSTANCE.addMedievalArmorItem("kotsk_kingsguard_chestplate", ModArmorTypes.KOTSK_KINGSGUARD_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KOTSK_KINGSGUARD_LEGGINGS = INSTANCE.addMedievalArmorItem("kotsk_kingsguard_leggings", ModArmorTypes.KOTSK_KINGSGUARD_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> KOTSK_KINGSGUARD_BOOTS = INSTANCE.addMedievalArmorItem("kotsk_kingsguard_boots", ModArmorTypes.KOTSK_KINGSGUARD_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
     public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_HELMET = INSTANCE.addMedievalArmorItem("kingsguard_helmet", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_CHESTPLATE = INSTANCE.addMedievalArmorItem("kingsguard_chestplate", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> KINGSGUARD_LEGGINGS = INSTANCE.addMedievalArmorItem("kingsguard_leggings", ModArmorTypes.KINGSGUARD_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());

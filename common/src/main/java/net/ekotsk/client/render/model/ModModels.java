@@ -28,6 +28,7 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation GOLD_CLOAK_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("gold_cloak_armor",GoldCloakArmorModel::createLayer);
 
     public static final ModelLayerLocation HOTD_KINGSGUARD_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("hotd_kingsguard_armor",HOTDKingsguardArmorModel::createLayer);
+    public static final ModelLayerLocation KOTSK_KINGSGUARD_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("kotsk_kingsguard_armor",KOTSKKingsguardArmorModel::createLayer);
     public static final ModelLayerLocation KINGSGUARD_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("kingsguard_armor",KingsguardArmorModel::createLayer);
     public static final ModelLayerLocation KINGSGUARD_2_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("kingsguard_2_armor",KingsguardArmorModel::createLayer);
 
