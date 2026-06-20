@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ekotsk:hand_sign_decoration"
+    },
+    "title": {
+      "translate": "advancements.ekotsk.root.title"
+    },
+    "description": {
+      "translate": "advancements.ekotsk.root.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/deepslate_bricks.png"
+  },
+  "criteria": {
+    "get_stone": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+
+  "requirements": [
+    [
+      "get_stone"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
