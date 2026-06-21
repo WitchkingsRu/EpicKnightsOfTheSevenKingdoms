@@ -108,6 +108,9 @@ public class ModCreativeTabs {
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.ARRYN_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.ROSE_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.FISH_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.FALLEN_STAR_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.SWORD_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.ARROWS_PATTERN);
 
     }
     static Supplier<ItemStack> LANNISTER_CHESTPLATE_SUPPLIER
