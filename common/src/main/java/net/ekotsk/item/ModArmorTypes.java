@@ -28,6 +28,7 @@ public class ModArmorTypes {
     public static final ArmorType KINGSGUARD_2_ARMOR = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "kingsguard_2_armor"), new ResourceLocation("ekotsk:kingsguard_2_armor"), 0.0f, 3.5f, new Integer[] { 400, 600, 800, 400 }, new Integer[] { 4, 5, 6, 3 }, 10, SoundEvents.ARMOR_EQUIP_IRON, true, Platform.isForge() ? "forge:ingots/steel" : "c:steel_ingots");
 
     public static final ArmorType DORNISH_ARMOR = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "dornish_armor"), new ResourceLocation("ekotsk:dornish_armor"), 0.0f, 3.5f, new Integer[] { 400, 600, 800, 400 }, new Integer[] { 4, 5, 6, 3 }, 10, SoundEvents.ARMOR_EQUIP_IRON, true, Platform.isForge() ? "forge:ingots/steel" : "c:steel_ingots");
+    public static final ArmorType GREYJOY_ARMOR = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "greyjoy_armor"), new ResourceLocation("ekotsk:greyjoy_armor"), 0.0f, 3.5f, new Integer[] { 400, 600, 800, 400 }, new Integer[] { 4, 5, 6, 3 }, 10, SoundEvents.ARMOR_EQUIP_IRON, true, Platform.isForge() ? "forge:ingots/steel" : "c:steel_ingots");
 
 
     public static final ArmorType HAND_SIGN = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "hand_sign"), new ResourceLocation("ekotsk:hand_sign"), 0.0f, 0.0f, new Integer[] { 0, 0, 180, 0 }, new Integer[] { 0, 0, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_DIAMOND, true, Platform.isForge() ? "forge:ingots/bronze" : "c:bronze_ingots");

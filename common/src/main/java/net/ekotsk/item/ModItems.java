@@ -92,6 +92,11 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_LEGGINGS = INSTANCE.addDyeableMedievalArmorItem("dornish_leggings", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties(),0xFF6A00);
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_BOOTS = INSTANCE.addDyeableMedievalArmorItem("dornish_boots", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties(),0xFF6A00);
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GREYJOY_HELMET = INSTANCE.addMedievalArmorItem("greyjoy_helmet", ModArmorTypes.GREYJOY_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GREYJOY_CHESTPLATE = INSTANCE.addMedievalArmorItem("greyjoy_chestplate", ModArmorTypes.GREYJOY_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GREYJOY_LEGGINGS = INSTANCE.addMedievalArmorItem("greyjoy_leggings", ModArmorTypes.GREYJOY_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GREYJOY_BOOTS = INSTANCE.addMedievalArmorItem("greyjoy_boots", ModArmorTypes.GREYJOY_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
     public static final RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN_DECORATION = INSTANCE.addWearableArmorDecorationItem("hand_sign_decoration", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final RegistrySupplier<WearableArmorDecorationItem> AEGON_CROWN_DECORATION = INSTANCE.addWearableArmorDecorationItem("aegon_crown_decoration", ModArmorTypes.AEGON_CROWN, ArmorItem.Type.HELMET, new Item.Properties());
     public static final RegistrySupplier<DyeableArmorDecorationItem> FANCY_CAPE_DECORATION = INSTANCE.addDyeableArmorDecorationItem("fancy_cape_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "fancy_cape"), new Item.Properties(), ArmorItem.Type.CHESTPLATE, 0xFFFFFF));
@@ -104,6 +109,9 @@ public class ModItems extends ModItemsProvider {
 
     public static final RegistrySupplier<Item> SPEAR_PATTERN = INSTANCE.addIngredientItem("spear_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SPEAR_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> DORNISH_SUN_PATTERN = INSTANCE.addIngredientItem("dornish_sun_pattern", () -> new BannerPatternItem(ModBannerPatternTags.DORNISH_SUN_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> SUNS_PATTERN = INSTANCE.addIngredientItem("suns_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SUNS_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> MOONS_PATTERN = INSTANCE.addIngredientItem("moons_pattern", () -> new BannerPatternItem(ModBannerPatternTags.MOONS_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> BRIGHT_SUN_PATTERN = INSTANCE.addIngredientItem("bright_sun_pattern", () -> new BannerPatternItem(ModBannerPatternTags.BRIGHT_SUN_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> STARK_PATTERN = INSTANCE.addIngredientItem("stark_pattern", () -> new BannerPatternItem(ModBannerPatternTags.STARK_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> KRAKEN_PATTERN = INSTANCE.addIngredientItem("kraken_pattern", () -> new BannerPatternItem(ModBannerPatternTags.KRAKEN_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> LANNISTER_PATTERN = INSTANCE.addIngredientItem("lannister_pattern", () -> new BannerPatternItem(ModBannerPatternTags.LANNISTER_PATTERN, new Item.Properties().stacksTo(1)));

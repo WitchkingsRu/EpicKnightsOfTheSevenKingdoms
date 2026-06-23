@@ -85,6 +85,10 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.GREYJOY_HELMET);
+        append(ASOIAF_ARMOR, ModItems.GREYJOY_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.GREYJOY_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.GREYJOY_BOOTS);
         append(ASOIAF_ARMOR, ModItems.DORNISH_HELMET);
         append(ASOIAF_ARMOR, ModItems.DORNISH_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.DORNISH_LEGGINGS);
@@ -100,6 +104,9 @@ public class ModCreativeTabs {
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SPEAR_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.DORNISH_SUN_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.BRIGHT_SUN_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.SUNS_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.MOONS_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.STARK_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.KRAKEN_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.LANNISTER_PATTERN);
