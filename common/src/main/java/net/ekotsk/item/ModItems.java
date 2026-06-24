@@ -53,6 +53,7 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> VALYRIAN_STEEL_LEGGINGS = INSTANCE.addMedievalArmorItem("valyrian_steel_leggings", ModArmorTypes.VALYRIAN_STEEL_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> VALYRIAN_STEEL_BOOTS = INSTANCE.addMedievalArmorItem("valyrian_steel_boots", ModArmorTypes.VALYRIAN_STEEL_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> NIGHT_WATCH_HAT = INSTANCE.addMedievalArmorItem("night_watch_hat", ModArmorTypes.NIGHT_WATCH_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NIGHT_WATCH_CHESTPLATE = INSTANCE.addMedievalArmorItem("night_watch_chestplate", ModArmorTypes.NIGHT_WATCH_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NIGHT_WATCH_LEGGINGS = INSTANCE.addMedievalArmorItem("night_watch_leggings", ModArmorTypes.NIGHT_WATCH_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> NIGHT_WATCH_BOOTS = INSTANCE.addMedievalArmorItem("night_watch_boots", ModArmorTypes.NIGHT_WATCH_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());

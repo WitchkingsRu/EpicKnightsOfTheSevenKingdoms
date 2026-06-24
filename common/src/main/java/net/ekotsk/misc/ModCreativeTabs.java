@@ -58,6 +58,7 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_HAT);
         append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_BOOTS);
