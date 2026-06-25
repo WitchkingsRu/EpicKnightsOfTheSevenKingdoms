@@ -1,0 +1,38 @@
+{
+  "parent": "ekotsk:root",
+  "criteria": {
+    "sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ekotsk:lamentation"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.ekotsk.lamentation.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "ekotsk:lamentation"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.ekotsk.lamentation.title"
+    }
+  },
+  "requirements": [
+    [
+      "sword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
