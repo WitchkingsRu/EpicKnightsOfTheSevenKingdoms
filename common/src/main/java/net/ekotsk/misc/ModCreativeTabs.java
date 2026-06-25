@@ -77,7 +77,6 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_HELMET);
         append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_LEGGINGS);
-        append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_BOOTS);
         append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_HELMET);
         append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_LEGGINGS);

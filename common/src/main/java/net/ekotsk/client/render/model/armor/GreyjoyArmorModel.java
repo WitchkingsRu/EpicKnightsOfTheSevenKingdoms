@@ -40,11 +40,11 @@ public class GreyjoyArmorModel {
 
         PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 16).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.6F)), PartPose.offset(-1.9F, 12.0F, 0.0F));
 
-        PartDefinition cube_r9 = right_leg.addOrReplaceChild("cube_r9", CubeListBuilder.create().texOffs(16, 54).mirror().addBox(-1.0F, -4.3F, -1.5F, 3.0F, 5.0F, 5.0F, new CubeDeformation(0.15F)).mirror(false), PartPose.offsetAndRotation(4.9F, 5.0F, -1.0F, 0.0F, 0.0F, -0.0873F));
+        PartDefinition cube_r9 = right_leg.addOrReplaceChild("cube_r9", CubeListBuilder.create().texOffs(16, 54).addBox(-2.0F, -4.3F, -1.5F, 3.0F, 5.0F, 5.0F, new CubeDeformation(0.17F)), PartPose.offsetAndRotation(-1.1F, 5.0F, -1.0F, 0.0F, 0.0F, 0.0873F));
 
         PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 16).mirror().addBox(-2.0F, 0.0F, -2.0F, 4.0F, 12.0F, 4.0F, new CubeDeformation(0.6F)).mirror(false), PartPose.offset(1.9F, 12.0F, 0.0F));
 
-        PartDefinition cube_r10 = left_leg.addOrReplaceChild("cube_r10", CubeListBuilder.create().texOffs(16, 54).addBox(-2.0F, -4.3F, -1.5F, 3.0F, 5.0F, 5.0F, new CubeDeformation(0.15F)), PartPose.offsetAndRotation(-4.9F, 5.0F, -1.0F, 0.0F, 0.0F, 0.0873F));
+        PartDefinition cube_r10 = left_leg.addOrReplaceChild("cube_r10", CubeListBuilder.create().texOffs(16, 54).mirror().addBox(-1.0F, -4.3F, -1.5F, 3.0F, 5.0F, 5.0F, new CubeDeformation(0.17F)).mirror(false), PartPose.offsetAndRotation(1.1F, 5.0F, -1.0F, 0.0F, 0.0F, -0.0873F));
 
         return LayerDefinition.create(meshdefinition, 64, 64);
     }
