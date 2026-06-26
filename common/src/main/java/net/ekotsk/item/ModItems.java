@@ -11,10 +11,14 @@ import dev.architectury.registry.registries.RegistrySupplier;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
 import net.ekotsk.ASOIAFMod;
 import net.ekotsk.misc.ModBannerPatternTags;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BannerPatternItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SmithingTemplateItem;
+
+import java.util.List;
 
 public class ModItems extends ModItemsProvider {
     public static ModItems INSTANCE = new ModItems();
@@ -134,6 +138,24 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> SWORD_PATTERN = INSTANCE.addIngredientItem("sword_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SWORD_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> ARROWS_PATTERN = INSTANCE.addIngredientItem("arrows_pattern", () -> new BannerPatternItem(ModBannerPatternTags.ARROWS_PATTERN, new Item.Properties().stacksTo(1)));
 
+    public static final RegistrySupplier<Item> BLACK_LEATHER = INSTANCE.addIngredientItem("black_leather", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> BLACK_WOOLEN_FABRIC = INSTANCE.addIngredientItem("black_woolen_fabric", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> BLACK_STEEL_INGOT = INSTANCE.addIngredientItem("blacked_steel_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> BLACK_STEEL_NUGGET = INSTANCE.addIngredientItem("blacked_steel_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> BLACK_STEEL_PLATE = INSTANCE.addIngredientItem("blacked_steel_plate", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> BLACK_STEEL_RING = INSTANCE.addIngredientItem("blacked_steel_ring", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> BLACK_STEEL_CHAINMAIL = INSTANCE.addIngredientItem("blacked_steel_chainmail", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> BLACK_STEEL_LAMELLAR = INSTANCE.addIngredientItem("blacked_steel_lamellar", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> BLACK_STEEL_SMALL_PLATE = INSTANCE.addIngredientItem("blacked_steel_small_plate", () -> new Item(new Item.Properties()));
+
+    public static final RegistrySupplier<Item> GILDED_STEEL_INGOT = INSTANCE.addIngredientItem("gilded_steel_ingot", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> GILDED_STEEL_NUGGET = INSTANCE.addIngredientItem("gilded_steel_nugget", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> GILDED_STEEL_PLATE = INSTANCE.addIngredientItem("gilded_steel_plate", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> GILDED_STEEL_RING = INSTANCE.addIngredientItem("gilded_steel_ring", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> GILDED_STEEL_CHAINMAIL = INSTANCE.addIngredientItem("gilded_steel_chainmail", () -> new Item(new Item.Properties()));
+    public static final RegistrySupplier<Item> GILDED_STEEL_SMALL_PLATE = INSTANCE.addIngredientItem("gilded_steel_small_plate", () -> new Item(new Item.Properties()));
+
+    public static final RegistrySupplier<Item> WHITENING_TEMPLATE = INSTANCE.addIngredientItem("whitening_template", () -> new SmithingTemplateItem(Component.translatable("ekotsk.whitening_template.applies_to"), Component.translatable("ekotsk.whitening_template.ingredients"), Component.translatable("ekotsk.whitening_template.upgrade_description"), Component.translatable("ekotsk.whitening_template.base_slot_description"), Component.translatable("ekotsk.whitening_template.additions_slot_description"), List.of(), List.of()));
 
 
     public ModItems() {
