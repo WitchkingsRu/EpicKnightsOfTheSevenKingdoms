@@ -26,7 +26,19 @@ public class UniqueLootInjector {
         return switch (structure) {
             case "desert_pyramid",
                  "shipwreck_treasure",
-                 "simple_dungeon",
+                 "ancient_city",
+                 "ancient_city_ice_box",
+                 "bastion_treasure",
+                 "buried_treasure",
+                 "end_city_treasure",
+                 "jungle_temple",
+                 "nether_bridge",
+                 "pillager_outpost",
+                 "underwater_ruin_big",
+                 "underwater_ruin_small",
+                 "woodland_mansion",
+                 "stronghold_library",
+                 "stronghold_crossing",
                  "stronghold_corridor" -> true;
             default -> false;
         };

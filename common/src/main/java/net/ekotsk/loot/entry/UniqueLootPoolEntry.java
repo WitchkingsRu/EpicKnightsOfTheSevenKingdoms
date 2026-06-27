@@ -18,7 +18,6 @@ import java.util.function.Consumer;
 
 public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
     private final ResourceLocation structure;
-    // ✅ РОВНО 4 параметра, как требует simpleBuilder
     public UniqueLootPoolEntry(int weight,
                                int quality,
                                LootItemCondition[] conditions,
@@ -53,9 +52,4 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
     public LootPoolEntryType getType() {
         return ModLootEntries.uniqueLootEntry().get();
     }
-
-//    // ✅ Теперь ссылается на конструктор с 4 аргументами
-//    public static Builder<?> builder() {
-//        return simpleBuilder(UniqueLootPoolEntry::new);
-//    }
 }

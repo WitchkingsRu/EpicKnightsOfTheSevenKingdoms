@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "ekotsk:unique_loot",
-          "weight": 400,
+          "weight": 1,
           "structure": "minecraft:shipwreck_treasure"
         }
       ]

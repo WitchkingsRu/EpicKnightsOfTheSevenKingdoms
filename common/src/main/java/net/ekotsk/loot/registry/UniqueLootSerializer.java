@@ -37,6 +37,5 @@ public class UniqueLootSerializer extends LootPoolEntryContainer.Serializer<Uniq
     public void serializeCustom(JsonObject json,
                                 UniqueLootPoolEntry entry,
                                 JsonSerializationContext context) {
-        // MVP: пусто
     }
 }

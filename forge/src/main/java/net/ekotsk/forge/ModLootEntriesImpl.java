@@ -1,4 +1,4 @@
-package net.ekotsk.forge; // ✅ Тот же пакет, что и в common!
+package net.ekotsk.forge;
 
 import net.ekotsk.ASOIAFMod;
 import net.ekotsk.loot.registry.UniqueLootSerializer;
@@ -19,12 +19,11 @@ public class ModLootEntriesImpl {
             LOOT_ENTRIES.register("unique_loot", () ->
                     new LootPoolEntryType(new UniqueLootSerializer()));
 
-    // ✅ Возвращаем Supplier через лямбду — просто и работает
+
     public static Supplier<LootPoolEntryType> uniqueLootEntry() {
-        return UNIQUE_LOOT; // RegistryObject implements Supplier<T>
+        return UNIQUE_LOOT;
     }
 
-    // ✅ Регистрация через правильный EventBus
     public static void register() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         LOOT_ENTRIES.register(bus);

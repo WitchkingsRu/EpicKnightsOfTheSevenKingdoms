@@ -12,7 +12,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public final class ASOIAFModForge {
 
     public ASOIAFModForge() {
-        System.out.println("[UniqueLoot] 🔵 CONSTRUCTOR START");
+        System.out.println("[EKOTSK Unique Loot] CONSTRUCTOR START");
 
         // 1. Architectury mod event bus
         EventBuses.registerModEventBus(
@@ -29,11 +29,11 @@ public final class ASOIAFModForge {
         // 4. Forge global event bus (ВАЖНО!)
         MinecraftForge.EVENT_BUS.addListener(this::onReloadListeners);
 
-        System.out.println("[UniqueLoot] 🔵 CONSTRUCTOR END");
+        System.out.println("[EKOTSK Unique Loot] CONSTRUCTOR END");
     }
 
     private void onReloadListeners(AddReloadListenerEvent event) {
-        System.out.println("[UniqueLoot] 🟢 Registering reload listener");
+        System.out.println("[EKOTSK Unique Loot] Registering reload listener");
 
         event.addListener(new UniqueLootReloadListener());
     }

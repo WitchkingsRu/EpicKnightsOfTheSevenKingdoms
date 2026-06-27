@@ -17,6 +17,6 @@ public class UniqueLootReloadListenerFabric extends UniqueLootReloadListener
 
     @Override
     public Collection<ResourceLocation> getFabricDependencies() {
-        return List.of(); // можно оставить пустым
+        return List.of();
     }
 }

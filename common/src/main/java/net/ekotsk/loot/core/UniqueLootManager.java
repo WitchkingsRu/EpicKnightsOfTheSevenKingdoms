@@ -56,8 +56,7 @@ public class UniqueLootManager {
     }
 
     private boolean storageAlreadyClaimed(UniqueLootStorage storage, UniqueLootEntry entry) {
-        // 🔥 добавим новый метод позже
-        return !storage.tryClaim(entry.getId()); // TEMP (ниже исправим)
+        return !storage.tryClaim(entry.getId());
     }
 
     public int size() {

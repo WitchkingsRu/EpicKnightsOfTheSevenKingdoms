@@ -32,16 +32,16 @@ public class UniqueLootReloadListener extends SimpleJsonResourceReloadListener  
     protected void apply(Map<ResourceLocation, JsonElement> map,
                          ResourceManager manager,
                          ProfilerFiller profiler) {
-        LOGGER.info("[UniqueLoot] Reload started. Found {} entries", map.size());
+        LOGGER.info("[EKOTSK Unique Loot] Reload started. Found {} entries", map.size());
         UniqueLootManager.get().clear();
-        LOGGER.info("[UniqueLoot] Manager cleared");
+        LOGGER.info("[EKOTSK Unique Loot] Manager cleared");
 
         for (var entry : map.entrySet()) {
             JsonObject json = entry.getValue().getAsJsonObject();
 
             ResourceLocation id = new ResourceLocation(GsonHelper.getAsString(json, "id"));
 
-            LOGGER.info("[UniqueLoot] Loading entry: {}", id);
+            LOGGER.info("[EKOTSK Unique Loot] Loading entry: {}", id);
             ResourceLocation itemId = new ResourceLocation(GsonHelper.getAsString(json, "item"));
 
             Item item = BuiltInRegistries.ITEM.get(itemId);
@@ -63,12 +63,12 @@ public class UniqueLootReloadListener extends SimpleJsonResourceReloadListener  
 
             UniqueLootManager.get().register(lootEntry);
 
-            LOGGER.info("[UniqueLoot] Registered entry {} with {} structures and weight {}",
+            LOGGER.info("[EKOTSK Unique Loot] Registered entry {} with {} structures and weight {}",
                     id,
                     structures.size(),
                     weight
             );
-            LOGGER.info("[UniqueLoot] Reload completed. Total entries: {}",
+            LOGGER.info("[EKOTSK Unique Loot] Reload completed. Total entries: {}",
                     UniqueLootManager.get().size());
         }
     }
