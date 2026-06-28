@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "ekotsk:kingsguard_leggings"
+    "item": "ekotsk:kingsguard_helmet"
   },
   "addition": {
-    "tag": "c:gilded_steel_ingots"
+    "tag": "forge:ingots/gilded_steel"
   },
   "result": {
-    "item": "ekotsk:kingsguard_baratheon_leggings",
+    "item": "ekotsk:kingsguard_baratheon_helmet",
     "count": 1
   },
   "template": {

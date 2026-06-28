@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nnn",
+    "nnn",
+    "nnn"
+  ],
+  "key": {
+    "n": {
+      "item": "ekotsk:gilded_steel_nugget"
+    }
+  },
+  "result": {
+    "item": "ekotsk:gilded_steel_ingot",
+    "count": 1
+  }
+}

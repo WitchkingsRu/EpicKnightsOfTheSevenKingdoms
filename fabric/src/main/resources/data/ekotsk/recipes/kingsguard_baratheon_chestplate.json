@@ -4,7 +4,7 @@
     "item": "ekotsk:kingsguard_chestplate"
   },
   "addition": {
-    "tag": "forge:ingots/gilded_steel"
+    "tag": "c:gilded_steel_ingots"
   },
   "result": {
     "item": "ekotsk:kingsguard_baratheon_chestplate",
