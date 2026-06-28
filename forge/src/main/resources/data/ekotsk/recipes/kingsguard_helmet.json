@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gpg",
+    "pbp"
+  ],
+  "key": {
+    "b": {
+      "item": "magistuarmory:barbute"
+    },
+    "p": {
+      "tag": "forge:plates/steel"
+    },
+    "g": {
+      "tag": "forge:nuggets/steel"
+    }
+  },
+  "result": {
+    "item": "ekotsk:kingsguard_helmet",
+    "count": 1
+  }
+}

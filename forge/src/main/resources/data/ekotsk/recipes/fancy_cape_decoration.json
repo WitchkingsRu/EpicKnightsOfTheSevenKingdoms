@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "lsl",
+    "sss",
+    "sss"
+  ],
+  "key": {
+    "l": {
+      "tag": "forge:nuggets/gilded_steel"
+    },
+    "s": {
+      "item": "magistuarmory:woolen_fabric"
+    }
+  },
+  "result": {
+    "item": "ekotsk:fancy_cape_decoration",
+    "count": 1
+  }
+}

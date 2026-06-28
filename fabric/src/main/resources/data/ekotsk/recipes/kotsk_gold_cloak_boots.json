@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "s s",
+    "l l"
+  ],
+  "key": {
+    "s": {
+      "tag": "magistuarmory:leather_strips"
+    },
+    "l": {
+      "item": "minecraft:leather"
+    },
+    "i": {
+      "tag": "c:gilded_steel_nuggets"
+    }
+  },
+  "result": {
+    "item": "ekotsk:kotsk_gold_cloak_boots",
+    "count": 1
+  }
+}

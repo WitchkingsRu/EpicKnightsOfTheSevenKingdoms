@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sss",
+    " ss",
+    " s "
+  ],
+  "key": {
+    "s": {
+      "tag": "forge:nuggets/gilded_steel"
+    }
+  },
+  "result": {
+    "item": "ekotsk:hand_sign_decoration",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ici",
+    "ghg",
+    "i i"
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:nuggets/gilded_steel"
+    },
+    "g": {
+      "tag": "forge:ingots/gilded_steel"
+    },
+    "c": {
+      "item": "minecraft:red_carpet"
+    },
+    "h": {
+      "item": "magistuarmory:halfarmor_chestplate"
+    }
+  },
+  "result": {
+    "item": "ekotsk:lannister_chestplate",
+    "count": 1
+  }
+}

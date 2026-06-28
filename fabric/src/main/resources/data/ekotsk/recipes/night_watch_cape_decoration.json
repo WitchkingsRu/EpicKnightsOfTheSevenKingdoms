@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "l l",
+    "sgs",
+    "sss"
+  ],
+  "key": {
+    "l": {
+      "item": "minecraft:black_wool"
+    },
+    "s": {
+      "item": "ekotsk:black_woolen_fabric"
+    },
+    "g": {
+      "item": "ekotsk:black_leather"
+    }
+  },
+  "result": {
+    "item": "ekotsk:night_watch_cape_decoration",
+    "count": 1
+  }
+}

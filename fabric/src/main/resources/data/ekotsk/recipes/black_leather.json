@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ib"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "tag": "c:black_dyes"
+    }
+  },
+  "result": {
+    "item": "ekotsk:black_leather",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ici",
+    " h "
+  ],
+  "key": {
+    "i": {
+      "tag": "c:steel_plates"
+    },
+    "c": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "h": {
+      "item": "magistuarmory:chainmail_chestplate"
+    }
+  },
+  "result": {
+    "item": "ekotsk:greyjoy_chestplate",
+    "count": 1
+  }
+}

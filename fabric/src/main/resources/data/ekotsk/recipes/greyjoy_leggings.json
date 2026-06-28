@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "ghg"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:leather"
+    },
+    "h": {
+      "item": "magistuarmory:chainmail_leggings"
+    },
+    "g": {
+      "item": "magistuarmory:steel_chainmail"
+    }
+  },
+  "result": {
+    "item": "ekotsk:greyjoy_leggings",
+    "count": 1
+  }
+}

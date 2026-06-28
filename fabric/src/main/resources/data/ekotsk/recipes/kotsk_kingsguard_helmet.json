@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "magistuarmory:armet"
+  },
+  "addition": {
+    "tag": "c:white_dyes"
+  },
+  "result": {
+    "item": "ekotsk:kotsk_kingsguard_helmet",
+    "count": 1
+  },
+  "template": {
+    "item": "ekotsk:whitening_template"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    " h "
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:leather"
+    },
+    "h": {
+      "item": "magistuarmory:platemail_leggings"
+    }
+  },
+  "result": {
+    "item": "ekotsk:northern_leggings",
+    "count": 1
+  }
+}

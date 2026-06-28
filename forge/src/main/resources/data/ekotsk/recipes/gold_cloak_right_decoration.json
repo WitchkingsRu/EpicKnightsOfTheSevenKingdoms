@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ss",
+    "sss",
+    "ss "
+  ],
+  "key": {
+    "s": {
+      "item": "magistuarmory:woolen_fabric"
+    }
+  },
+  "result": {
+    "item": "ekotsk:gold_cloak_right_decoration",
+    "count": 1
+  }
+}

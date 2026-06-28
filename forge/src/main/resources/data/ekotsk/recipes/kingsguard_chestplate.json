@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "fbf",
+    "wgw"
+  ],
+  "key": {
+    "b": {
+      "item": "magistuarmory:gothic_chestplate"
+    },
+    "f": {
+      "item": "magistuarmory:woolen_fabric"
+    },
+    "g": {
+      "tag": "forge:nuggets/steel"
+    },
+    "w": {
+      "tag": "forge:dyes/white"
+    }
+  },
+  "result": {
+    "item": "ekotsk:kingsguard_chestplate",
+    "count": 1
+  }
+}

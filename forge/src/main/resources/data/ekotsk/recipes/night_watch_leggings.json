@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "lcl",
+    "i i",
+    "c c"
+  ],
+  "key": {
+    "c": {
+      "item": "ekotsk:blacked_steel_chainmail"
+    },
+    "l": {
+      "item": "ekotsk:black_leather"
+    },
+    "i": {
+      "tag": "forge:ingots/blacked_steel"
+    }
+  },
+  "result": {
+    "item": "ekotsk:night_watch_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "glg",
+    "fpf",
+    "o o"
+  ],
+  "key": {
+    "p": {
+      "item": "magistuarmory:lamellar_chestplate"
+    },
+    "g": {
+      "tag": "c:steel_plates"
+    },
+    "o": {
+      "tag": "c:orange_dyes"
+    },
+    "f": {
+      "item": "magistuarmory:woolen_fabric"
+    },
+    "l": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "ekotsk:dornish_chestplate",
+    "count": 1
+  }
+}

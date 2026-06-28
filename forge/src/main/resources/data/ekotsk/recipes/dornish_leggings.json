@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "gpg",
+    "f f",
+    "o o"
+  ],
+  "key": {
+    "p": {
+      "item": "magistuarmory:chainmail_leggings"
+    },
+    "g": {
+      "tag": "forge:plates/steel"
+    },
+    "o": {
+      "tag": "forge:dyes/orange"
+    },
+    "f": {
+      "item": "magistuarmory:woolen_fabric"
+    }
+  },
+  "result": {
+    "item": "ekotsk:dornish_leggings",
+    "count": 1
+  }
+}

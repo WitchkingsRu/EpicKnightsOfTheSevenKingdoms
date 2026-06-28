@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "s s",
+    "s s",
+    "lol"
+  ],
+  "key": {
+    "s": {
+      "tag": "magistuarmory:leather_strips"
+    },
+    "l": {
+      "item": "minecraft:leather"
+    },
+    "o": {
+      "tag": "forge:dyes/orange"
+    }
+  },
+  "result": {
+    "item": "ekotsk:dornish_boots",
+    "count": 1
+  }
+}

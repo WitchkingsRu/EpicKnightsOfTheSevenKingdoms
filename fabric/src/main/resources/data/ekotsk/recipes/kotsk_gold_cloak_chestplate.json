@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "c c",
+    "cfc",
+    "ccc"
+  ],
+  "key": {
+    "c": {
+      "item": "ekotsk:gilded_steel_chainmail"
+    },
+    "f": {
+      "item": "magistuarmory:gambeson_chestplate"
+    }
+  },
+  "result": {
+    "item": "ekotsk:kotsk_gold_cloak_chestplate",
+    "count": 1
+  }
+}

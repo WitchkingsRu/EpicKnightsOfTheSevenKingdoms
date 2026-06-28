@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " g ",
+    "iii",
+    "p p"
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:ingots/blacked_steel"
+    },
+    "p": {
+      "tag": "forge:plates/blacked_steel"
+    },
+    "g": {
+      "tag": "forge:nuggets/blacked_steel"
+    }
+  },
+  "result": {
+    "item": "ekotsk:gold_cloak_helmet",
+    "count": 1
+  }
+}

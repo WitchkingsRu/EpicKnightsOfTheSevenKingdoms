@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "glg",
+    "sls"
+  ],
+  "key": {
+    "s": {
+      "item": "ekotsk:black_woolen_fabric"
+    },
+    "l": {
+      "tag": "forge:ingots/blacked_steel"
+    },
+    "g": {
+      "tag": "forge:nuggets/blacked_steel"
+    }
+  },
+  "result": {
+    "item": "ekotsk:dragon_decoration",
+    "count": 1
+  }
+}

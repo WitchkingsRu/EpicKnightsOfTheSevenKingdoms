@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "pnp",
+    "p p",
+    "n n"
+  ],
+  "key": {
+    "n": {
+      "tag": "c:blacked_steel_nuggets"
+    },
+    "p": {
+      "tag": "c:steel_plates"
+    }
+  },
+  "result": {
+    "item": "ekotsk:hotd_kingsguard_boots",
+    "count": 1
+  }
+}

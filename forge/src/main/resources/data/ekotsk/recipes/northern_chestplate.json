@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ici",
+    "lhl"
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:plates/steel"
+    },
+    "c": {
+      "item": "minecraft:leather_chestplate"
+    },
+    "l": {
+      "item": "minecraft:leather"
+    },
+    "h": {
+      "item": "magistuarmory:chainmail_chestplate"
+    }
+  },
+  "result": {
+    "item": "ekotsk:northern_chestplate",
+    "count": 1
+  }
+}

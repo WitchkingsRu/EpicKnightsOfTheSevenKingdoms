@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "magistuarmory:knight_leggings"
+  },
+  "addition": {
+    "tag": "c:white_dyes"
+  },
+  "result": {
+    "item": "ekotsk:kotsk_kingsguard_leggings",
+    "count": 1
+  },
+  "template": {
+    "item": "ekotsk:whitening_template"
+  }
+}

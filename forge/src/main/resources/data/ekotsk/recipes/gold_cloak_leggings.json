@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "i i",
+    "c c"
+  ],
+  "key": {
+    "c": {
+      "item": "ekotsk:blacked_steel_chainmail"
+    },
+    "i": {
+      "tag": "forge:ingots/blacked_steel"
+    }
+  },
+  "result": {
+    "item": "ekotsk:gold_cloak_leggings",
+    "count": 1
+  }
+}

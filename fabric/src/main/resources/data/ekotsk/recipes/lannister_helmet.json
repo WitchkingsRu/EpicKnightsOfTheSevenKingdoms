@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " g ",
+    "igi",
+    "p p"
+  ],
+  "key": {
+    "i": {
+      "tag": "c:steel_ingots"
+    },
+    "p": {
+      "tag": "c:steel_plates"
+    },
+    "g": {
+      "tag": "c:gilded_steel_plates"
+    }
+  },
+  "result": {
+    "item": "ekotsk:lannister_helmet",
+    "count": 1
+  }
+}
