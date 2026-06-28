@@ -11,7 +11,7 @@ public class ASOIAFModFabric implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        System.out.println("[EKOTSK UniqueLoot] Fabric init START");
+        System.out.println("[EKOTSK UniqueLoot] CONSTRUCTOR START");
 
         // 1. Common init
         ASOIAFMod.init();
@@ -23,6 +23,6 @@ public class ASOIAFModFabric implements ModInitializer {
         ResourceManagerHelper.get(PackType.SERVER_DATA)
                 .registerReloadListener(new UniqueLootReloadListenerFabric());
 
-        System.out.println("[EKOTSK UniqueLoot] Fabric init END");
+        System.out.println("[EKOTSK UniqueLoot] CONSTRUCTOR FINISH");
     }
 }

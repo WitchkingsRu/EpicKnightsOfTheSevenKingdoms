@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " n ",
+    "n n",
+    " n "
+  ],
+  "key": {
+    "n": {
+      "tag": "forge:nuggets/gilded_steel"
+    }
+  },
+  "result": {
+    "item": "ekotsk:gilded_steel_ring",
+    "count": 8
+  }
+}

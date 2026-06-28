@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "ekotsk:lannister_chestplate", "required": false },
+    { "id": "ekotsk:lannister_lord_chestplate", "required": false },
+    { "id": "ekotsk:valyrian_steel_chestplate", "required": false },
+    { "id": "ekotsk:night_watch_chestplate", "required": false },
+    { "id": "ekotsk:northern_chestplate", "required": false },
+    { "id": "ekotsk:gold_cloak_chestplate", "required": false },
+    { "id": "ekotsk:kotsk_gold_cloak_chestplate", "required": false },
+    { "id": "ekotsk:got_gold_cloak_chestplate", "required": false },
+    { "id": "ekotsk:hotd_kingsguard_chestplate", "required": false },
+    { "id": "ekotsk:kotsk_kingsguard_chestplate", "required": false },
+    { "id": "ekotsk:kingsguard_chestplate", "required": false },
+    { "id": "ekotsk:kingsguard_baratheon_chestplate", "required": false },
+    { "id": "ekotsk:greyjoy_chestplate", "required": false },
+    { "id": "ekotsk:dornish_chestplate", "required": false }
+  ]
+}

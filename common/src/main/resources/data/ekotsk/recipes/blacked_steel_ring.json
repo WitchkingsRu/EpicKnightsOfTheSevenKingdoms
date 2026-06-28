@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " n ",
+    "n n",
+    " n "
+  ],
+  "key": {
+    "n": {
+      "tag": "forge:nuggets/blacked_steel"
+    }
+  },
+  "result": {
+    "item": "ekotsk:blacked_steel_ring",
+    "count": 8
+  }
+}

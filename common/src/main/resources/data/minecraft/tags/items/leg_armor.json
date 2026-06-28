@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "ekotsk:fancy_boots", "required": false },
+    { "id": "ekotsk:valyrian_steel_boots", "required": false },
+    { "id": "ekotsk:night_watch_boots", "required": false },
+    { "id": "ekotsk:northern_boots", "required": false },
+    { "id": "ekotsk:gold_cloak_boots", "required": false },
+    { "id": "ekotsk:kotsk_gold_cloak_boots", "required": false },
+    { "id": "ekotsk:got_gold_cloak_boots", "required": false },
+    { "id": "ekotsk:hotd_kingsguard_boots", "required": false },
+    { "id": "ekotsk:kotsk_kingsguard_boots", "required": false },
+    { "id": "ekotsk:kingsguard_boots", "required": false },
+    { "id": "ekotsk:kingsguard_baratheon_boots", "required": false },
+    { "id": "ekotsk:greyjoy_boots", "required": false },
+    { "id": "ekotsk:dornish_boots", "required": false }
+  ]
+}

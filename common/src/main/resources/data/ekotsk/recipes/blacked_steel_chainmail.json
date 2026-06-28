@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    "rrr",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "item": "ekotsk:blacked_steel_ring"
+    }
+  },
+  "result": {
+    "item": "ekotsk:blacked_steel_chainmail",
+    "count": 1
+  }
+}

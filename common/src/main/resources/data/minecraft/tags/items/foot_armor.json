@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "ekotsk:lannister_leggings", "required": false },
+    { "id": "ekotsk:lannister_lord_leggings", "required": false },
+    { "id": "ekotsk:valyrian_steel_leggings", "required": false },
+    { "id": "ekotsk:night_watch_leggings", "required": false },
+    { "id": "ekotsk:northern_leggings", "required": false },
+    { "id": "ekotsk:gold_cloak_leggings", "required": false },
+    { "id": "ekotsk:kotsk_gold_cloak_leggings", "required": false },
+    { "id": "ekotsk:got_gold_cloak_leggings", "required": false },
+    { "id": "ekotsk:hotd_kingsguard_leggings", "required": false },
+    { "id": "ekotsk:kotsk_kingsguard_leggings", "required": false },
+    { "id": "ekotsk:kingsguard_leggings", "required": false },
+    { "id": "ekotsk:kingsguard_baratheon_leggings", "required": false },
+    { "id": "ekotsk:greyjoy_leggings", "required": false },
+    { "id": "ekotsk:dornish_leggings", "required": false }
+  ]
+}

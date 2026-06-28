@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " t ",
+    "   "
+  ],
+  "key": {
+    "i": {
+      "tag": "forge:dyes/white"
+    },
+    "t": {
+      "item": "ekotsk:whitening_template"
+    }
+  },
+  "result": {
+    "item": "ekotsk:whitening_template",
+    "count": 2
+  }
+}
