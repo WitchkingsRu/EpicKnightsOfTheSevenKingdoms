@@ -24,6 +24,8 @@ public class ModBannerPatternTags {
     public static final TagKey<BannerPattern> FALLEN_STAR_PATTERN = create("fallen_star");
     public static final TagKey<BannerPattern> SWORD_PATTERN = create("sword");
     public static final TagKey<BannerPattern> ARROWS_PATTERN = create("arrows");
+    public static final TagKey<BannerPattern> WEIRWOOD_PATTERN = create("weirwood");
+    public static final TagKey<BannerPattern> CARRIED_SHIELD_PATTERN = create("carried_shield");
     private static TagKey<BannerPattern> create(String name) {
         return TagKey.create(Registries.BANNER_PATTERN, new ResourceLocation(ASOIAFMod.MOD_ID, "pattern_item/" + name));
     }

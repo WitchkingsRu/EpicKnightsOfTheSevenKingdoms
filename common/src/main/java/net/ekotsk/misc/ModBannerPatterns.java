@@ -27,6 +27,8 @@ public class ModBannerPatterns {
     public static final RegistrySupplier<BannerPattern> FALLEN_STAR;
     public static final RegistrySupplier<BannerPattern> SWORD;
     public static final RegistrySupplier<BannerPattern> ARROWS;
+    public static final RegistrySupplier<BannerPattern> WEIRWOOD;
+    public static final RegistrySupplier<BannerPattern> CARRIED_SHIELD;
 
 
     public static RegistrySupplier<BannerPattern> add(String name) {
@@ -57,6 +59,8 @@ public class ModBannerPatterns {
         FALLEN_STAR = add("fallen_star");
         SWORD = add("sword");
         ARROWS = add("arrows");
+        WEIRWOOD = add("weirwood");
+        CARRIED_SHIELD = add("carried_shield");
 
 
     }

@@ -134,6 +134,8 @@
   "item.ekotsk.fallen_star_pattern": "Banner Pattern",
   "item.ekotsk.arrows_pattern": "Banner Pattern",
   "item.ekotsk.fish_pattern": "Banner Pattern",
+  "item.ekotsk.carried_shield_pattern": "Banner Pattern",
+  "item.ekotsk.weirwood_pattern": "Banner Pattern",
 
   "item.ekotsk.spear_pattern.desc": "Piercing Spear",
   "item.ekotsk.dornish_sun_pattern.desc": "Southern Sun",
@@ -151,6 +153,8 @@
   "item.ekotsk.fallen_star_pattern.desc": "Falling Star",
   "item.ekotsk.arrows_pattern.desc": "Five Arrows",
   "item.ekotsk.fish_pattern.desc": "Fish",
+  "item.ekotsk.weirwood_pattern.desc": "Weirwood",
+  "item.ekotsk.carried_shield_pattern.desc": "Shield carried by Ravens",
 
   "item.ekotsk.blacked_steel_ingot": "Blacked Steel Ingot",
   "item.ekotsk.blacked_steel_nugget": "Blacked Steel Nugget",

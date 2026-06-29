@@ -137,6 +137,9 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> FALLEN_STAR_PATTERN = INSTANCE.addIngredientItem("fallen_star_pattern", () -> new BannerPatternItem(ModBannerPatternTags.FALLEN_STAR_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> SWORD_PATTERN = INSTANCE.addIngredientItem("sword_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SWORD_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> ARROWS_PATTERN = INSTANCE.addIngredientItem("arrows_pattern", () -> new BannerPatternItem(ModBannerPatternTags.ARROWS_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> WEIRWOOD_PATTERN = INSTANCE.addIngredientItem("weirwood_pattern", () -> new BannerPatternItem(ModBannerPatternTags.WEIRWOOD_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> CARRIED_SHIELD_PATTERN = INSTANCE.addIngredientItem("carried_pattern", () -> new BannerPatternItem(ModBannerPatternTags.CARRIED_SHIELD_PATTERN, new Item.Properties().stacksTo(1)));
+
 
     public static final RegistrySupplier<Item> BLACK_LEATHER = INSTANCE.addIngredientItem("black_leather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> BLACK_WOOLEN_FABRIC = INSTANCE.addIngredientItem("black_woolen_fabric", () -> new Item(new Item.Properties()));
