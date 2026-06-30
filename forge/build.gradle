@@ -41,7 +41,8 @@ dependencies {
     modApi "dev.architectury:architectury-forge:9.2.14"
     modImplementation "me.shedaniel.cloth:cloth-config-forge:11.1.136"
     modImplementation "curse.maven:epic-knights-armor-and-weapons-509041:7756534"
-    modImplementation "curse.maven:jei-238222:8292131"
+
+    //runtimeOnly "curse.maven:jei-238222:8292131"
 }
 
 processResources {
