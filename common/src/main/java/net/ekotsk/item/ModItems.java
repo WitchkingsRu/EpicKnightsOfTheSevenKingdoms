@@ -140,7 +140,12 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> WEIRWOOD_PATTERN = INSTANCE.addIngredientItem("weirwood_pattern", () -> new BannerPatternItem(ModBannerPatternTags.WEIRWOOD_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> CARRIED_SHIELD_PATTERN = INSTANCE.addIngredientItem("carried_shield_pattern", () -> new BannerPatternItem(ModBannerPatternTags.CARRIED_SHIELD_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> SEAHORSE_PATTERN = INSTANCE.addIngredientItem("seahorse_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SEAHORSE_PATTERN, new Item.Properties().stacksTo(1)));
-
+    public static final RegistrySupplier<Item> HIGHTOWER_PATTERN = INSTANCE.addIngredientItem("hightower_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HIGHTOWER_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> BEACON_PATTERN = INSTANCE.addIngredientItem("beacon_pattern", () -> new BannerPatternItem(ModBannerPatternTags.BEACON_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> GRAPE_PATTERN = INSTANCE.addIngredientItem("grape_pattern", () -> new BannerPatternItem(ModBannerPatternTags.GRAPE_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> SCYTHE_PATTERN = INSTANCE.addIngredientItem("scythe_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SCYTHE_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> BONEHAND_PATTERN = INSTANCE.addIngredientItem("bonehand_pattern", () -> new BannerPatternItem(ModBannerPatternTags.BONEHAND_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> HORN_PATTERN = INSTANCE.addIngredientItem("horn_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HORN_PATTERN, new Item.Properties().stacksTo(1)));
 
     public static final RegistrySupplier<Item> BLACK_LEATHER = INSTANCE.addIngredientItem("black_leather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> BLACK_WOOLEN_FABRIC = INSTANCE.addIngredientItem("black_woolen_fabric", () -> new Item(new Item.Properties()));

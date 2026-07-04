@@ -30,7 +30,12 @@ public class ModBannerPatterns {
     public static final RegistrySupplier<BannerPattern> WEIRWOOD;
     public static final RegistrySupplier<BannerPattern> CARRIED_SHIELD;
     public static final RegistrySupplier<BannerPattern> SEAHORSE;
-
+    public static final RegistrySupplier<BannerPattern> HIGHTOWER;
+    public static final RegistrySupplier<BannerPattern> BEACON;
+    public static final RegistrySupplier<BannerPattern> GRAPE;
+    public static final RegistrySupplier<BannerPattern> SCYTHE;
+    public static final RegistrySupplier<BannerPattern> BONEHAND;
+    public static final RegistrySupplier<BannerPattern> HORN;
 
     public static RegistrySupplier<BannerPattern> add(String name) {
         HeraldryRegistry.register(name);
@@ -63,6 +68,12 @@ public class ModBannerPatterns {
         WEIRWOOD = add("weirwood");
         CARRIED_SHIELD = add("carried_shield");
         SEAHORSE = add("seahorse");
+        HIGHTOWER = add("hightower");
+        BEACON = add("beacon");
+        GRAPE = add("grape");
+        SCYTHE = add("scythe");
+        BONEHAND = add("bonehand");
+        HORN = add("horn");
 
 
     }
