@@ -1,7 +1,9 @@
 package net.ekotsk.init;
 
+import dev.architectury.event.events.common.LifecycleEvent;
 import dev.architectury.event.events.common.LootEvent;
 import net.ekotsk.loot.UniqueLootInjector;
+import net.ekotsk.misc.ModMerchantOffers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootDataManager;
 
@@ -9,6 +11,7 @@ public class CommonEvents {
 
     public static void init() {
         LootEvent.MODIFY_LOOT_TABLE.register(CommonEvents::onModifyLootTable);
+        LifecycleEvent.SETUP.register(CommonEvents::onSetup);
     }
 
     public static void onModifyLootTable(
@@ -18,5 +21,9 @@ public class CommonEvents {
             boolean builtin
     ) {
         UniqueLootInjector.modifyLootTable(id, context);
+    }
+    private static void onSetup()
+    {
+        ModMerchantOffers.setup();
     }
 }
