@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:blackfyre",
+  "item": "ekotsk:blackfyre",
+  "structures": [
+    "minecraft:ancient_city",
+    "minecraft:stronghold_crossing"
+  ],
+  "weight": 10
+}

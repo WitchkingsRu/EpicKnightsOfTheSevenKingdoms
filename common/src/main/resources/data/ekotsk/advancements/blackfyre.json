@@ -1,0 +1,38 @@
+{
+  "parent": "ekotsk:root",
+  "criteria": {
+    "sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ekotsk:blackfyre"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.ekotsk.blackfyre.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "ekotsk:blackfyre"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.ekotsk.blackfyre.title"
+    }
+  },
+  "requirements": [
+    [
+      "sword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

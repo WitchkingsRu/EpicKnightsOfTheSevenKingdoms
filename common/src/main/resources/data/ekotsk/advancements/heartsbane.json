@@ -1,0 +1,38 @@
+{
+  "parent": "ekotsk:root",
+  "criteria": {
+    "sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ekotsk:heartsbane"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.ekotsk.heartsbane.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "ekotsk:heartsbane"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.ekotsk.heartsbane.title"
+    }
+  },
+  "requirements": [
+    [
+      "sword"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

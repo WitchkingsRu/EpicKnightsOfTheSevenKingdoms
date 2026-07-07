@@ -1,0 +1,8 @@
+{
+  "id": "ekotsk:ice",
+  "item": "ekotsk:ice",
+  "structures": [
+    "minecraft:ancient_city_ice_box"
+  ],
+  "weight": 10
+}

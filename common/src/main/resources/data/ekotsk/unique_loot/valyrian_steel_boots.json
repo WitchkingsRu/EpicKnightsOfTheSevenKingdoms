@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:valyrian_steel_boots",
+  "item": "ekotsk:valyrian_steel_boots",
+  "structures": [
+    "minecraft:ancient_city",
+    "minecraft:ancient_city_ice_box"
+  ],
+  "weight": 10
+}

@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "ekotsk:lannister_helmet", "required": false },
+    { "id": "ekotsk:lannister_lord_helmet", "required": false },
+    { "id": "ekotsk:valyrian_steel_helmet", "required": false },
+    { "id": "ekotsk:night_watch_hat", "required": false },
+    { "id": "ekotsk:northern_helmet", "required": false },
+    { "id": "ekotsk:gold_cloak_helmet", "required": false },
+    { "id": "ekotsk:kotsk_gold_cloak_helmet", "required": false },
+    { "id": "ekotsk:got_gold_cloak_helmet", "required": false },
+    { "id": "ekotsk:hotd_kingsguard_helmet", "required": false },
+    { "id": "ekotsk:kotsk_kingsguard_helmet", "required": false },
+    { "id": "ekotsk:kingsguard_helmet", "required": false },
+    { "id": "ekotsk:kingsguard_baratheon_helmet", "required": false },
+    { "id": "ekotsk:greyjoy_helmet", "required": false },
+    { "id": "ekotsk:dornish_helmet", "required": false }
+  ]
+}

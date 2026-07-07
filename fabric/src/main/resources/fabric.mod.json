@@ -16,10 +16,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.ekotsk.fabric.ExampleModFabric"
+      "net.ekotsk.fabric.ASOIAFModFabric"
     ],
     "client": [
-      "net.ekotsk.fabric.client.ExampleModFabricClient"
+      "net.ekotsk.fabric.client.ASOIAFModFabricClient"
     ]
   },
   "mixins": [

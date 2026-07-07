@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:brightroar",
+  "item": "ekotsk:brightroar",
+  "structures": [
+    "minecraft:underwater_ruin_big",
+    "minecraft:shipwreck_treasure"
+  ],
+  "weight": 10
+}

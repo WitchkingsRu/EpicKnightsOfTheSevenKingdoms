@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:dawn",
+  "item": "ekotsk:dawn",
+  "structures": [
+    "minecraft:desert_pyramid",
+    "minecraft:nether_bridge"
+  ],
+  "weight": 10
+}

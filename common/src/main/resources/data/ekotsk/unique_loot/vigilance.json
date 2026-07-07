@@ -1,0 +1,8 @@
+{
+  "id": "ekotsk:vigilance",
+  "item": "ekotsk:vigilance",
+  "structures": [
+    "minecraft:stronghold_library"
+  ],
+  "weight": 10
+}

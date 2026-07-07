@@ -1,0 +1,38 @@
+{
+  "sources": [
+    {
+      "type": "directory", "source": "entity/ellipticalshield", "prefix": "entity/ellipticalshield/"
+    },
+    {
+      "type": "directory", "source": "entity/heatershield", "prefix": "entity/heatershield/"
+    },
+    {
+      "type": "directory", "source": "entity/kiteshield", "prefix": "entity/kiteshield/"
+    },
+    {
+      "type": "directory", "source": "entity/pavese", "prefix": "entity/pavese/"
+    },
+    {
+      "type": "directory", "source": "entity/roundshield", "prefix": "entity/roundshield/"
+    },
+    {
+      "type": "single",
+      "resource": "minecraft:entity/shield_base"
+    },
+    {
+      "type": "single",
+      "resource": "minecraft:entity/shield_base_nopattern"
+    },
+    {
+      "type": "directory",
+      "source": "entity/shield",
+      "prefix": "entity/shield/"
+    },
+    {
+      "type": "directory", "source": "entity/shield", "prefix": "entity/shield/"
+    },
+    {
+      "type": "directory", "source": "entity/tartsche", "prefix": "entity/tartsche/"
+    }
+  ]
+}
