@@ -1,9 +1,0 @@
-{
-  "id": "ekotsk:aegon_dagger",
-  "item": "ekotsk:aegon_dagger",
-  "structures": [
-    "minecraft:ancient_city",
-    "minecraft:stronghold_library"
-  ],
-  "weight": 10
-}

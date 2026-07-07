@@ -1,9 +1,0 @@
-{
-  "id": "ekotsk:sandoq",
-  "item": "ekotsk:sandoq",
-  "structures": [
-    "minecraft:desert_pyramid",
-    "minecraft:jungle_temple"
-  ],
-  "weight": 10
-}

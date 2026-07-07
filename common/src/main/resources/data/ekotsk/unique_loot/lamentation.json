@@ -1,9 +1,0 @@
-{
-  "id": "ekotsk:aegon_dagger",
-  "item": "ekotsk:aegon_dagger",
-  "structures": [
-    "minecraft:buried_treasure",
-    "minecraft:stronghold_corridor"
-  ],
-  "weight": 10
-}

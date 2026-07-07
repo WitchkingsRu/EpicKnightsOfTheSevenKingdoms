@@ -1,9 +1,0 @@
-{
-  "id": "ekotsk:lady_forlorn",
-  "item": "ekotsk:lady_forlorn",
-  "structures": [
-    "minecraft:ancient_city",
-    "minecraft:stronghold_crossing"
-  ],
-  "weight": 10
-}
