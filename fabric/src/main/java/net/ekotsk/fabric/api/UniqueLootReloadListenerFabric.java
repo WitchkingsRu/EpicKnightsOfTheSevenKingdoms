@@ -11,7 +11,7 @@ public class UniqueLootReloadListenerFabric extends UniqueLootReloadListener
 
     @Override
     public ResourceLocation getFabricId() {
-        return ResourceLocation.parse("ekotsk:unique_loot"); // ✅ parse(), не конструктор
+        return ResourceLocation.parse("ekotsk:unique_loot");
     }
 
     @Override

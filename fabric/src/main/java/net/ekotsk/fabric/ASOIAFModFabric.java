@@ -10,13 +10,10 @@ public class ASOIAFModFabric implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        // 1. Common init
         ASOIAFMod.init();
 
-        // 2. Регистрация loot entry
         ModLootEntriesImpl.register();
 
-        // 3. Регистрация reload listener
         ResourceManagerHelper.get(PackType.SERVER_DATA)
                 .registerReloadListener(new UniqueLootReloadListenerFabric());
     }

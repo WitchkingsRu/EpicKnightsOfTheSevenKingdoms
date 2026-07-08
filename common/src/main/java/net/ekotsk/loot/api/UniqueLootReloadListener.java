@@ -40,7 +40,6 @@ public class UniqueLootReloadListener extends SimpleJsonResourceReloadListener {
             try {
                 JsonObject json = entry.getValue().getAsJsonObject();
 
-                // ✅ FIX: используем parse() вместо конструктора
                 ResourceLocation id = ResourceLocation.parse(GsonHelper.getAsString(json, "id"));
                 ResourceLocation itemId = ResourceLocation.parse(GsonHelper.getAsString(json, "item"));
 

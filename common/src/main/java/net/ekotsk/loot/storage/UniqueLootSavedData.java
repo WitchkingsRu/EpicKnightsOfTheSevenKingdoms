@@ -15,8 +15,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UniqueLootSavedData extends SavedData implements UniqueLootStorage {
+    private static final String DATA_NAME = "ekotsk_unique_loot_data";
+    public static final ResourceLocation ID = ResourceLocation.parse("ekotsk:unique_loot_data");
 
-    private static final String DATA_NAME = "ekotsk:unique_loot_data";
     private final Set<ResourceLocation> claimed = new HashSet<>();
 
     @Override
@@ -42,7 +43,6 @@ public class UniqueLootSavedData extends SavedData implements UniqueLootStorage 
         return tag;
     }
 
-    // ✅ load() с ровно 2 параметрами — сигнатура ВАЖНА для Factory
     public static UniqueLootSavedData load(CompoundTag tag, HolderLookup.Provider provider) {
         UniqueLootSavedData data = new UniqueLootSavedData();
         ListTag list = tag.getList("claimed", Tag.TAG_STRING);
@@ -52,15 +52,13 @@ public class UniqueLootSavedData extends SavedData implements UniqueLootStorage 
         return data;
     }
 
-    // ✅ Factory — 3 аргумента: constructor, deserializer, DataFixTypes
     public static final SavedData.Factory<UniqueLootSavedData> TYPE =
             new SavedData.Factory<>(
-                    UniqueLootSavedData::new,                    // Supplier<T>
-                    UniqueLootSavedData::load,                   // BiFunction<CompoundTag, HolderLookup.Provider, T>
-                    DataFixTypes.LEVEL                     // DataFixTypes (третий аргумент!)
+                    UniqueLootSavedData::new,
+                    UniqueLootSavedData::load,
+                    DataFixTypes.LEVEL
             );
 
-    // ✅ computeIfAbsent — 2 аргумента: Factory + name
     public static UniqueLootSavedData get(ServerLevel level) {
         return level.getDataStorage().computeIfAbsent(TYPE, DATA_NAME);
     }

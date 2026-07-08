@@ -19,24 +19,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.util.ExtraCodecs;
 
 public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
 
-    // ✅ Codec для парсинга из JSON loot table
     public static final MapCodec<UniqueLootPoolEntry> CODEC = RecordCodecBuilder.mapCodec(inst ->
             inst.group(
                     ExtraCodecs.POSITIVE_INT.optionalFieldOf("weight", 1).forGetter(e -> 1),
                     ExtraCodecs.POSITIVE_INT.optionalFieldOf("quality", 0).forGetter(e -> 0),
-                    ResourceLocation.CODEC.fieldOf("structure").forGetter(UniqueLootPoolEntry::getStructure) // ✅ геттер
-            ).apply(inst, UniqueLootPoolEntry::new) // ✅ конструктор без protected
+                    ResourceLocation.CODEC.fieldOf("structure").forGetter(UniqueLootPoolEntry::getStructure)
+            ).apply(inst, UniqueLootPoolEntry::new)
     );
 
     private final ResourceLocation structure;
 
-    // ✅ Конструктор для Codec
     public UniqueLootPoolEntry(int weight, int quality, ResourceLocation structure) {
         super(weight, quality, List.of(), List.of()); // условия/функции добавляются отдельно
         this.structure = structure;
@@ -44,7 +41,7 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
     public ResourceLocation getStructure() {
         return structure;
     }
-    // ✅ Конструктор для билдера (с условиями)
+
     protected UniqueLootPoolEntry(int weight, int quality,
                                   List<LootItemCondition> conditions,
                                   List<LootItemFunction> functions,
@@ -73,7 +70,6 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
         return ModLootEntries.uniqueLootEntry().get();
     }
 
-    // ✅ FIX: кастомный Builder с setStructure()
     public static class Builder extends LootPoolSingletonContainer.Builder<Builder> {
         private ResourceLocation structure = ResourceLocation.parse("minecraft:empty");
 
@@ -87,7 +83,6 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
 
         @Override
         public UniqueLootPoolEntry build() {
-            // Конвертируем List в массив для вызова protected конструктора
             return new UniqueLootPoolEntry(
                     this.weight,
                     this.quality,

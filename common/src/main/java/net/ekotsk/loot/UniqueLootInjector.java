@@ -14,12 +14,10 @@ public class UniqueLootInjector {
 
         String structure = name.substring(PREFIX.length());
         if (shouldInject(structure)) {
-            // ✅ Передаём BUILDER пула, не вызываем .build()
             context.addPool(LootPool.lootPool()
                             .add(UniqueLootPoolEntry.builder()
                                     .setWeight(1)
                                     .setStructure(ResourceLocation.parse("minecraft:" + structure)))
-                    // ❌ УБРАЛИ .build() в конце — передаём builder, не объект
             );
         }
     }

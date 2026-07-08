@@ -15,9 +15,7 @@ public class ModLootEntriesImpl {
     public static Supplier<LootPoolEntryType> uniqueLootEntry() {
         return () -> UNIQUE_LOOT;
     }
-
     public static void register() {
-        // ✅ Регистрируем через Codec, не Serializer
         UNIQUE_LOOT = Registry.register(
                 BuiltInRegistries.LOOT_POOL_ENTRY_TYPE,
                 ResourceLocation.parse(ASOIAFMod.MOD_ID + ":unique_loot"),
