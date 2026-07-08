@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "ekotsk:unique_loot",
-          "weight": 1,
+          "weight": 400,
           "structure": "minecraft:desert_pyramid"
         }
       ]
