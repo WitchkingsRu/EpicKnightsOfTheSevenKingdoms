@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " g ",
+    "gpg",
+    "ofo"
+  ],
+  "key": {
+    "p": {
+      "item": "magistuarmory:barbute"
+    },
+    "g": {
+      "tag": "c:plates/steel"
+    },
+    "o": {
+      "tag": "c:dyes/orange"
+    },
+    "f": {
+      "item": "magistuarmory:woolen_fabric"
+    }
+  },
+  "result": {    "id": "ekotsk:dornish_helmet",
+    "count": 1
+  }
+}

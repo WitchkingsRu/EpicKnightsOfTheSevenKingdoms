@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "ekotsk:lannister_helmet"
+  },
+  "addition": {
+    "tag": "c:ingots/gold"
+  },
+  "result": {    "id": "ekotsk:lannister_lord_helmet",
+    "count": 1
+  },
+  "template": {
+    "item": "magistuarmory:gilding_template"
+  }
+}

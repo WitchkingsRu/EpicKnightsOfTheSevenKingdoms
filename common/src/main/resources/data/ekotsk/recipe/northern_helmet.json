@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "g",
+    "p",
+    "g"
+  ],
+  "key": {
+    "p": {
+      "item": "magistuarmory:barbute"
+    },
+    "g": {
+      "tag": "c:plates/steel"
+    }
+  },
+  "result": {    "id": "ekotsk:northern_helmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " p ",
+    "   "
+  ],
+  "key": {
+    "i": {
+      "tag": "c:dyes/white"
+    },
+    "p": {
+      "tag": "magistuarmory:small_plates/steel"
+    }
+  },
+  "result": {    "id": "ekotsk:whitening_template",
+    "count": 1
+  }
+}

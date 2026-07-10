@@ -12,6 +12,7 @@ import net.ekotsk.item.ModArmorTypes;
 import net.ekotsk.item.ModItems;
 
 import net.ekotsk.misc.ModCreativeTabs;
+import net.ekotsk.misc.ModReloadListenerRegistry;
 import net.fabricmc.api.EnvType;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 
@@ -35,6 +36,7 @@ public final class ASOIAFMod {
         ModItems.INSTANCE.init();
         CommonEvents.init();
         ModCreativeTabs.init();
+        ModReloadListenerRegistry.init();
 
     }
 }

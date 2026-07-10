@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ii"
+  ],
+  "key": {
+    "i": {
+      "tag": "c:ingots/gilded_steel"
+    }
+  },
+  "result": {    "id": "ekotsk:gilded_steel_plate",
+    "count": 2
+  }
+}

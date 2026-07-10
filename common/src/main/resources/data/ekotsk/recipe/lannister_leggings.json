@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "igi",
+    "ghg",
+    "i i"
+  ],
+  "key": {
+    "i": {
+      "tag": "c:nuggets/gilded_steel"
+    },
+    "g": {
+      "tag": "c:plates/steel"
+    },
+    "h": {
+      "item": "magistuarmory:chainmail_leggings"
+    }
+  },
+  "result": {    "id": "ekotsk:lannister_leggings",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ccc",
+    "c c"
+  ],
+  "key": {
+    "c": {
+      "item": "ekotsk:gilded_steel_chainmail"
+    }
+  },
+  "result": {    "id": "ekotsk:kotsk_gold_cloak_helmet",
+    "count": 1
+  }
+}

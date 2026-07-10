@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "g",
+    "p",
+    "g"
+  ],
+  "key": {
+    "p": {
+      "item": "magistuarmory:norman_helmet"
+    },
+    "g": {
+      "tag": "c:plates/steel"
+    }
+  },
+  "result": {    "id": "ekotsk:greyjoy_helmet",
+    "count": 1
+  }
+}

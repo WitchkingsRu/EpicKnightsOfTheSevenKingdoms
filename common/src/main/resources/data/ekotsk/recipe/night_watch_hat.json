@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "p p"
+  ],
+  "key": {
+    "i": {
+      "item": "ekotsk:black_leather"
+    },
+    "p": {
+      "item": "ekotsk:black_woolen_fabric"
+    }
+  },
+  "result": {    "id": "ekotsk:night_watch_hat",
+    "count": 1
+  }
+}

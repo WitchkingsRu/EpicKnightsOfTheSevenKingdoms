@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ib"
+  ],
+  "key": {
+    "i": {
+      "tag": "c:ingots/steel"
+    },
+    "b": {
+      "tag": "c:dyes/black"
+    }
+  },
+  "result": {    "id": "ekotsk:blacked_steel_ingot",
+    "count": 1
+  }
+}

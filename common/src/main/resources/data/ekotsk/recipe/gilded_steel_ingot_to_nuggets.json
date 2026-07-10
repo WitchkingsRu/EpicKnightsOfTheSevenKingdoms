@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i"
+  ],
+  "key": {
+    "i": {
+      "tag": "c:ingots/gilded_steel"
+    }
+  },
+  "result": {    "id": "ekotsk:gilded_steel_nugget",
+    "count": 9
+  }
+}

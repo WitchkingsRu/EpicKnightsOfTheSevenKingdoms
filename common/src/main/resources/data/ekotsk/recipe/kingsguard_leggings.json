@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ggg",
+    "fbf",
+    "w w"
+  ],
+  "key": {
+    "b": {
+      "item": "magistuarmory:gothic_leggings"
+    },
+    "f": {
+      "item": "magistuarmory:woolen_fabric"
+    },
+    "g": {
+      "tag": "c:nuggets/steel"
+    },
+    "w": {
+      "tag": "c:dyes/white"
+    }
+  },
+  "result": {    "id": "ekotsk:kingsguard_leggings",
+    "count": 1
+  }
+}

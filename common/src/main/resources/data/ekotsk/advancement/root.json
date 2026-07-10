@@ -1,0 +1,35 @@
+{
+  "criteria": {
+    "crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crafting_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/deepslate_bricks.png",
+    "description": {
+      "translate": "advancements.ekotsk.root.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "ekotsk:hand_sign_decoration"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.ekotsk.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

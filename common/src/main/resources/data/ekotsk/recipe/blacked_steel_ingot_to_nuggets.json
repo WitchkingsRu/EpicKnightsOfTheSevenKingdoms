@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i"
+  ],
+  "key": {
+    "i": {
+      "tag": "c:ingots/blacked_steel"
+    }
+  },
+  "result": {    "id": "ekotsk:blacked_steel_nugget",
+    "count": 9
+  }
+}

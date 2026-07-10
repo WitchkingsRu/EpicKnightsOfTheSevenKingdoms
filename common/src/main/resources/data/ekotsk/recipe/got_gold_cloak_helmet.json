@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " g ",
+    "gcg",
+    "c c"
+  ],
+  "key": {
+    "c": {
+      "item": "ekotsk:gilded_steel_chainmail"
+    },
+    "g": {
+      "tag": "c:plates/gilded_steel"
+    }
+  },
+  "result": {    "id": "ekotsk:got_gold_cloak_helmet",
+    "count": 1
+  }
+}

@@ -49,67 +49,67 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.SANDOQ);
 
         append(ASOIAF_ARMOR, ModItems.LANNISTER_HELMET);
-//        appendStack(ASOIAF_ARMOR, LANNISTER_CHESTPLATE_SUPPLIER);
-//        append(ASOIAF_ARMOR, ModItems.LANNISTER_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.FANCY_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_HELMET);
-//        appendStack(ASOIAF_ARMOR, LANNISTER_LORD_CHESTPLATE_SUPPLIER);
-//        append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_HAT);
-//        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.NORTHERN_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.NORTHERN_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.NORTHERN_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.NORTHERN_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.KOTSK_GOLD_CLOAK_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.KOTSK_GOLD_CLOAK_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.KOTSK_GOLD_CLOAK_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.KOTSK_GOLD_CLOAK_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.KOTSK_KINGSGUARD_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.KOTSK_KINGSGUARD_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.KOTSK_KINGSGUARD_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.KOTSK_KINGSGUARD_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.GREYJOY_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.GREYJOY_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.GREYJOY_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.GREYJOY_BOOTS);
-//        append(ASOIAF_ARMOR, ModItems.DORNISH_HELMET);
-//        append(ASOIAF_ARMOR, ModItems.DORNISH_CHESTPLATE);
-//        append(ASOIAF_ARMOR, ModItems.DORNISH_LEGGINGS);
-//        append(ASOIAF_ARMOR, ModItems.DORNISH_BOOTS);
-//
-//        append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
-//        append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
-//        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CAPE_DECORATION);
-//        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_LEFT_DECORATION);
-//        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_RIGHT_DECORATION);
-//        append(ASOIAF_ARMOR, ModItems.AEGON_CROWN_DECORATION);
-//        append(ASOIAF_ARMOR, ModItems.DRAGON_DECORATION);
+        appendStack(ASOIAF_ARMOR, LANNISTER_CHESTPLATE_SUPPLIER);
+        append(ASOIAF_ARMOR, ModItems.LANNISTER_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.FANCY_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_HELMET);
+        appendStack(ASOIAF_ARMOR, LANNISTER_LORD_CHESTPLATE_SUPPLIER);
+        append(ASOIAF_ARMOR, ModItems.LANNISTER_LORD_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_HELMET);
+        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.VALYRIAN_STEEL_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_HAT);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.NORTHERN_HELMET);
+        append(ASOIAF_ARMOR, ModItems.NORTHERN_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.NORTHERN_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.NORTHERN_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_HELMET);
+        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.KOTSK_GOLD_CLOAK_HELMET);
+        append(ASOIAF_ARMOR, ModItems.KOTSK_GOLD_CLOAK_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.KOTSK_GOLD_CLOAK_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.KOTSK_GOLD_CLOAK_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_HELMET);
+        append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.GOT_GOLD_CLOAK_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_HELMET);
+        append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.HOTD_KINGSGUARD_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.KOTSK_KINGSGUARD_HELMET);
+        append(ASOIAF_ARMOR, ModItems.KOTSK_KINGSGUARD_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.KOTSK_KINGSGUARD_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.KOTSK_KINGSGUARD_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_HELMET);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_HELMET);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.KINGSGUARD_2_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.GREYJOY_HELMET);
+        append(ASOIAF_ARMOR, ModItems.GREYJOY_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.GREYJOY_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.GREYJOY_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.DORNISH_HELMET);
+        append(ASOIAF_ARMOR, ModItems.DORNISH_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.DORNISH_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.DORNISH_BOOTS);
+
+        append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_LEFT_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_RIGHT_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.AEGON_CROWN_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.DRAGON_DECORATION);
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SPEAR_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.DORNISH_SUN_PATTERN);
@@ -156,9 +156,9 @@ public class ModCreativeTabs {
 
 
     }
-//    static Supplier<ItemStack> LANNISTER_CHESTPLATE_SUPPLIER
-//            = () -> ModItems.getDecoratedStack(ModItems.LANNISTER_CHESTPLATE, ModItems.LANNISTER_CAPE_DECORATION);
-//    static Supplier<ItemStack> LANNISTER_LORD_CHESTPLATE_SUPPLIER
-//            = () -> ModItems.getDecoratedStack(ModItems.LANNISTER_LORD_CHESTPLATE, ModItems.LANNISTER_CAPE_DECORATION);
+    static Supplier<ItemStack> LANNISTER_CHESTPLATE_SUPPLIER
+            = () -> ModItems.getDecoratedStack(ModItems.LANNISTER_CHESTPLATE, ModItems.LANNISTER_CAPE_DECORATION);
+    static Supplier<ItemStack> LANNISTER_LORD_CHESTPLATE_SUPPLIER
+            = () -> ModItems.getDecoratedStack(ModItems.LANNISTER_LORD_CHESTPLATE, ModItems.LANNISTER_CAPE_DECORATION);
 }
 

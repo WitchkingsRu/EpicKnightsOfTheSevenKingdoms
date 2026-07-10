@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "i i",
+    "s s",
+    "l l"
+  ],
+  "key": {
+    "s": {
+      "tag": "magistuarmory:leather_strips"
+    },
+    "l": {
+      "item": "ekotsk:black_leather"
+    },
+    "i": {
+      "tag": "c:ingots/blacked_steel"
+    }
+  },
+  "result": {    "id": "ekotsk:night_watch_boots",
+    "count": 1
+  }
+}

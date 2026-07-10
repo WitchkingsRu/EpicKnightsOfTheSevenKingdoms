@@ -1,0 +1,9 @@
+{
+  "id": "ekotsk:valyrian_steel_leggings",
+  "item": "ekotsk:valyrian_steel_leggings",
+  "structures": [
+    "minecraft:nether_bridge",
+    "minecraft:bastion_treasure"
+  ],
+  "weight": 10
+}

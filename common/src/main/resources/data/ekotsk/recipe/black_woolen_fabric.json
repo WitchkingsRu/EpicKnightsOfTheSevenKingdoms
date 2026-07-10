@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "ibi",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "item": "magistuarmory:woolen_fabric"
+    },
+    "b": {
+      "tag": "c:dyes/black"
+    }
+  },
+  "result": {    "id": "ekotsk:black_woolen_fabric",
+    "count": 8
+  }
+}

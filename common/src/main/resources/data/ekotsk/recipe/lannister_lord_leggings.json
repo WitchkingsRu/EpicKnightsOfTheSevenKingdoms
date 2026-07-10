@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "ekotsk:lannister_leggings"
+  },
+  "addition": {
+    "tag": "c:ingots/gold"
+  },
+  "result": {    "id": "ekotsk:lannister_lord_leggings",
+    "count": 1
+  },
+  "template": {
+    "item": "magistuarmory:gilding_template"
+  }
+}
