@@ -3,6 +3,7 @@ package net.ekotsk.loot.entry;
 import com.mojang.serialization.MapCodec;
 import net.ekotsk.UniqueLootPlatform;
 import net.ekotsk.loot.api.UniqueLootStorage;
+import net.ekotsk.loot.core.UniqueLootClaimManager;
 import net.ekotsk.loot.core.UniqueLootEntry;
 import net.ekotsk.loot.core.UniqueLootManager;
 import net.ekotsk.ModLootEntries;
@@ -14,7 +15,8 @@ import net.minecraft.world.level.storage.loot.entries.LootPoolEntryType;
 import net.minecraft.world.level.storage.loot.entries.LootPoolSingletonContainer;
 import net.minecraft.world.level.storage.loot.functions.LootItemFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -23,7 +25,7 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.util.ExtraCodecs;
 
 public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
-
+    private static final Logger LOGGER = LoggerFactory.getLogger("EKOTSK.UniqueLoot.PoolEntry");
     public static final MapCodec<UniqueLootPoolEntry> CODEC = RecordCodecBuilder.mapCodec(inst ->
             inst.group(
                     ExtraCodecs.POSITIVE_INT.optionalFieldOf("weight", 1).forGetter(e -> 1),
@@ -53,16 +55,30 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
     @Override
     protected void createItemStack(Consumer<ItemStack> output, LootContext context) {
         ServerLevel level = context.getLevel();
-        if (level == null) return;
+        if (level == null) {
+            LOGGER.warn("LootContext has no ServerLevel. Aborting unique loot generation.");
+            return;
+        }
 
+        LOGGER.debug("Evaluating unique loot pool for structure: {}", structure);
         UniqueLootStorage storage = UniqueLootPlatform.getStorage(level);
 
         UniqueLootEntry entry = UniqueLootManager.get().roll(structure, context.getRandom(), storage);
-        if (entry == null) return;
+        if (entry == null) {
+            LOGGER.debug("No valid entry rolled for structure: {}", structure);
+            return;
+        }
 
-        if (!storage.tryClaim(entry.getId())) return;
+        if (!UniqueLootClaimManager.get().tryClaim(entry.getId(), storage)) {
+            LOGGER.info("Item {} already claimed in this world. Skipping generation.", entry.getId());
+            return;
+        }
 
-        output.accept(entry.createStack());
+        ItemStack stack = entry.createStack();
+        UniqueLootClaimManager.get().markAsUniqueIfLoaded(stack);
+
+        LOGGER.info("Generated unique loot: {} for structure: {}", entry.getId(), structure);
+        output.accept(stack);
     }
 
     @Override
