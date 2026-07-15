@@ -40,6 +40,6 @@ public class ModArmorTypes {
     public static final ArmorType GOLD_CLOAK_LEFT = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "gold_cloak_left"), new ResourceLocation("ekotsk:gold_cloak_left"), 0.0f, 0.0f, new Integer[] { 0, 0, 180, 0 }, new Integer[] { 0, 0, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, true, Platform.isForge() ? "forge:ingots/bronze" : "c:bronze_ingots");
     public static final ArmorType GOLD_CLOAK_RIGHT = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "gold_cloak_right"), new ResourceLocation("ekotsk:gold_cloak_right"), 0.0f, 0.0f, new Integer[] { 0, 0, 180, 0 }, new Integer[] { 0, 0, 0, 0 }, 9, SoundEvents.ARMOR_EQUIP_LEATHER, true, Platform.isForge() ? "forge:ingots/bronze" : "c:bronze_ingots");
 
-    public static final ArmorType AEGON_CROWN = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "aegon_crown"), new ResourceLocation("ekotsk:aegon_crown"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 5000 }, new Integer[] { 0, 0, 0, 2 }, 9, SoundEvents.ARMOR_EQUIP_NETHERITE, true, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots");
+    public static final ArmorType AEGON_CROWN = new ArmorType(new ResourceLocation(ASOIAFMod.MOD_ID, "aegon_crown"), new ResourceLocation("ekotsk:aegon_crown"), 0.0f, 0.0f, new Integer[] { 0, 0, 0, 5000 }, new Integer[] { 0, 0, 0, 2 }, 251, SoundEvents.ARMOR_EQUIP_NETHERITE, true, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots");
 
 }

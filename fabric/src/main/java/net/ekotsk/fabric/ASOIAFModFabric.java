@@ -13,13 +13,10 @@ public class ASOIAFModFabric implements ModInitializer {
     public void onInitialize() {
         System.out.println("[EKOTSK UniqueLoot] CONSTRUCTOR START");
 
-        // 1. Common init
         ASOIAFMod.init();
 
-        // 2. Loot entry registry
         ModLootEntriesImpl.register();
 
-        // 3. Reload listener (КЛЮЧЕВОЕ)
         ResourceManagerHelper.get(PackType.SERVER_DATA)
                 .registerReloadListener(new UniqueLootReloadListenerFabric());
 

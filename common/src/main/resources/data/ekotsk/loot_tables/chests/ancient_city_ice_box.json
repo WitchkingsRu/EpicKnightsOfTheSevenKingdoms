@@ -6,8 +6,12 @@
       "entries": [
         {
           "type": "ekotsk:unique_loot",
-          "weight": 1,
+          "weight": 5,
           "structure": "minecraft:ancient_city_ice_box"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 95
         }
       ]
     }

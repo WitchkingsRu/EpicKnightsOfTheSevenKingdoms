@@ -14,19 +14,15 @@ public final class ASOIAFModForge {
     public ASOIAFModForge() {
         System.out.println("[EKOTSK Unique Loot] CONSTRUCTOR START");
 
-        // 1. Architectury mod event bus
         EventBuses.registerModEventBus(
                 ASOIAFMod.MOD_ID,
                 FMLJavaModLoadingContext.get().getModEventBus()
         );
 
-        // 2. Common init
         ASOIAFMod.init();
 
-        // 3. Loot entry registry (Forge impl)
         ModLootEntriesImpl.register();
 
-        // 4. Forge global event bus (ВАЖНО!)
         MinecraftForge.EVENT_BUS.addListener(this::onReloadListeners);
 
         System.out.println("[EKOTSK Unique Loot] CONSTRUCTOR END");

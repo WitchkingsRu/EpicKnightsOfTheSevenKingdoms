@@ -1,6 +1,7 @@
 package net.ekotsk.loot.entry;
 
 import net.ekotsk.UniqueLootPlatform;
+import net.ekotsk.loot.api.LootrCompat; // <-- ДОБАВИТЬ ЭТОТ ИМПОРТ
 import net.ekotsk.loot.api.UniqueLootStorage;
 import net.ekotsk.loot.core.UniqueLootEntry;
 import net.ekotsk.loot.core.UniqueLootManager;
@@ -18,6 +19,7 @@ import java.util.function.Consumer;
 
 public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
     private final ResourceLocation structure;
+
     public UniqueLootPoolEntry(int weight,
                                int quality,
                                LootItemCondition[] conditions,
@@ -29,7 +31,6 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
 
     @Override
     protected void createItemStack(Consumer<ItemStack> output, LootContext context) {
-
         ServerLevel level = context.getLevel();
         if (level == null) return;
 
@@ -45,7 +46,13 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
 
         if (!storage.tryClaim(entry.getId())) return;
 
-        output.accept(entry.createStack());
+        ItemStack stack = entry.createStack();
+
+        if (LootrCompat.isLootrLoaded()) {
+            LootrCompat.makeUnique(stack);
+        }
+
+        output.accept(stack);
     }
 
     @Override

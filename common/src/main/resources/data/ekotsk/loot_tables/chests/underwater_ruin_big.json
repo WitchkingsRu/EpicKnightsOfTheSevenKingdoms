@@ -6,8 +6,12 @@
       "entries": [
         {
           "type": "ekotsk:unique_loot",
-          "weight": 1,
+          "weight": 5,
           "structure": "minecraft:underwater_ruin_big"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 95
         }
       ]
     }
