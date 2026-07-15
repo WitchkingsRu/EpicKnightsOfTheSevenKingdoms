@@ -38,8 +38,8 @@ dependencies {
     modImplementation "dev.architectury:architectury-neoforge:$rootProject.architectury_api_version"
     modImplementation "curse.maven:cloth-config-348521:5729127"
     modImplementation "curse.maven:epic-knights-armor-and-weapons-509041:7803552"
-    modRuntimeOnly "curse.maven:jei-238222:8392171"
-    modRuntimeOnly "noobanidus.mods.lootr:lootr-neoforge:1.21.1-1.11.37.121"
+//    modRuntimeOnly "curse.maven:jei-238222:8392171"
+//    modRuntimeOnly "noobanidus.mods.lootr:lootr-neoforge:1.21.1-1.11.37.121"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')

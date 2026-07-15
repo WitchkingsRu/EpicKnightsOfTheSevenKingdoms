@@ -12,4 +12,5 @@ dependencies {
     modImplementation "dev.architectury:architectury:$rootProject.architectury_api_version"
     modImplementation "curse.maven:cloth-config-348521:5729127"
     modImplementation "curse.maven:epic-knights-armor-and-weapons-509041:7803552"
+
 }
