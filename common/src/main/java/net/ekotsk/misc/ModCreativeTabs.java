@@ -39,6 +39,7 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.LONGCLAW);
         append(ASOIAF_WEAPONS, ModItems.NIGHTFALL);
         append(ASOIAF_WEAPONS, ModItems.BRIGHTROAR);
+        append(ASOIAF_WEAPONS, ModItems.ORPHANMAKER);
         append(ASOIAF_WEAPONS, ModItems.RED_RAIN);
         append(ASOIAF_WEAPONS, ModItems.ROBERT_HAMMER);
         append(ASOIAF_WEAPONS, ModItems.TRUTH);
@@ -135,6 +136,7 @@ public class ModCreativeTabs {
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SCYTHE_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BONEHAND_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.HORN_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.SEVEN_PATTERN);
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BLACK_LEATHER);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BLACK_WOOLEN_FABRIC);

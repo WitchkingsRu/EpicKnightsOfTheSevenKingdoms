@@ -37,6 +37,8 @@
   "advancements.ekotsk.heartsbane.description": "§fAcquire §nHeartsbane§r§f - an ancestral greatsword of Valyrian steel, which belonged to §lHouse Tarly§r§f since ancient times.",
   "advancements.ekotsk.nightfall.title": "The Raider's Treasure",
   "advancements.ekotsk.nightfall.description": "§fAcquire §nNightfall§r§f - a longsword of Valyrian steel, which belonged to §lDalton Greyjoy§r§f and somehow ended up being the heirloom of §lHouse Harlaw§r§f.",
+  "advancements.ekotsk.orphanmaker.title": "What's the weather today, Bold Jon?",
+  "advancements.ekotsk.orphanmaker.description": "§fAcquire §nOrphan-maker§r§f - a longsword of Valyrian steel, which belonged to §lBold Jon Roxton§r§f during §lThe Dance of the Dragons§r§f and came into possession of Lord §lUnwin Peake§r§f during regency of young §lKing Aegon III§r§f.",
 
   "item.ekotsk.blackfyre": "Blackfyre",
   "item.ekotsk.dark_sister": "Dark Sister",
@@ -55,6 +57,7 @@
   "item.ekotsk.nightfall": "Nightfall",
   "item.ekotsk.vigilance": "Vigilance",
   "item.ekotsk.longclaw": "Longclaw",
+  "item.ekotsk.orphanmaker": "Orphan-maker",
 
   "item.ekotsk.lannister_helmet": "Lannister Footman Helmet",
   "item.ekotsk.lannister_chestplate": "Lannister Footman Chestplate",
@@ -143,6 +146,7 @@
   "item.ekotsk.bonehand_pattern": "Banner Pattern",
   "item.ekotsk.scythe_pattern": "Banner Pattern",
   "item.ekotsk.horn_pattern": "Banner Pattern",
+  "item.ekotsk.seven_pattern": "Banner Pattern",
 
   "item.ekotsk.spear_pattern.desc": "Piercing Spear",
   "item.ekotsk.dornish_sun_pattern.desc": "Southern Sun",
@@ -169,6 +173,7 @@
   "item.ekotsk.bonehand_pattern.desc": "Bone Hand",
   "item.ekotsk.scythe_pattern.desc": "Scythe",
   "item.ekotsk.horn_pattern.desc": "Black Horn",
+  "item.ekotsk.seven_pattern.desc": "Seven-pointed Star",
 
   "item.ekotsk.blacked_steel_ingot": "Blacked Steel Ingot",
   "item.ekotsk.blacked_steel_nugget": "Blacked Steel Nugget",
