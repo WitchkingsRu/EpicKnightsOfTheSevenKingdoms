@@ -67,10 +67,14 @@ public final class ASOIAFModForge {
                 setFlammable.setAccessible(true);
 
                 setFlammable.invoke(fire, ModBlocks.WEIRWOOD_LOG.get(), 5, 5);
+                setFlammable.invoke(fire, ModBlocks.WEIRWOOD_FACE_GRIM.get(), 5, 5);
+                setFlammable.invoke(fire, ModBlocks.WEIRWOOD_FACE_HAPPY.get(), 5, 5);
+                setFlammable.invoke(fire, ModBlocks.WEIRWOOD_FACE_ROBLOX.get(), 5, 5);
+                setFlammable.invoke(fire, ModBlocks.WEIRWOOD_LEAVES.get(), 5, 5);
                 setFlammable.invoke(fire, ModBlocks.STRIPPED_WEIRWOOD_LOG.get(), 5, 5);
 
 
-                System.out.println("[EKOTSK Unique Loot] Flammability registered");
+                System.out.println("[EKOTSK] Flammability registered");
             } catch (Exception e) {
                 System.err.println("[EKOTSK Unique Loot] Failed to set flammable: " + e.getMessage());
             }
@@ -98,9 +102,7 @@ public final class ASOIAFModForge {
             Direction lastHitSide = state.getValue(WeirwoodLogBlock.LAST_HIT_SIDE);
 
             BlockState stripped = ModBlocks.STRIPPED_WEIRWOOD_LOG.get()
-                    .defaultBlockState()
-                    .setValue(WeirwoodLogBlock.CARVINGS, carvings)
-                    .setValue(WeirwoodLogBlock.LAST_HIT_SIDE, lastHitSide);
+                    .defaultBlockState();
 
             if (state.hasProperty(RotatedPillarBlock.AXIS)) {
                 stripped = stripped.setValue(RotatedPillarBlock.AXIS,

@@ -13,7 +13,7 @@ public class WeirwoodSapParticle extends TextureSheetParticle {
         this.rCol = 0.7F; // Красный
         this.gCol = 0.1F;
         this.bCol = 0.1F;
-        this.scale(1.3F);
+        this.scale(1.0F);
         this.hasPhysics = true;
     }
 

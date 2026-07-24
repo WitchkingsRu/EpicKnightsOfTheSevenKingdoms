@@ -29,7 +29,7 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
         super(properties);
         registerDefaultState(stateDefinition.any()
                 .setValue(CARVINGS, 0)
-                .setValue(LAST_HIT_SIDE, Direction.UP) // Дефолтное значение
+                .setValue(LAST_HIT_SIDE, Direction.UP)
                 .setValue(AXIS, Direction.Axis.Y));
     }
 
@@ -50,17 +50,26 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
             if (carvings < 4) {
                 Direction hitSide = hit.getDirection();
 
-                // Обновляем и количество зарубок, и сторону последнего удара
+                if (hitSide.getAxis() == Direction.Axis.Y) {
+                    return InteractionResult.PASS;
+                }
+
+                Direction carvingSide;
+                if (carvings == 0) {
+                    carvingSide = hitSide;
+                } else {
+                    carvingSide = state.getValue(LAST_HIT_SIDE);
+                }
+
                 BlockState newState = state
                         .setValue(CARVINGS, carvings + 1)
-                        .setValue(LAST_HIT_SIDE, hitSide);
+                        .setValue(LAST_HIT_SIDE, carvingSide);
 
                 level.setBlock(pos, newState, 3);
                 stack.hurtAndBreak(1, player, p -> p.broadcastBreakEvent(hand));
                 level.playSound(null, pos, SoundEvents.AXE_STRIP, SoundSource.BLOCKS, 1.0F, 1.0F);
 
-                // Активный спавн — партиклы летят в игрока
-                spawnActiveCarvingParticles(level, pos, hitSide, player, level.getRandom());
+                spawnActiveCarvingParticles(level, pos, carvingSide, player, level.getRandom());
 
                 return InteractionResult.CONSUME;
             }
@@ -68,7 +77,6 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
         return InteractionResult.PASS;
     }
 
-    // Активный спавн при ПКМ — партиклы летят в игрока
     public static void spawnActiveCarvingParticles(Level level, BlockPos pos, Direction hitSide,
                                                    Player player, RandomSource random) {
         if (!level.isClientSide()) return;
@@ -79,7 +87,6 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
             double y = pos.getY() + 0.5;
             double z = pos.getZ() + 0.5;
 
-            // Стартовая позиция — на стороне удара
             double offsetX = hitSide.getStepX() * 0.6;
             double offsetY = hitSide.getStepY() * 0.6;
             double offsetZ = hitSide.getStepZ() * 0.6;
@@ -88,12 +95,10 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
             y += offsetY + (random.nextDouble() - 0.5) * 0.3;
             z += offsetZ + (random.nextDouble() - 0.5) * 0.3;
 
-            // Направление к игроку
             double dx = player.getX() - x;
-            double dy = player.getY() + 1.5 - y; // Летят в голову игрока
+            double dy = player.getY() + 1.5 - y;
             double dz = player.getZ() - z;
 
-            // Нормализуем и добавляем скорость
             double distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
             double speed = 0.15 + random.nextDouble() * 0.1;
 
@@ -105,22 +110,22 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
         }
     }
 
-    // Пассивный спавн — только со стороны последней зарубки
     @Override
     public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
         if (!level.isClientSide()) return;
 
-        int carvings = state.getValue(CARVINGS);
-        if (carvings == 0) return; // Нет зарубок — нет партиклов
+        // Пассивные партикли только для вертикальных бревен с зарубками
+        if (state.getValue(AXIS) != Direction.Axis.Y) return;
 
-        // Спавним 1-2 партикла за тик
+        int carvings = state.getValue(CARVINGS);
+        if (carvings == 0) return;
+
         if (random.nextInt(3) == 0) {
             Direction lastHitSide = state.getValue(LAST_HIT_SIDE);
             spawnPassiveCarvingParticles(level, pos, lastHitSide, random);
         }
     }
 
-    // Пассивный спавн — партиклы стекают со стороны зарубки
     public static void spawnPassiveCarvingParticles(Level level, BlockPos pos, Direction side, RandomSource random) {
         if (!level.isClientSide()) return;
 
@@ -128,7 +133,6 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
         double y = pos.getY() + 0.5;
         double z = pos.getZ() + 0.5;
 
-        // Позиция на стороне зарубки
         double offsetX = side.getStepX() * 0.55;
         double offsetY = side.getStepY() * 0.55;
         double offsetZ = side.getStepZ() * 0.55;
@@ -137,7 +141,6 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
         y += offsetY + (random.nextDouble() - 0.5) * 0.4;
         z += offsetZ + (random.nextDouble() - 0.5) * 0.4;
 
-        // Скорость — стекают вниз (гравитация)
         double vx = (random.nextDouble() - 0.5) * 0.02;
         double vy = -0.05 - random.nextDouble() * 0.03;
         double vz = (random.nextDouble() - 0.5) * 0.02;

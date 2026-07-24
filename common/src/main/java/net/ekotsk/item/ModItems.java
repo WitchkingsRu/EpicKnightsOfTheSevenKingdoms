@@ -171,8 +171,16 @@ public class ModItems extends ModItemsProvider {
 
     public static final RegistrySupplier<Item> WEIRWOOD_LOG_BLOCK = ITEMS.register("weirwood_log", () ->
             new BlockItem(ModBlocks.WEIRWOOD_LOG.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FACE_GRIM_BLOCK = ITEMS.register("weirwood_face_grim", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FACE_GRIM.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FACE_HAPPY_BLOCK = ITEMS.register("weirwood_face_happy", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FACE_HAPPY.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FACE_EASTER_EGG_BLOCK = ITEMS.register("weirwood_face_easter_egg", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FACE_ROBLOX.get(), new Item.Properties()));
     public static final RegistrySupplier<Item> WEIRWOOD_LEAVES_BLOCK = ITEMS.register("weirwood_leaves", () ->
             new BlockItem(ModBlocks.WEIRWOOD_LEAVES.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> STRIPPED_WEIRWOOD_LOG_BLOCK = ITEMS.register("stripped_weirwood_log", () ->
+            new BlockItem(ModBlocks.STRIPPED_WEIRWOOD_LOG.get(), new Item.Properties()));
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);

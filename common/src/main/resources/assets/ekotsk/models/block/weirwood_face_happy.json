@@ -2,7 +2,7 @@
   "parent": "minecraft:block/cube_column",
   "textures": {
     "particle": "ekotsk:block/weirwood_log",
-    "north": "ekotsk:block/weirwood_log_carved_3",
+    "north": "ekotsk:block/weirwood_face_happy",
     "south": "ekotsk:block/weirwood_log",
     "east": "ekotsk:block/weirwood_log",
     "west": "ekotsk:block/weirwood_log",
