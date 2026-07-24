@@ -1,6 +1,7 @@
 package net.ekotsk.fabric;
 
 import net.ekotsk.ASOIAFMod;
+import net.ekotsk.fabric.api.MiscStuffFabric;
 import net.ekotsk.fabric.api.UniqueLootReloadListenerFabric;
 import net.ekotsk.loot.api.UniqueLootReloadListener;
 import net.fabricmc.api.ModInitializer;
@@ -14,7 +15,7 @@ public class ASOIAFModFabric implements ModInitializer {
         System.out.println("[EKOTSK UniqueLoot] CONSTRUCTOR START");
 
         ASOIAFMod.init();
-
+        MiscStuffFabric.init();
         ModLootEntriesImpl.register();
 
         ResourceManagerHelper.get(PackType.SERVER_DATA)

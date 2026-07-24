@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "ekotsk:block/weirwood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "ekotsk:block/weirwood_log"
+    },
+    "axis=z": {
+      "model": "ekotsk:block/weirwood_log_horizontal",
+      "x": 90
+    },
+    "axis=y,carvings=0": { "model": "ekotsk:block/weirwood_log" },
+    "axis=y,carvings=1": { "model": "ekotsk:block/weirwood_log_carved_1" },
+    "axis=y,carvings=2": { "model": "ekotsk:block/weirwood_log_carved_2" },
+    "axis=y,carvings=3": { "model": "ekotsk:block/weirwood_log_carved_3" },
+    "axis=y,carvings=4": { "model": "ekotsk:block/weirwood_log_carved_4" },
+    "axis=x,carvings=0": { "model": "ekotsk:block/weirwood_log_horizontal", "x": 90, "y": 90 },
+    "axis=x,carvings=1": { "model": "ekotsk:block/weirwood_log_carved_1_horizontal", "x": 90, "y": 90 },
+    "axis=x,carvings=2": { "model": "ekotsk:block/weirwood_log_carved_2_horizontal", "x": 90, "y": 90 },
+    "axis=x,carvings=3": { "model": "ekotsk:block/weirwood_log_carved_3_horizontal", "x": 90, "y": 90 },
+    "axis=x,carvings=4": { "model": "ekotsk:block/weirwood_log_carved_4_horizontal", "x": 90, "y": 90 },
+    "axis=z,carvings=0": { "model": "ekotsk:block/weirwood_log_horizontal", "x": 90 },
+    "axis=z,carvings=1": { "model": "ekotsk:block/weirwood_log_carved_1_horizontal", "x": 90 },
+    "axis=z,carvings=2": { "model": "ekotsk:block/weirwood_log_carved_2_horizontal", "x": 90 },
+    "axis=z,carvings=3": { "model": "ekotsk:block/weirwood_log_carved_3_horizontal", "x": 90 },
+    "axis=z,carvings=4": { "model": "ekotsk:block/weirwood_log_carved_4_horizontal", "x": 90 }
+  }
+}

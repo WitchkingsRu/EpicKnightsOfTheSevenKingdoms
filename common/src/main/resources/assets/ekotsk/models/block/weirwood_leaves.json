@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "ekotsk:block/weirwood_leaves"
+  }
+}

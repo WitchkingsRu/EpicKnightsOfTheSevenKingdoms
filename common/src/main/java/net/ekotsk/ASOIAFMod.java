@@ -7,14 +7,19 @@ import net.ekotsk.item.ModItems;
 import net.ekotsk.misc.ModBannerPatterns;
 import net.ekotsk.misc.ModCreativeTabs;
 import net.fabricmc.api.EnvType;
-
+import static net.ekotsk.block.ModBlocks.BLOCKS;
+import static net.ekotsk.item.ModItems.ITEMS;
+import static net.ekotsk.misc.ModParticles.PARTICLES;
 public final class ASOIAFMod {
     public static final String MOD_ID = "ekotsk";
 
 
     public static void init() {
         ModBannerPatterns.init();
+        PARTICLES.register();
+        BLOCKS.register();
         ModItems.INSTANCE.init();
+        ITEMS.register();
         CommonEvents.init();
         ModCreativeTabs.init();
         if (Platform.getEnv() == EnvType.CLIENT)

@@ -7,21 +7,22 @@ import com.magistuarmory.item.armor.DyeableMedievalArmorItem;
 import com.magistuarmory.item.armor.MedievalArmorItem;
 import com.magistuarmory.item.armor.WearableArmorDecorationItem;
 import dev.architectury.platform.Platform;
+import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
 import net.ekotsk.ASOIAFMod;
+import net.ekotsk.block.ModBlocks;
 import net.ekotsk.misc.ModBannerPatternTags;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.BannerPatternItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SmithingTemplateItem;
+import net.minecraft.world.item.*;
 
 import java.util.List;
 
 public class ModItems extends ModItemsProvider {
     public static ModItems INSTANCE = new ModItems();
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ASOIAFMod.MOD_ID, Registries.ITEM);
     public static ModItemTier VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 5, 10800, 11.0F, 5.5F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 6);
     public static ModItemTier FINE_VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 5, 10800, 12.0F, 6.0F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 6);
     public static ModItemTier WEAK_VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 5, 10800, 10.0F, 5.0F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 6);
@@ -168,6 +169,10 @@ public class ModItems extends ModItemsProvider {
 
     public static final RegistrySupplier<Item> WHITENING_TEMPLATE = INSTANCE.addIngredientItem("whitening_template", () -> new SmithingTemplateItem(Component.translatable("ekotsk.whitening_template.applies_to"), Component.translatable("ekotsk.whitening_template.ingredients"), Component.translatable("ekotsk.whitening_template.upgrade_description"), Component.translatable("ekotsk.whitening_template.base_slot_description"), Component.translatable("ekotsk.whitening_template.additions_slot_description"), List.of(), List.of()));
 
+    public static final RegistrySupplier<Item> WEIRWOOD_LOG_BLOCK = ITEMS.register("weirwood_log", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_LOG.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_LEAVES_BLOCK = ITEMS.register("weirwood_leaves", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_LEAVES.get(), new Item.Properties()));
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);
