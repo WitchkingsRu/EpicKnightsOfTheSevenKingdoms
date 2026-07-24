@@ -181,6 +181,8 @@ public class ModItems extends ModItemsProvider {
             new BlockItem(ModBlocks.WEIRWOOD_LEAVES.get(), new Item.Properties()));
     public static final RegistrySupplier<Item> STRIPPED_WEIRWOOD_LOG_BLOCK = ITEMS.register("stripped_weirwood_log", () ->
             new BlockItem(ModBlocks.STRIPPED_WEIRWOOD_LOG.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_SAPLING = ITEMS.register("weirwood_sapling", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_SAPLING.get(), new Item.Properties()));
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);

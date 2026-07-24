@@ -61,4 +61,13 @@ public class ModBlocks {
                     .ignitedByLava()
                     .sound(SoundType.GRASS)
                     .pushReaction(PushReaction.DESTROY)));
+
+    public static final RegistrySupplier<Block> WEIRWOOD_SAPLING = BLOCKS.register("weirwood_sapling",
+            () -> new WeirwoodSaplingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)
+                    .mapColor(net.minecraft.world.level.material.MapColor.PLANT)
+                    .noCollission()
+                    .randomTicks()
+                    .instabreak()
+                    .sound(SoundType.GRASS)
+                    .pushReaction(PushReaction.DESTROY)));
 }

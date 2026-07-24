@@ -7,7 +7,12 @@ import net.ekotsk.block.WeirwoodLogBlock;
 import net.ekotsk.loot.api.UniqueLootReloadListener;
 import net.ekotsk.misc.ModParticles;
 import net.ekotsk.misc.WeirwoodSapParticle;
+import net.ekotsk.worldgen.ModConfiguredFeatures;
+import net.ekotsk.worldgen.ModPlacedFeature;
+import net.ekotsk.worldgen.ModWorldGen;
 import net.minecraft.core.Direction;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
@@ -37,6 +42,7 @@ public final class ASOIAFModForge {
         ASOIAFMod.init();
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModLootEntriesImpl.register();
+
         // Регистрируем listeners на mod event bus
         modEventBus.addListener(this::onCommonSetup);
         modEventBus.addListener(this::registerParticles);
