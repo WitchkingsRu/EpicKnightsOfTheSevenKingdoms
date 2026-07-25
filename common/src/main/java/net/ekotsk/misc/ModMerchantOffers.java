@@ -41,6 +41,7 @@ public class ModMerchantOffers {
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.SCYTHE_PATTERN.get()), 7, 0, 1),
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.HORN_PATTERN.get()), 7, 0, 1),
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.BONEHAND_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.SEVEN_PATTERN.get()), 7, 0, 1),
         };
 
         WANDERING_TRADER_TRADES = new VillagerTrades.ItemListing[] {

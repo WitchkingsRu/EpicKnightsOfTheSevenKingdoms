@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=x": { "model": "ekotsk:block/weirwood_wood", "x": 90, "y": 90 },
+    "axis=y": { "model": "ekotsk:block/weirwood_wood" },
+    "axis=z": { "model": "ekotsk:block/weirwood_wood", "x": 90 }
+  }
+}

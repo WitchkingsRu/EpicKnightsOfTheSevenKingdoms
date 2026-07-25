@@ -7,12 +7,9 @@ import net.ekotsk.block.WeirwoodLogBlock;
 import net.ekotsk.loot.api.UniqueLootReloadListener;
 import net.ekotsk.misc.ModParticles;
 import net.ekotsk.misc.WeirwoodSapParticle;
-import net.ekotsk.worldgen.ModConfiguredFeatures;
-import net.ekotsk.worldgen.ModPlacedFeature;
-import net.ekotsk.worldgen.ModWorldGen;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
@@ -43,17 +40,16 @@ public final class ASOIAFModForge {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModLootEntriesImpl.register();
 
-        // Регистрируем listeners на mod event bus
         modEventBus.addListener(this::onCommonSetup);
         modEventBus.addListener(this::registerParticles);
 
-        // Регистрируем listeners на Forge event bus
         MinecraftForge.EVENT_BUS.addListener(this::onReloadListeners);
         MinecraftForge.EVENT_BUS.addListener(this::onToolModification);
 
         MinecraftForge.EVENT_BUS.addListener(this::onReloadListeners);
 
         System.out.println("[EKOTSK Unique Loot] CONSTRUCTOR END");
+
     }
 
     private void onReloadListeners(AddReloadListenerEvent event) {
@@ -62,10 +58,9 @@ public final class ASOIAFModForge {
         event.addListener(new UniqueLootReloadListener());
     }
     private void onCommonSetup(FMLCommonSetupEvent event) {
-        System.out.println("[EKOTSK Unique Loot] Common setup");
+        System.out.println("[EKOTSK] Common setup");
 
         event.enqueueWork(() -> {
-            // Горючесть через рефлекшен
             try {
                 FireBlock fire = (FireBlock) Blocks.FIRE;
                 java.lang.reflect.Method setFlammable = FireBlock.class.getDeclaredMethod(
@@ -76,29 +71,24 @@ public final class ASOIAFModForge {
                 setFlammable.invoke(fire, ModBlocks.WEIRWOOD_FACE_GRIM.get(), 5, 5);
                 setFlammable.invoke(fire, ModBlocks.WEIRWOOD_FACE_HAPPY.get(), 5, 5);
                 setFlammable.invoke(fire, ModBlocks.WEIRWOOD_FACE_ROBLOX.get(), 5, 5);
-                setFlammable.invoke(fire, ModBlocks.WEIRWOOD_LEAVES.get(), 5, 5);
+                setFlammable.invoke(fire, ModBlocks.WEIRWOOD_LEAVES.get(), 10, 10);
                 setFlammable.invoke(fire, ModBlocks.STRIPPED_WEIRWOOD_LOG.get(), 5, 5);
 
 
                 System.out.println("[EKOTSK] Flammability registered");
             } catch (Exception e) {
-                System.err.println("[EKOTSK Unique Loot] Failed to set flammable: " + e.getMessage());
+                System.err.println("[EKOTSK] Failed to set flammable: " + e.getMessage());
             }
-
-            // Компостер
-//            ComposterBlock.COMPOSTABLES.put(ModBlocks.WEIRWOOD_FACE.get().asItem(), 0.3F);
         });
     }
     private void registerParticles(RegisterParticleProvidersEvent event) {
-        System.out.println("[EKOTSK Unique Loot] Registering particles");
+        System.out.println("[EKOTSK] Registering particles");
 
         event.registerSpriteSet(ModParticles.WEIRWOOD_SAP.get(),
                 WeirwoodSapParticle.Provider::new);
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.WEIRWOOD_SAPLING.get(), RenderType.cutoutMipped());
     }
 
-    // ===== FORGE EVENT BUS =====
-
-    // Обтёсывание топором
     private void onToolModification(BlockEvent.BlockToolModificationEvent event) {
         if (event.getToolAction() != ToolActions.AXE_STRIP) return;
 

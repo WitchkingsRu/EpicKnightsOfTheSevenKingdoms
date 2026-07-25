@@ -14,6 +14,7 @@ import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -37,15 +38,18 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(CARVINGS, LAST_HIT_SIDE, AXIS);
     }
-
+    @Override
+    public SoundType getSoundType(BlockState state) {
+        return SoundType.WOOD;
+    }
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos,
                                  Player player, InteractionHand hand, BlockHitResult hit) {
-        if (level.isClientSide()) return InteractionResult.SUCCESS;
 
         ItemStack stack = player.getItemInHand(hand);
 
         if (stack.getItem() instanceof SwordItem) {
+            if (level.isClientSide()) return InteractionResult.SUCCESS;
             int carvings = state.getValue(CARVINGS);
             if (carvings < 4) {
                 Direction hitSide = hit.getDirection();
@@ -114,7 +118,6 @@ public class WeirwoodLogBlock extends RotatedPillarBlock {
     public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
         if (!level.isClientSide()) return;
 
-        // Пассивные партикли только для вертикальных бревен с зарубками
         if (state.getValue(AXIS) != Direction.Axis.Y) return;
 
         int carvings = state.getValue(CARVINGS);

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ekotsk:block/weirwood_log",
+    "side": "ekotsk:block/weirwood_log"
+  }
+}

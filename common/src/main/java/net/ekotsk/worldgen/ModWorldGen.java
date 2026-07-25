@@ -13,7 +13,7 @@ public class ModWorldGen {
     public static void init() {
         LifecycleEvent.SETUP.register(() -> {
             BiomeModifications.addProperties((ctx, mutable) -> {
-                if (ctx.hasTag(BiomeTags.IS_FOREST)) {
+                if (ctx.hasTag(BiomeTags.IS_FOREST) || ctx.hasTag(BiomeTags.IS_TAIGA)) {
                     mutable.getGenerationProperties().addFeature(
                             GenerationStep.Decoration.VEGETAL_DECORATION,
                             ResourceKey.create(

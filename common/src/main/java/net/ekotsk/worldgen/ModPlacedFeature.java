@@ -20,7 +20,7 @@ public class ModPlacedFeature {
     public static final PlacedFeature WEIRWOOD = new PlacedFeature(
             Holder.direct(ModConfiguredFeatures.WEIRWOOD),
             List.of(
-                    RarityFilter.onAverageOnceEvery(1000),
+                    RarityFilter.onAverageOnceEvery(10),
                     InSquarePlacement.spread(),
                     SurfaceWaterDepthFilter.forMaxDepth(0),
                     PlacementUtils.HEIGHTMAP_OCEAN_FLOOR,

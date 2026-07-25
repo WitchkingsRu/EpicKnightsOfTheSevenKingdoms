@@ -13,7 +13,6 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlac
 
 
 public class ModConfiguredFeatures {
-    // Просто объект. Никаких Registrar или DeferredRegister.
     public static final ConfiguredFeature<?, ?> WEIRWOOD = new ConfiguredFeature<>(
             ModFeatures.WEIRWOOD_TREE.get(),
             new TreeConfiguration.TreeConfigurationBuilder(

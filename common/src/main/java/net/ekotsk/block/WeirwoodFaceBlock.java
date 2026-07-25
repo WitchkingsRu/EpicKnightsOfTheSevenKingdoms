@@ -28,22 +28,14 @@ public class WeirwoodFaceBlock extends RotatedPillarBlock {
         builder.add(AXIS, FACING);
     }
 
-    // === ДОБАВЛЕННЫЙ МЕТОД ДЛЯ АВТОМАТИЧЕСКОГО ПОВОРОТА ===
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        // 1. Определяем ось бревна на основе грани, по которой кликнул игрок
         Direction.Axis axis = context.getClickedFace().getAxis();
-
-        // 2. Определяем направление взгляда игрока по горизонтали и берем противоположное,
-        // чтобы лицо блока смотрело НА игрока, а не туда, куда смотрит игрок.
         Direction faceDirection = context.getHorizontalDirection().getOpposite();
-
-        // 3. Возвращаем итоговое состояние блока
         return this.defaultBlockState()
                 .setValue(AXIS, axis)
                 .setValue(FACING, faceDirection);
     }
-    // ========================================================
 
     @Override
     public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {

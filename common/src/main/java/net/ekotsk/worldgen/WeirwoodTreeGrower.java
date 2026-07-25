@@ -13,15 +13,11 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 
 public class WeirwoodTreeGrower extends AbstractTreeGrower {
-
-    // Создаём ключ, который указывает на наш ConfiguredFeature
-    // Убедись, что "weirwood" здесь совпадает с именем регистрации в ModConfiguredFeatures
     public static final ResourceKey<ConfiguredFeature<?, ?>> WEIRWOOD_KEY =
             ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(ASOIAFMod.MOD_ID, "weirwood"));
 
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean hasFlowers) {
-        // Возвращаем наш ключ. Костная мука будет искать фичу по этому ключу.
         return WEIRWOOD_KEY;
     }
 }

@@ -10,7 +10,7 @@ public class WeirwoodSapParticle extends TextureSheetParticle {
         super(level, x, y, z);
         this.gravity = 0.05F;
         this.lifetime = 60 + this.random.nextInt(20);
-        this.rCol = 0.7F; // Красный
+        this.rCol = 0.7F;
         this.gCol = 0.1F;
         this.bCol = 0.1F;
         this.scale(1.0F);

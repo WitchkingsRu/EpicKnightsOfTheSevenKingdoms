@@ -171,6 +171,10 @@ public class ModItems extends ModItemsProvider {
 
     public static final RegistrySupplier<Item> WEIRWOOD_LOG_BLOCK = ITEMS.register("weirwood_log", () ->
             new BlockItem(ModBlocks.WEIRWOOD_LOG.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_WOOD_BLOCK = ITEMS.register("weirwood_wood", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_WOOD.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> STRIPPED_WEIRWOOD_WOOD_BLOCK = ITEMS.register("stripped_weirwood_wood", () ->
+            new BlockItem(ModBlocks.STRIPPED_WEIRWOOD_WOOD.get(), new Item.Properties()));
     public static final RegistrySupplier<Item> WEIRWOOD_FACE_GRIM_BLOCK = ITEMS.register("weirwood_face_grim", () ->
             new BlockItem(ModBlocks.WEIRWOOD_FACE_GRIM.get(), new Item.Properties()));
     public static final RegistrySupplier<Item> WEIRWOOD_FACE_HAPPY_BLOCK = ITEMS.register("weirwood_face_happy", () ->
@@ -183,6 +187,24 @@ public class ModItems extends ModItemsProvider {
             new BlockItem(ModBlocks.STRIPPED_WEIRWOOD_LOG.get(), new Item.Properties()));
     public static final RegistrySupplier<Item> WEIRWOOD_SAPLING = ITEMS.register("weirwood_sapling", () ->
             new BlockItem(ModBlocks.WEIRWOOD_SAPLING.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_PLANKS_BLOCK = ITEMS.register("weirwood_planks", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_PLANKS.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_STAIRS_BLOCK = ITEMS.register("weirwood_stairs", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_STAIRS.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_SLAB_BLOCK = ITEMS.register("weirwood_slab", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_SLAB.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FENCE_BLOCK = ITEMS.register("weirwood_fence", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FENCE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FENCE_GATE_BLOCK = ITEMS.register("weirwood_fence_gate", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FENCE_GATE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_TRAPDOOR_BLOCK = ITEMS.register("weirwood_trapdoor", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_TRAPDOOR.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_DOOR_BLOCK = ITEMS.register("weirwood_door", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_DOOR.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_PRESSURE_PLATE_BLOCK = ITEMS.register("weirwood_pressure_plate", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_PRESSURE_PLATE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_BUTTON_BLOCK = ITEMS.register("weirwood_button", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_BUTTON.get(), new Item.Properties()));
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);
