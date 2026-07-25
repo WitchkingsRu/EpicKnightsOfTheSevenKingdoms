@@ -67,4 +67,13 @@ public class ModBlocks {
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
     public static final RegistrySupplier<Block> WEIRWOOD_BUTTON = BLOCKS.register("weirwood_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission(), BlockSetType.SPRUCE, 30, true));
+    public static final RegistrySupplier<Block> WEIRWOOD_HANGING_SIGN = BLOCKS.register("weirwood_hanging_sign",
+            () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), WoodType.OAK));
+    public static final RegistrySupplier<Block> WEIRWOOD_WALL_HANGING_SIGN = BLOCKS.register("weirwood_wall_hanging_sign",
+            () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), WoodType.OAK));
+    public static final RegistrySupplier<Block> WEIRWOOD_SIGN = BLOCKS.register("weirwood_sign",
+            () -> new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodType.OAK));
+    public static final RegistrySupplier<Block> WEIRWOOD_WALL_SIGN = BLOCKS.register("weirwood_wall_sign",
+            () -> new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodType.OAK));
+
 }
