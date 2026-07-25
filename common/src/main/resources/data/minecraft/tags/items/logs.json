@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "ekotsk:weirwood_log",
+    "ekotsk:stripped_weirwood_log",
+    "ekotsk:weirwood_face_grim",
+    "ekotsk:weirwood_face_happy",
+    "ekotsk:weirwood_face_easter_egg"
+  ]
+}
