@@ -18,16 +18,10 @@ public class ASOIAFModFabric implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        System.out.println("[EKOTSK UniqueLoot] CONSTRUCTOR START");
-
         ASOIAFMod.init();
         MiscStuffFabric.init();
         ModLootEntriesImpl.register();
-
-
         ResourceManagerHelper.get(PackType.SERVER_DATA)
                 .registerReloadListener(new UniqueLootReloadListenerFabric());
-
-        System.out.println("[EKOTSK UniqueLoot] CONSTRUCTOR FINISH");
     }
 }

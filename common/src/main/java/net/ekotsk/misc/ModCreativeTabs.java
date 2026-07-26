@@ -176,6 +176,8 @@ public class ModCreativeTabs {
         append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_TRAPDOOR_BLOCK);
         append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_PRESSURE_PLATE_BLOCK);
         append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_BUTTON_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_SIGN_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_HANGING_SIGN_BLOCK);
     }
     static Supplier<ItemStack> LANNISTER_CHESTPLATE_SUPPLIER
             = () -> ModItems.getDecoratedStack(ModItems.LANNISTER_CHESTPLATE, ModItems.LANNISTER_CAPE_DECORATION);

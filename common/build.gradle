@@ -1,7 +1,12 @@
 architectury {
     common rootProject.enabled_platforms.split(',')
 }
-
+loom {
+    def at = file("src/main/resources/${archives_name}.accesswidener")
+    if(at.exists()){
+        accessWidenerPath.set(at)
+    }
+}
 dependencies {
     // We depend on Fabric Loader here to use the Fabric @Environment annotations,
     // which get remapped to the correct annotations on each platform.

@@ -1,5 +1,7 @@
 package net.ekotsk.client.render.model;
 
+import net.ekotsk.block.ModBlockEntities;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import com.magistuarmory.api.client.render.model.ModModelsProvider;
 import com.magistuarmory.client.render.model.decoration.SurcoatModel;
 import net.ekotsk.ASOIAFMod;
@@ -7,6 +9,8 @@ import net.ekotsk.client.render.model.armor.*;
 import net.ekotsk.client.render.model.decoration.*;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
+import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 
 public class ModModels extends ModModelsProvider {
     public static ModModels INSTANCE = new ModModels(ASOIAFMod.MOD_ID);
@@ -55,7 +59,10 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation GOLD_CLOAK_RIGHT_DECORATION_LOCATION = INSTANCE.addDecorationModel("gold_cloak_right", () -> GOLD_CLOAK_RIGHT);
     public static final ModelLayerLocation FANCY_BOOTS_LAYER_LOCATION = INSTANCE.addArmorModel("fancy_boots", FancyBootsModel::createLayer);
 
-
+    public static void blockEntityRender() {
+        BlockEntityRenderers.register(ModBlockEntities.WEIRWOOD_SIGN.get(), SignRenderer::new);
+        BlockEntityRenderers.register(ModBlockEntities.WEIRWOOD_HANGING_SIGN.get(), HangingSignRenderer::new);
+    }
     public ModModels(String modId)
     {
         super(modId);

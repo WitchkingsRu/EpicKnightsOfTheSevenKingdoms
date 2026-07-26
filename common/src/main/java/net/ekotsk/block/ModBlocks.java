@@ -3,6 +3,7 @@ package net.ekotsk.block;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.ekotsk.ASOIAFMod;
+import net.ekotsk.misc.ModWoodTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.level.block.*;
@@ -68,12 +69,12 @@ public class ModBlocks {
     public static final RegistrySupplier<Block> WEIRWOOD_BUTTON = BLOCKS.register("weirwood_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).noCollission(), BlockSetType.SPRUCE, 30, true));
     public static final RegistrySupplier<Block> WEIRWOOD_HANGING_SIGN = BLOCKS.register("weirwood_hanging_sign",
-            () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), WoodType.OAK));
+            () -> new WeirwoodCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.WEIRWOOD));
     public static final RegistrySupplier<Block> WEIRWOOD_WALL_HANGING_SIGN = BLOCKS.register("weirwood_wall_hanging_sign",
-            () -> new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), WoodType.OAK));
+            () -> new WeirwoodCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.WEIRWOOD));
     public static final RegistrySupplier<Block> WEIRWOOD_SIGN = BLOCKS.register("weirwood_sign",
-            () -> new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), WoodType.OAK));
+            () -> new WeirwoodStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.WEIRWOOD));
     public static final RegistrySupplier<Block> WEIRWOOD_WALL_SIGN = BLOCKS.register("weirwood_wall_sign",
-            () -> new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), WoodType.OAK));
+            () -> new WeirwoodWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.WEIRWOOD));
 
 }

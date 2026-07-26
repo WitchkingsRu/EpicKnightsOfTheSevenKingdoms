@@ -205,6 +205,10 @@ public class ModItems extends ModItemsProvider {
             new BlockItem(ModBlocks.WEIRWOOD_PRESSURE_PLATE.get(), new Item.Properties()));
     public static final RegistrySupplier<Item> WEIRWOOD_BUTTON_BLOCK = ITEMS.register("weirwood_button", () ->
             new BlockItem(ModBlocks.WEIRWOOD_BUTTON.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_SIGN_BLOCK = ITEMS.register("weirwood_sign", () ->
+            new SignItem(new Item.Properties().stacksTo(16), ModBlocks.WEIRWOOD_SIGN.get(), ModBlocks.WEIRWOOD_WALL_SIGN.get()));
+    public static final RegistrySupplier<Item> WEIRWOOD_HANGING_SIGN_BLOCK = ITEMS.register("weirwood_hanging_sign", () ->
+            new HangingSignItem(ModBlocks.WEIRWOOD_HANGING_SIGN.get(), ModBlocks.WEIRWOOD_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);

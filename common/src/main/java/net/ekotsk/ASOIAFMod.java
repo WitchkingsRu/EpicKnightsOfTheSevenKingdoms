@@ -1,6 +1,7 @@
 package net.ekotsk;
 
 import dev.architectury.platform.Platform;
+import net.ekotsk.block.ModBlockEntities;
 import net.ekotsk.client.render.model.ModModels;
 import net.ekotsk.init.CommonEvents;
 import net.ekotsk.item.ModItems;
@@ -20,6 +21,7 @@ public final class ASOIAFMod {
         ModBannerPatterns.init();
         PARTICLES.register();
         BLOCKS.register();
+        ModBlockEntities.init();
         ModItems.INSTANCE.init();
         ITEMS.register();
         CommonEvents.init();
