@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "ekotsk:weirwood_planks"
+    }
+  ],
+  "result": {
+    "item": "ekotsk:weirwood_button"
+  }
+}

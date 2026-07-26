@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_sign",
+  "key": {
+    "#": {
+      "item": "ekotsk:weirwood_planks"
+    },
+    "X": {
+      "item": "ekotsk:weirwood_stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    " X "
+  ],
+  "result": {
+    "count": 3,
+    "item": "ekotsk:weirwood_sign"
+  },
+  "show_notification": true
+}

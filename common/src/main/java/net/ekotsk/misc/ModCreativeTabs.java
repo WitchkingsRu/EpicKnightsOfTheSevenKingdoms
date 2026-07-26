@@ -48,6 +48,7 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.LADY_FORLORN);
         append(ASOIAF_WEAPONS, ModItems.HEARTSBANE);
         append(ASOIAF_WEAPONS, ModItems.SANDOQ);
+        append(ASOIAF_WEAPONS, ModItems.WEIRWOOD_LONGBOW);
 
         append(ASOIAF_ARMOR, ModItems.LANNISTER_HELMET);
         appendStack(ASOIAF_ARMOR, LANNISTER_CHESTPLATE_SUPPLIER);
@@ -139,6 +140,7 @@ public class ModCreativeTabs {
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.HORN_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SEVEN_PATTERN);
 
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.WEIRWOOD_STICK);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BLACK_LEATHER);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BLACK_WOOLEN_FABRIC);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BLACK_STEEL_INGOT);

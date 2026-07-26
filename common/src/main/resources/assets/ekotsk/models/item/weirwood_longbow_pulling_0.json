@@ -1,0 +1,6 @@
+{
+    "parent": "ekotsk:item/weirwood_longbow",
+    "textures": {
+        "layer0": "ekotsk:item/weirwood_longbow_pulling_0"
+    }
+}

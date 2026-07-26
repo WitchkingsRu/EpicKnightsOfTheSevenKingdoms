@@ -167,6 +167,8 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> GILDED_STEEL_CHAINMAIL = INSTANCE.addIngredientItem("gilded_steel_chainmail", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> GILDED_STEEL_SMALL_PLATE = INSTANCE.addIngredientItem("gilded_steel_small_plate", () -> new Item(new Item.Properties()));
 
+    public static final RegistrySupplier<Item> WEIRWOOD_STICK = INSTANCE.addIngredientItem("weirwood_stick", () -> new Item(new Item.Properties()));
+
     public static final RegistrySupplier<Item> WHITENING_TEMPLATE = INSTANCE.addIngredientItem("whitening_template", () -> new SmithingTemplateItem(Component.translatable("ekotsk.whitening_template.applies_to"), Component.translatable("ekotsk.whitening_template.ingredients"), Component.translatable("ekotsk.whitening_template.upgrade_description"), Component.translatable("ekotsk.whitening_template.base_slot_description"), Component.translatable("ekotsk.whitening_template.additions_slot_description"), List.of(), List.of()));
 
     public static final RegistrySupplier<Item> WEIRWOOD_LOG_BLOCK = ITEMS.register("weirwood_log", () ->
@@ -209,6 +211,10 @@ public class ModItems extends ModItemsProvider {
             new SignItem(new Item.Properties().stacksTo(16), ModBlocks.WEIRWOOD_SIGN.get(), ModBlocks.WEIRWOOD_WALL_SIGN.get()));
     public static final RegistrySupplier<Item> WEIRWOOD_HANGING_SIGN_BLOCK = ITEMS.register("weirwood_hanging_sign", () ->
             new HangingSignItem(ModBlocks.WEIRWOOD_HANGING_SIGN.get(), ModBlocks.WEIRWOOD_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistrySupplier<Item> WEIRWOOD_LONGBOW = INSTANCE.addMedievalBowItem("weirwood_longbow", ModWeaponTypes.WEIRWOOD_LONGBOW);
+
+
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);
