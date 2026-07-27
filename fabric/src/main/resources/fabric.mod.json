@@ -3,6 +3,7 @@
   "id": "ekotsk",
   "version": "${version}",
   "name": "Epic Knights of the Seven Kingdoms",
+  "accessWidener": "ekotsk.accesswidener",
   "description": "An Epic Knights addon which adds various weapons, armor sets and remarkable items from the world of George Martin's 'A Song of Ice and Fire!'",
   "authors": [
     "Witchkings"
