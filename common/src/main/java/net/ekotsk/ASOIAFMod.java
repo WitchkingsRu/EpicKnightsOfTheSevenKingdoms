@@ -15,6 +15,7 @@ import net.fabricmc.api.EnvType;
 import me.shedaniel.autoconfig.serializer.JanksonConfigSerializer;
 import static net.ekotsk.block.ModBlocks.BLOCKS;
 import static net.ekotsk.item.ModItems.ITEMS;
+import static net.ekotsk.entity.ModEntityTypes.ENTITY_TYPES;
 import static net.ekotsk.misc.ModParticles.PARTICLES;
 import static net.ekotsk.worldgen.ModFeatures.FEATURES;
 public final class ASOIAFMod {
@@ -31,12 +32,14 @@ public final class ASOIAFMod {
         ModBlockEntities.init();
         ModItems.INSTANCE.init();
         ITEMS.register();
+        ENTITY_TYPES.register();
         CommonEvents.init();
         ModCreativeTabs.init();
         FEATURES.register();
         ModWorldGen.init();
         if (Platform.getEnv() == EnvType.CLIENT)
             ModModels.INSTANCE.init(ModItems.INSTANCE);
+
     }
 
 }

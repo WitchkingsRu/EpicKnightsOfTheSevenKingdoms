@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "s",
+    "r",
+    "f"
+  ],
+  "key": {
+    "s": {
+      "tag": "c:steel_nuggets"
+    },
+    "r": {
+      "item": "ekotsk:weirwood_stick"
+    },
+    "f": {
+      "item": "minecraft:feather"
+    }
+  },
+  "result": {
+    "item": "ekotsk:weirwood_arrow",
+    "count": 1
+  }
+}

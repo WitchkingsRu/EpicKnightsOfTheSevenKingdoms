@@ -1,6 +1,9 @@
 package net.ekotsk.client.render.model;
 
 import net.ekotsk.block.ModBlockEntities;
+import net.ekotsk.client.render.WeirwoodArrowRender;
+import net.ekotsk.entity.ModEntityTypes;
+import net.ekotsk.entity.WeirwoodArrowEntity;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import com.magistuarmory.api.client.render.model.ModModelsProvider;
 import com.magistuarmory.client.render.model.decoration.SurcoatModel;
@@ -11,6 +14,14 @@ import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
 import net.minecraft.client.renderer.blockentity.SignRenderer;
+import net.minecraft.client.renderer.entity.ArrowRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.TippableArrowRenderer;
+import net.minecraft.client.renderer.entity.layers.ArrowLayer;
+import net.minecraft.resources.ResourceLocation;
+
+import java.util.function.BiConsumer;
+import java.util.function.Supplier;
 
 public class ModModels extends ModModelsProvider {
     public static ModModels INSTANCE = new ModModels(ASOIAFMod.MOD_ID);
@@ -58,11 +69,17 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation GOLD_CLOAK_LEFT_DECORATION_LOCATION = INSTANCE.addDecorationModel("gold_cloak_left", () -> GOLD_CLOAK_LEFT);
     public static final ModelLayerLocation GOLD_CLOAK_RIGHT_DECORATION_LOCATION = INSTANCE.addDecorationModel("gold_cloak_right", () -> GOLD_CLOAK_RIGHT);
     public static final ModelLayerLocation FANCY_BOOTS_LAYER_LOCATION = INSTANCE.addArmorModel("fancy_boots", FancyBootsModel::createLayer);
+    public static final ModelLayerLocation WEIRWOOD_ARROW_LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(ASOIAFMod.MOD_ID, "weirwood_arrow"), "main");
 
+//    public static void registerLayers(BiConsumer<ModelLayerLocation, Supplier<LayerDefinition>> consumer) {
+//        consumer.accept(ModModels.WEIRWOOD_ARROW_LAYER_LOCATION, ArrowLayer::createBodyLayer);
+//    }
     public static void blockEntityRender() {
         BlockEntityRenderers.register(ModBlockEntities.WEIRWOOD_SIGN.get(), SignRenderer::new);
         BlockEntityRenderers.register(ModBlockEntities.WEIRWOOD_HANGING_SIGN.get(), HangingSignRenderer::new);
+        EntityRenderers.register(ModEntityTypes.WEIRWOOD_ARROW.get(), WeirwoodArrowRender::new);
     }
+
     public ModModels(String modId)
     {
         super(modId);

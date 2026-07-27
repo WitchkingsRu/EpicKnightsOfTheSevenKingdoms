@@ -212,10 +212,20 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> WEIRWOOD_HANGING_SIGN_BLOCK = ITEMS.register("weirwood_hanging_sign", () ->
             new HangingSignItem(ModBlocks.WEIRWOOD_HANGING_SIGN.get(), ModBlocks.WEIRWOOD_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
 
-    public static final RegistrySupplier<Item> WEIRWOOD_LONGBOW = INSTANCE.addMedievalBowItem("weirwood_longbow", ModWeaponTypes.WEIRWOOD_LONGBOW);
+    public static final RegistrySupplier<Item> WEIRWOOD_LONGBOW = INSTANCE.addWeirwoodBowItem("weirwood_longbow", ModWeaponTypes.WEIRWOOD_LONGBOW);
+    public static final RegistrySupplier<Item> WEIRWOOD_ARROW = ITEMS.register("weirwood_arrow", () ->
+            new WeirwoodArrowItem(new Item.Properties()));
 
-
-
+    @Nullable
+    public RegistrySupplier<Item> addWeirwoodBowItem(String id, RangedWeaponType type) {
+        if (type.isDisabled()) {
+            return null;
+        } else {
+            RegistrySupplier<Item> bow = this.items.register(id, () -> new WeirwoodBowItem((new Item.Properties()).stacksTo(1).defaultDurability(type.getDurability()), type.getProjectileSpeed(), (float)type.getPullTime()));
+            this.rangedWeaponItems.add(bow);
+            return bow;
+        }
+    }
     public ModItems() {
         super(ASOIAFMod.MOD_ID);
     }

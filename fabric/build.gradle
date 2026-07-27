@@ -57,6 +57,10 @@ shadowJar {
     archiveClassifier = 'dev-shadow'
 }
 
+loom {
+    accessWidenerPath = file("src/main/resources/ekotsk.accesswidener")
+}
+
 remapJar {
     inputFile.set shadowJar.archiveFile
 }
