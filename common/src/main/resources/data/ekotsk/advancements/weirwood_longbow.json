@@ -1,0 +1,54 @@
+{
+  "parent": "ekotsk:root",
+  "criteria": {
+    "bow": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ekotsk:weirwood_longbow"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "arrows": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ekotsk:weirwood_arrow"
+            ],
+            "count": 10
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.ekotsk.weirwood_longbow.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "ekotsk:weirwood_longbow"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.ekotsk.weirwood_longbow.title"
+    }
+  },
+  "requirements": [
+    [
+      "bow"
+    ],
+    [
+      "arrows"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

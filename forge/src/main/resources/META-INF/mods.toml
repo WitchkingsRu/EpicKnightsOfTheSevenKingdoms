@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/WitchkingsRu/EpicKnightsOfTheSevenKingdoms/issues"
+license = "GPLv3"
 
 [[mods]]
 modId = "ekotsk"
@@ -12,7 +12,7 @@ description = '''
 An Epic Knights addon which adds various weapons, armor sets and remarkable items from the world of George Martin's
 "A Song of Ice and Fire"!
 '''
-#logoFile = ""
+logoFile = "assets/ekotsk/icon.png"
 
 [[dependencies.ekotsk]]
 modId = "forge"

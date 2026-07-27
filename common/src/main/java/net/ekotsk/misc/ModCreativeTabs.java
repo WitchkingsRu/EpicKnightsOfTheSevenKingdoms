@@ -26,6 +26,7 @@ public class ModCreativeTabs {
     public static final ResourceKey<CreativeModeTab> INGRIDIENTS_RESOURCE_KEY = CreativeModeTabs.INGREDIENTS;
     public static final ResourceKey<CreativeModeTab> NATURAL_RESOURCE_KEY = CreativeModeTabs.NATURAL_BLOCKS;
     public static final ResourceKey<CreativeModeTab> BUILDING_RESOURCE_KEY = CreativeModeTabs.BUILDING_BLOCKS;
+    public static final ResourceKey<CreativeModeTab> FUNC_RESOURCE_KEY = CreativeModeTabs.FUNCTIONAL_BLOCKS;
 
 
     public static void init() {
@@ -179,8 +180,8 @@ public class ModCreativeTabs {
         append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_TRAPDOOR_BLOCK);
         append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_PRESSURE_PLATE_BLOCK);
         append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_BUTTON_BLOCK);
-        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_SIGN_BLOCK);
-        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_HANGING_SIGN_BLOCK);
+        append(FUNC_RESOURCE_KEY, ModItems.WEIRWOOD_SIGN_BLOCK);
+        append(FUNC_RESOURCE_KEY, ModItems.WEIRWOOD_HANGING_SIGN_BLOCK);
     }
     static Supplier<ItemStack> LANNISTER_CHESTPLATE_SUPPLIER
             = () -> ModItems.getDecoratedStack(ModItems.LANNISTER_CHESTPLATE, ModItems.LANNISTER_CAPE_DECORATION);
