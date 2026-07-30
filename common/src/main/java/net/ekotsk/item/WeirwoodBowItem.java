@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -20,8 +21,11 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
 
+import java.util.function.Predicate;
+
 public class WeirwoodBowItem extends BowItem implements IHasModelProperty
 {
+    public static final Predicate<ItemStack> WEIRWOOD_ARROW_ONLY = (itemStack) -> itemStack.is(ModItems.WEIRWOOD_ARROW.get());
     private final float pullTime;
     private final float arrowSpeed;
 
@@ -30,6 +34,14 @@ public class WeirwoodBowItem extends BowItem implements IHasModelProperty
         super(properties);
         this.arrowSpeed = arrowSpeed;
         this.pullTime = pullTime;
+    }
+    @Override
+    public Predicate<ItemStack> getSupportedHeldProjectiles() {
+        return WEIRWOOD_ARROW_ONLY;
+    }
+    @Override
+    public Predicate<ItemStack> getAllSupportedProjectiles() {
+        return WEIRWOOD_ARROW_ONLY;
     }
 
     @Override

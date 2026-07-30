@@ -1,4 +1,4 @@
-package net.ekotsk.worldgen; // Твой пакет
+package net.ekotsk.worldgen;
 
 import dev.architectury.event.events.common.LifecycleEvent;
 import dev.architectury.registry.level.biome.BiomeModifications;

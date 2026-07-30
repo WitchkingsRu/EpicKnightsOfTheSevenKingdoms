@@ -71,7 +71,7 @@ public class ModBlocks {
     public static final RegistrySupplier<Block> WEIRWOOD_HANGING_SIGN = BLOCKS.register("weirwood_hanging_sign",
             () -> new WeirwoodCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.WEIRWOOD));
     public static final RegistrySupplier<Block> WEIRWOOD_WALL_HANGING_SIGN = BLOCKS.register("weirwood_wall_hanging_sign",
-            () -> new WeirwoodCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.WEIRWOOD));
+            () -> new WeirwoodWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.WEIRWOOD));
     public static final RegistrySupplier<Block> WEIRWOOD_SIGN = BLOCKS.register("weirwood_sign",
             () -> new WeirwoodStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.WEIRWOOD));
     public static final RegistrySupplier<Block> WEIRWOOD_WALL_SIGN = BLOCKS.register("weirwood_wall_sign",
