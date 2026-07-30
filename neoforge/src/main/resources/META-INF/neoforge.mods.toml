@@ -1,17 +1,18 @@
 modLoader = "javafml"
 loaderVersion = "[4,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+issueTrackerURL = "https://github.com/WitchkingsRu/EpicKnightsOfTheSevenKingdoms/issues"
+license = "GPLv3"
 
 [[mods]]
 modId = "ekotsk"
 version = "${version}"
 displayName = "Epic Knights of the Seven Kingdoms"
-authors = "Me!"
+authors = "Witchkings"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+An Epic Knights addon which adds various weapons, armor sets and remarkable items from the world of George Martin's
+"A Song of Ice and Fire"!
 '''
-#logoFile = ""
+logoFile = "assets/ekotsk/icon.png"
 
 [[dependencies.ekotsk]]
 modId = "neoforge"
@@ -33,6 +34,13 @@ type = "required"
 versionRange = "[13.0.8,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies.ekotsk]]
+modId="magistuarmory"
+mandatory=true
+versionRange="[9.24,)"
+ordering="NONE"
+side="BOTH"
 
 [[mixins]]
 config = "ekotsk.mixins.json"

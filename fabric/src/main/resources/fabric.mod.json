@@ -10,7 +10,7 @@
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/WitchkingsRu/EpicKnightsOfTheSevenKingdoms/"
   },
   "license": "GPLv3",
   "icon": "assets/ekotsk/icon.png",
@@ -31,7 +31,8 @@
     "minecraft": "~1.21.1",
     "java": ">=21",
     "architectury": ">=13.0.8",
-    "fabric-api": "*"
+    "fabric-api": "*",
+    "magistuarmory": ">=9.24"
   },
   "suggests": {
     "another-mod": "*"
