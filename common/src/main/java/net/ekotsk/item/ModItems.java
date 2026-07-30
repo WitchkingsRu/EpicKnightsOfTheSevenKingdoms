@@ -7,22 +7,23 @@ import com.magistuarmory.item.armor.DyeableMedievalArmorItem;
 import com.magistuarmory.item.armor.MedievalArmorItem;
 import com.magistuarmory.item.armor.WearableArmorDecorationItem;
 import dev.architectury.platform.Platform;
+import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import me.shedaniel.cloth.clothconfig.shadowed.blue.endless.jankson.annotation.Nullable;
 import net.ekotsk.ASOIAFMod;
+import net.ekotsk.block.ModBlocks;
 import net.ekotsk.misc.ModBannerPatternTags;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.BannerPatternItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SmithingTemplateItem;
+import net.minecraft.world.item.*;
 
 import java.util.List;
 
 public class ModItems extends ModItemsProvider {
     public static ModItems INSTANCE = new ModItems();
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ASOIAFMod.MOD_ID, Registries.ITEM);
     public static ModItemTier VALYRIAN_STEEL = new ModItemTier("valyrian_steel", BlockTags.INCORRECT_FOR_STONE_TOOL, 10800, 11.0F, 5.5F, 22, "c:ingots/valyrian_steel", 6);
     public static ModItemTier FINE_VALYRIAN_STEEL = new ModItemTier("valyrian_steel", BlockTags.INCORRECT_FOR_STONE_TOOL, 10800, 12.0F, 6.0F, 22, "c:ingots/valyrian_steel", 6);
     public static ModItemTier WEAK_VALYRIAN_STEEL = new ModItemTier("valyrian_steel", BlockTags.INCORRECT_FOR_STONE_TOOL, 10800, 10.0F, 5.0F, 22, "c:ingots/valyrian_steel", 6);
@@ -36,6 +37,7 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LAMENTATION = INSTANCE.addMedievalWeaponItem("lamentation", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LONGCLAW = INSTANCE.addMedievalWeaponItem("longclaw", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> NIGHTFALL = INSTANCE.addMedievalWeaponItem("nightfall", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ESTOC);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> ORPHANMAKER = INSTANCE.addMedievalWeaponItem("orphanmaker", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> BRIGHTROAR = INSTANCE.addMedievalWeaponItem("brightroar", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> RED_RAIN = INSTANCE.addMedievalWeaponItem("red_rain", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> ROBERT_HAMMER = INSTANCE.addMedievalWeaponItem("robert_hammer", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.LUCERNE_HAMMER);
@@ -147,6 +149,7 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> SCYTHE_PATTERN = INSTANCE.addIngredientItem("scythe_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SCYTHE_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> BONEHAND_PATTERN = INSTANCE.addIngredientItem("bonehand_pattern", () -> new BannerPatternItem(ModBannerPatternTags.BONEHAND_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> HORN_PATTERN = INSTANCE.addIngredientItem("horn_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HORN_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> SEVEN_PATTERN = INSTANCE.addIngredientItem("seven_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SEVEN_PATTERN, new Item.Properties().stacksTo(1)));
 
     public static final RegistrySupplier<Item> BLACK_LEATHER = INSTANCE.addIngredientItem("black_leather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> BLACK_WOOLEN_FABRIC = INSTANCE.addIngredientItem("black_woolen_fabric", () -> new Item(new Item.Properties()));
@@ -167,6 +170,63 @@ public class ModItems extends ModItemsProvider {
 
     public static final RegistrySupplier<Item> WHITENING_TEMPLATE = INSTANCE.addIngredientItem("whitening_template", () -> new SmithingTemplateItem(Component.translatable("ekotsk.whitening_template.applies_to"), Component.translatable("ekotsk.whitening_template.ingredients"), Component.translatable("ekotsk.whitening_template.upgrade_description"), Component.translatable("ekotsk.whitening_template.base_slot_description"), Component.translatable("ekotsk.whitening_template.additions_slot_description"), List.of(), List.of()));
 
+    public static final RegistrySupplier<Item> WEIRWOOD_STICK = INSTANCE.addIngredientItem("weirwood_stick", () -> new Item(new Item.Properties()));
+
+    public static final RegistrySupplier<Item> WEIRWOOD_LOG_BLOCK = ITEMS.register("weirwood_log", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_LOG.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_WOOD_BLOCK = ITEMS.register("weirwood_wood", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_WOOD.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> STRIPPED_WEIRWOOD_WOOD_BLOCK = ITEMS.register("stripped_weirwood_wood", () ->
+            new BlockItem(ModBlocks.STRIPPED_WEIRWOOD_WOOD.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FACE_GRIM_BLOCK = ITEMS.register("weirwood_face_grim", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FACE_GRIM.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FACE_HAPPY_BLOCK = ITEMS.register("weirwood_face_happy", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FACE_HAPPY.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FACE_EASTER_EGG_BLOCK = ITEMS.register("weirwood_face_easter_egg", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FACE_ROBLOX.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_LEAVES_BLOCK = ITEMS.register("weirwood_leaves", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_LEAVES.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> STRIPPED_WEIRWOOD_LOG_BLOCK = ITEMS.register("stripped_weirwood_log", () ->
+            new BlockItem(ModBlocks.STRIPPED_WEIRWOOD_LOG.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_SAPLING = ITEMS.register("weirwood_sapling", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_SAPLING.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_PLANKS_BLOCK = ITEMS.register("weirwood_planks", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_PLANKS.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_STAIRS_BLOCK = ITEMS.register("weirwood_stairs", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_STAIRS.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_SLAB_BLOCK = ITEMS.register("weirwood_slab", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_SLAB.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FENCE_BLOCK = ITEMS.register("weirwood_fence", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FENCE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_FENCE_GATE_BLOCK = ITEMS.register("weirwood_fence_gate", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_FENCE_GATE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_TRAPDOOR_BLOCK = ITEMS.register("weirwood_trapdoor", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_TRAPDOOR.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_DOOR_BLOCK = ITEMS.register("weirwood_door", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_DOOR.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_PRESSURE_PLATE_BLOCK = ITEMS.register("weirwood_pressure_plate", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_PRESSURE_PLATE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_BUTTON_BLOCK = ITEMS.register("weirwood_button", () ->
+            new BlockItem(ModBlocks.WEIRWOOD_BUTTON.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> WEIRWOOD_SIGN_BLOCK = ITEMS.register("weirwood_sign", () ->
+            new SignItem(new Item.Properties().stacksTo(16), ModBlocks.WEIRWOOD_SIGN.get(), ModBlocks.WEIRWOOD_WALL_SIGN.get()));
+    public static final RegistrySupplier<Item> WEIRWOOD_HANGING_SIGN_BLOCK = ITEMS.register("weirwood_hanging_sign", () ->
+            new HangingSignItem(ModBlocks.WEIRWOOD_HANGING_SIGN.get(), ModBlocks.WEIRWOOD_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+    public static final RegistrySupplier<Item> WEIRWOOD_LONGBOW = INSTANCE.addWeirwoodBowItem("weirwood_longbow", ModWeaponTypes.WEIRWOOD_LONGBOW);
+    public static final RegistrySupplier<Item> WEIRWOOD_ARROW = ITEMS.register("weirwood_arrow", () ->
+            new WeirwoodArrowItem(new Item.Properties()));
+
+    @Nullable
+    public RegistrySupplier<Item> addWeirwoodBowItem(String id, RangedWeaponType type) {
+        if (type.isDisabled()) {
+            return null;
+        } else {
+            RegistrySupplier<Item> bow = this.items.register(id, () -> new WeirwoodBowItem((new Item.Properties()).stacksTo(1).durability(type.getDurability()), type.getProjectileSpeed(), type.getPullTime()));
+            this.rangedWeaponItems.add(bow);
+            return bow;
+        }
+    }
 
     public ModItems() {
         super(ASOIAFMod.MOD_ID);

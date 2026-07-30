@@ -34,7 +34,7 @@ dependencies {
     modImplementation "dev.architectury:architectury-fabric:$rootProject.architectury_api_version"
     modImplementation "curse.maven:cloth-config-348521:5729125"
     modImplementation "curse.maven:epic-knights-armor-and-weapons-509041:7803551"
-//    modImplementation "curse.maven:jei-238222:8392169"
+    modImplementation "curse.maven:jei-238222:8392169"
 
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
@@ -52,6 +52,10 @@ processResources {
 shadowJar {
     configurations = [project.configurations.shadowBundle]
     archiveClassifier = 'dev-shadow'
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/ekotsk.accesswidener")
 }
 
 remapJar {

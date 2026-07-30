@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ekotsk:block/weirwood_planks",
+    "side": "ekotsk:block/weirwood_planks",
+    "top": "ekotsk:block/weirwood_planks"
+  }
+}

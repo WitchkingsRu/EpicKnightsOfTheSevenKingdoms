@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "axis=y,facing=north": { "model": "ekotsk:block/weirwood_face_grim", "y": 0 },
+    "axis=y,facing=east": { "model": "ekotsk:block/weirwood_face_grim", "y": 90 },
+    "axis=y,facing=south": { "model": "ekotsk:block/weirwood_face_grim", "y": 180 },
+    "axis=y,facing=west": { "model": "ekotsk:block/weirwood_face_grim", "y": 270 },
+
+    "axis=x,facing=north": { "model": "ekotsk:block/weirwood_face_grim", "x": 90, "y": 180 },
+    "axis=x,facing=east": { "model": "ekotsk:block/weirwood_face_grim", "x": 90, "y": 270 },
+    "axis=x,facing=south": { "model": "ekotsk:block/weirwood_face_grim", "x": 90, "y": 0 },
+    "axis=x,facing=west": { "model": "ekotsk:block/weirwood_face_grim", "x": 90, "y": 90 },
+
+    "axis=z,facing=north": { "model": "ekotsk:block/weirwood_face_grim", "x": 90, "y": 90 },
+    "axis=z,facing=east": { "model": "ekotsk:block/weirwood_face_grim", "x": 90, "y": 180 },
+    "axis=z,facing=south": { "model": "ekotsk:block/weirwood_face_grim", "x": 90, "y": 270 },
+    "axis=z,facing=west": { "model": "ekotsk:block/weirwood_face_grim", "x": 90, "y": 0 }
+
+  }
+}

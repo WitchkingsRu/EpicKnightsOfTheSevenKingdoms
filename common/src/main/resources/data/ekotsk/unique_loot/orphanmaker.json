@@ -1,0 +1,8 @@
+{
+  "id": "ekotsk:orphanmaker",
+  "item": "ekotsk:orphanmaker",
+  "structures": [
+    "minecraft:woodland_mansion"
+  ],
+  "weight": 10
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "axis=y": { "model": "ekotsk:block/stripped_weirwood_log" },
+    "axis=x": { "model": "ekotsk:block/stripped_weirwood_log_horizontal", "x": 90, "y": 90},
+    "axis=z": { "model": "ekotsk:block/stripped_weirwood_log_horizontal","x": 90 }
+
+  }
+}

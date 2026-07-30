@@ -30,7 +30,8 @@ public class HeraldryRegistry {
             "suns",
             "sword",
             "targaryen",
-            "weirwood"
+            "weirwood",
+            "seven"
             ));
 
     public static void register(String name) {

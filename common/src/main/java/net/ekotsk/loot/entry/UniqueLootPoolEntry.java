@@ -37,7 +37,7 @@ public class UniqueLootPoolEntry extends LootPoolSingletonContainer {
     private final ResourceLocation structure;
 
     public UniqueLootPoolEntry(int weight, int quality, ResourceLocation structure) {
-        super(weight, quality, List.of(), List.of()); // условия/функции добавляются отдельно
+        super(weight, quality, List.of(), List.of());
         this.structure = structure;
     }
     public ResourceLocation getStructure() {

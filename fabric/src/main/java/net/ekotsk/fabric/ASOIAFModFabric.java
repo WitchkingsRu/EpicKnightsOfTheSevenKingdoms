@@ -1,6 +1,7 @@
 package net.ekotsk.fabric;
 
 import net.ekotsk.ASOIAFMod;
+import net.ekotsk.fabric.api.MiscStuffFabric;
 import net.ekotsk.fabric.api.UniqueLootReloadListenerFabric;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
@@ -11,9 +12,8 @@ public class ASOIAFModFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         ASOIAFMod.init();
-
+        MiscStuffFabric.init();
         ModLootEntriesImpl.register();
-
         ResourceManagerHelper.get(PackType.SERVER_DATA)
                 .registerReloadListener(new UniqueLootReloadListenerFabric());
     }

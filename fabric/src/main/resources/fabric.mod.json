@@ -3,15 +3,16 @@
   "id": "ekotsk",
   "version": "${version}",
   "name": "Epic Knights of the Seven Kingdoms",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "accessWidener": "ekotsk.accesswidener",
+  "description": "An Epic Knights addon which adds various weapons, armor sets and remarkable items from the world of George Martin's 'A Song of Ice and Fire!'",
   "authors": [
-    "Me!"
+    "Witchkings"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-  "license": "CC0-1.0",
+  "license": "GPLv3",
   "icon": "assets/ekotsk/icon.png",
   "environment": "*",
   "entrypoints": {

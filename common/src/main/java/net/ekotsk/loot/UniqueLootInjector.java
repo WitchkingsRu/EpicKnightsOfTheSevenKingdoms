@@ -4,6 +4,7 @@ import dev.architectury.event.events.common.LootEvent;
 import net.ekotsk.loot.entry.UniqueLootPoolEntry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootPool;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 
 public class UniqueLootInjector {
     private static final String PREFIX = "minecraft:chests/";
@@ -15,9 +16,10 @@ public class UniqueLootInjector {
         String structure = name.substring(PREFIX.length());
         if (shouldInject(structure)) {
             context.addPool(LootPool.lootPool()
-                            .add(UniqueLootPoolEntry.builder()
-                                    .setWeight(1)
-                                    .setStructure(ResourceLocation.parse("minecraft:" + structure)))
+                    .add(UniqueLootPoolEntry.builder()
+                            .setWeight(1)
+                            .setStructure(ResourceLocation.parse("minecraft:" + structure)))
+                    .when(LootItemRandomChanceCondition.randomChance(0.05f))
             );
         }
     }

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ekotsk:block/weirwood_slab"
+    },
+    "type=double": {
+      "model": "ekotsk:block/weirwood_planks"
+    },
+    "type=top": {
+      "model": "ekotsk:block/weirwood_slab_top"
+    }
+  }
+}

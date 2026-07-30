@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ekotsk:block/weirwood_planks",
+    "side": "ekotsk:block/weirwood_planks",
+    "top": "ekotsk:block/weirwood_planks"
+  }
+}

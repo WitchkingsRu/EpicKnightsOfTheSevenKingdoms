@@ -25,8 +25,9 @@ public class ModCreativeTabs {
     static final RegistrySupplier<CreativeModeTab> ASOIAF_WEAPONS = createTab("asoiaf_weapons", ModItems.ICE);
     static final RegistrySupplier<CreativeModeTab> ASOIAF_ARMOR = createTab("asoiaf_armor", ModItems.LANNISTER_HELMET);
     public static final ResourceKey<CreativeModeTab> INGRIDIENTS_RESOURCE_KEY = CreativeModeTabs.INGREDIENTS;
-
-    //public static final ResourceKey<CreativeModeTab> WEAPONS_RESOURCE_KEY = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ASOIAFMod.MOD_ID, "asoiaf_weapons"));
+    public static final ResourceKey<CreativeModeTab> NATURAL_RESOURCE_KEY = CreativeModeTabs.NATURAL_BLOCKS;
+    public static final ResourceKey<CreativeModeTab> BUILDING_RESOURCE_KEY = CreativeModeTabs.BUILDING_BLOCKS;
+    public static final ResourceKey<CreativeModeTab> FUNC_RESOURCE_KEY = CreativeModeTabs.FUNCTIONAL_BLOCKS;
 
     public static void init() {
         TABS.register();
@@ -40,6 +41,7 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.LONGCLAW);
         append(ASOIAF_WEAPONS, ModItems.NIGHTFALL);
         append(ASOIAF_WEAPONS, ModItems.BRIGHTROAR);
+        append(ASOIAF_WEAPONS, ModItems.ORPHANMAKER);
         append(ASOIAF_WEAPONS, ModItems.RED_RAIN);
         append(ASOIAF_WEAPONS, ModItems.ROBERT_HAMMER);
         append(ASOIAF_WEAPONS, ModItems.TRUTH);
@@ -47,6 +49,8 @@ public class ModCreativeTabs {
         append(ASOIAF_WEAPONS, ModItems.LADY_FORLORN);
         append(ASOIAF_WEAPONS, ModItems.HEARTSBANE);
         append(ASOIAF_WEAPONS, ModItems.SANDOQ);
+        append(ASOIAF_WEAPONS, ModItems.WEIRWOOD_LONGBOW);
+        append(ASOIAF_WEAPONS, ModItems.WEIRWOOD_ARROW);
 
         append(ASOIAF_ARMOR, ModItems.LANNISTER_HELMET);
         appendStack(ASOIAF_ARMOR, LANNISTER_CHESTPLATE_SUPPLIER);
@@ -136,7 +140,9 @@ public class ModCreativeTabs {
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SCYTHE_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BONEHAND_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.HORN_PATTERN);
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.SEVEN_PATTERN);
 
+        append(INGRIDIENTS_RESOURCE_KEY, ModItems.WEIRWOOD_STICK);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BLACK_LEATHER);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BLACK_WOOLEN_FABRIC);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.BLACK_STEEL_INGOT);
@@ -153,6 +159,29 @@ public class ModCreativeTabs {
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.GILDED_STEEL_RING);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.GILDED_STEEL_CHAINMAIL);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.WHITENING_TEMPLATE);
+
+        append(NATURAL_RESOURCE_KEY, ModItems.WEIRWOOD_SAPLING);
+        append(NATURAL_RESOURCE_KEY, ModItems.WEIRWOOD_LOG_BLOCK);
+        append(NATURAL_RESOURCE_KEY, ModItems.WEIRWOOD_FACE_GRIM_BLOCK);
+        append(NATURAL_RESOURCE_KEY, ModItems.WEIRWOOD_FACE_HAPPY_BLOCK);
+        append(NATURAL_RESOURCE_KEY, ModItems.WEIRWOOD_FACE_EASTER_EGG_BLOCK);
+        append(NATURAL_RESOURCE_KEY, ModItems.WEIRWOOD_LEAVES_BLOCK);
+
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_LOG_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_WOOD_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.STRIPPED_WEIRWOOD_LOG_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.STRIPPED_WEIRWOOD_WOOD_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_PLANKS_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_STAIRS_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_SLAB_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_FENCE_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_FENCE_GATE_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_DOOR_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_TRAPDOOR_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_PRESSURE_PLATE_BLOCK);
+        append(BUILDING_RESOURCE_KEY, ModItems.WEIRWOOD_BUTTON_BLOCK);
+        append(FUNC_RESOURCE_KEY, ModItems.WEIRWOOD_SIGN_BLOCK);
+        append(FUNC_RESOURCE_KEY, ModItems.WEIRWOOD_HANGING_SIGN_BLOCK);
 
 
     }
