@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrs",
+    "r s",
+    "rrs"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:string"
+    },
+    "r": {
+      "item": "ekotsk:weirwood_stick"
+    }
+  },
+  "result": {
+    "id": "ekotsk:weirwood_longbow",
+    "count": 1
+  }
+}

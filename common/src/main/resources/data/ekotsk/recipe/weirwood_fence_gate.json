@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_fence_gate",
+  "key": {
+    "#": {
+      "item": "ekotsk:weirwood_stick"
+    },
+    "W": {
+      "item": "ekotsk:weirwood_planks"
+    }
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "ekotsk:weirwood_fence_gate"
+  },
+  "show_notification": true
+}

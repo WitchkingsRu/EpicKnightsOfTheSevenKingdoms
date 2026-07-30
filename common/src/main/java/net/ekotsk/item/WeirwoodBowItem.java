@@ -1,6 +1,7 @@
 package net.ekotsk.item;
 
 import com.magistuarmory.item.IHasModelProperty;
+import dev.architectury.platform.Mod;
 import dev.architectury.registry.item.ItemPropertiesRegistry;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -9,6 +10,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.BowItem;
@@ -21,6 +23,7 @@ import java.util.function.Predicate;
 public class WeirwoodBowItem extends BowItem implements IHasModelProperty {
     private final int pullTime;
     private final float projectileSpeed;
+    public static final Predicate<ItemStack> WEIRWOOD_ARROW_ONLY = (arg) -> arg.is(ModItems.WEIRWOOD_ARROW.get());
 
     public WeirwoodBowItem(Properties properties, float projectileSpeed, int pullTime) {
         super(properties.stacksTo(1));
@@ -28,35 +31,30 @@ public class WeirwoodBowItem extends BowItem implements IHasModelProperty {
         this.pullTime = pullTime;
     }
 
-    // ГЛАВНОЕ ИСПРАВЛЕНИЕ: Переопределяем предикат валидных снарядов
     @Override
     public Predicate<ItemStack> getSupportedHeldProjectiles() {
-        // Лук будет искать в инвентаре ТОЛЬКО чардревные стрелы
-        return stack -> stack.is(ModItems.WEIRWOOD_ARROW.get());
+        return WEIRWOOD_ARROW_ONLY;
+    }
+    @Override
+    public Predicate<ItemStack> getAllSupportedProjectiles() {
+        return WEIRWOOD_ARROW_ONLY;
     }
 
     @Override
     public void releaseUsing(ItemStack itemStack, Level level, LivingEntity livingEntity, int i) {
         if (livingEntity instanceof Player player) {
-            // Теперь getProjectile() будет искать только WeirwoodArrowItem благодаря методу выше
             ItemStack realAmmo = player.getProjectile(itemStack);
 
             int j = this.getUseDuration(itemStack, livingEntity) - i;
             float f = this.getPower(j);
 
             if (!((double)f < 0.1D)) {
-                // Если стрел нет и нет криэйта, ванильный use() уже вернул FAIL,
-                // но для безопасности проверяем еще раз
                 if (realAmmo.isEmpty() && !player.getAbilities().instabuild) {
                     return;
                 }
-
-                // Если стрел нет, но есть криэйт (или Infinity), создаем фейковую стрелу для выстрела
                 ItemStack effectiveAmmo = realAmmo.isEmpty() ? new ItemStack(ModItems.WEIRWOOD_ARROW.get()) : realAmmo;
 
                 List<ItemStack> list = this.draw(itemStack, effectiveAmmo, player);
-
-                // Подменяем все снаряды (например, от Multishot) на наши чардревные стрелы
                 ItemStack weirwoodArrow = new ItemStack(ModItems.WEIRWOOD_ARROW.get());
                 for (int k = 0; k < list.size(); k++) {
                     list.set(k, weirwoodArrow);
