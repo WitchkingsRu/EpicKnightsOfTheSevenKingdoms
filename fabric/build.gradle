@@ -38,8 +38,8 @@ dependencies {
 
     modImplementation "me.shedaniel.cloth:cloth-config-fabric:11.1.136"
     modImplementation "curse.maven:epic-knights-armor-and-weapons-509041:7756532"
-    modImplementation "curse.maven:jei-238222:8292129"
-    modImplementation "curse.maven:lootr-fabric-615106:7266482"
+//    modImplementation "curse.maven:jei-238222:8292129"
+//    modImplementation "curse.maven:lootr-fabric-615106:7266482"
 
 
 }
