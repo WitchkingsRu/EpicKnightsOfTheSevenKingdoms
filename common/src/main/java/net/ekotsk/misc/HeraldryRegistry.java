@@ -31,7 +31,16 @@ public class HeraldryRegistry {
             "sword",
             "targaryen",
             "weirwood",
-            "seven"
+            "seven",
+            "wyl",
+            "prancing_horse",
+            "shield",
+            "horse_head",
+            "circles",
+            "hog",
+            "hunter",
+            "two_towers",
+            "three_towers"
             ));
 
     public static void register(String name) {

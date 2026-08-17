@@ -1,0 +1,12 @@
+{
+  "replace":false,
+  "values": [
+    { "id": "ekotsk:dornish_helmet", "required":false },
+    { "id": "ekotsk:dornish_chestplate", "required": false },
+    { "id": "ekotsk:dornish_leggings", "required": false },
+    { "id": "ekotsk:dornish_boots", "required": false },
+    { "id": "ekotsk:gold_cloak_left_decoration", "required": false },
+    { "id": "ekotsk:gold_cloak_right_decoration", "required": false },
+    { "id": "ekotsk:fancy_cape_decoration", "required": false }
+  ]
+}

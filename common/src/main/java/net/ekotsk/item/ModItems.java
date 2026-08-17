@@ -150,6 +150,15 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> BONEHAND_PATTERN = INSTANCE.addIngredientItem("bonehand_pattern", () -> new BannerPatternItem(ModBannerPatternTags.BONEHAND_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> HORN_PATTERN = INSTANCE.addIngredientItem("horn_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HORN_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> SEVEN_PATTERN = INSTANCE.addIngredientItem("seven_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SEVEN_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> WYL_PATTERN = INSTANCE.addIngredientItem("wyl_pattern", () -> new BannerPatternItem(ModBannerPatternTags.WYL_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> PRANCING_HORSE_PATTERN = INSTANCE.addIngredientItem("prancing_horse_pattern", () -> new BannerPatternItem(ModBannerPatternTags.PRANCING_HORSE_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> HORSE_HEAD_PATTERN = INSTANCE.addIngredientItem("horse_head_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HORSE_HEAD_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> CIRCLES_PATTERN = INSTANCE.addIngredientItem("wreaths_pattern", () -> new BannerPatternItem(ModBannerPatternTags.CIRCLES_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> HOG_PATTERN = INSTANCE.addIngredientItem("hog_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HOG_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> SHIELD_PATTERN = INSTANCE.addIngredientItem("shield_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SHIELD_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> HUNTER_PATTERN = INSTANCE.addIngredientItem("hunter_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HUNTER_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> TWO_TOWERS_PATTERN = INSTANCE.addIngredientItem("two_towers_pattern", () -> new BannerPatternItem(ModBannerPatternTags.TWO_TOWERS_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> THREE_TOWERS_PATTERN = INSTANCE.addIngredientItem("three_towers_pattern", () -> new BannerPatternItem(ModBannerPatternTags.THREE_TOWERS_PATTERN, new Item.Properties().stacksTo(1)));
 
     public static final RegistrySupplier<Item> BLACK_LEATHER = INSTANCE.addIngredientItem("black_leather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> BLACK_WOOLEN_FABRIC = INSTANCE.addIngredientItem("black_woolen_fabric", () -> new Item(new Item.Properties()));
