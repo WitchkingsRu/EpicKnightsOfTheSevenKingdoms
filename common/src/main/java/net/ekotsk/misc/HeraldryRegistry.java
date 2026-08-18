@@ -40,7 +40,9 @@ public class HeraldryRegistry {
             "hog",
             "hunter",
             "two_towers",
-            "three_towers"
+            "three_towers",
+            "apple",
+            "hives"
             ));
 
     public static void register(String name) {

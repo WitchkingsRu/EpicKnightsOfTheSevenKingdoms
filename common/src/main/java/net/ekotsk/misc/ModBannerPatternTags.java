@@ -43,6 +43,8 @@ public class ModBannerPatternTags {
     public static final TagKey<BannerPattern> HUNTER_PATTERN = create("hunter");
     public static final TagKey<BannerPattern> TWO_TOWERS_PATTERN = create("two_towers");
     public static final TagKey<BannerPattern> THREE_TOWERS_PATTERN = create("three_towers");
+    public static final TagKey<BannerPattern> APPLE_PATTERN = create("apple");
+    public static final TagKey<BannerPattern> HIVES_PATTERN = create("hives");
     private static TagKey<BannerPattern> create(String name) {
         return TagKey.create(Registries.BANNER_PATTERN, ResourceLocation.fromNamespaceAndPath(ASOIAFMod.MOD_ID, "pattern_item/" + name));
     }
