@@ -34,6 +34,17 @@ public class ModBannerPatternTags {
     public static final TagKey<BannerPattern> BONEHAND_PATTERN = create("bonehand");
     public static final TagKey<BannerPattern> HORN_PATTERN = create("horn");
     public static final TagKey<BannerPattern> SEVEN_PATTERN = create("seven");
+    public static final TagKey<BannerPattern> WYL_PATTERN = create("wyl");
+    public static final TagKey<BannerPattern> PRANCING_HORSE_PATTERN = create("prancing_horse");
+    public static final TagKey<BannerPattern> HORSE_HEAD_PATTERN = create("horse_head");
+    public static final TagKey<BannerPattern> CIRCLES_PATTERN = create("circles");
+    public static final TagKey<BannerPattern> HOG_PATTERN = create("hog");
+    public static final TagKey<BannerPattern> SHIELD_PATTERN = create("shield");
+    public static final TagKey<BannerPattern> HUNTER_PATTERN = create("hunter");
+    public static final TagKey<BannerPattern> TWO_TOWERS_PATTERN = create("two_towers");
+    public static final TagKey<BannerPattern> THREE_TOWERS_PATTERN = create("three_towers");
+    public static final TagKey<BannerPattern> APPLE_PATTERN = create("apple");
+    public static final TagKey<BannerPattern> HIVES_PATTERN = create("hives");
     private static TagKey<BannerPattern> create(String name) {
         return TagKey.create(Registries.BANNER_PATTERN, new ResourceLocation(ASOIAFMod.MOD_ID, "pattern_item/" + name));
     }

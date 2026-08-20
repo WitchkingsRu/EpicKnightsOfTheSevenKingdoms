@@ -42,10 +42,21 @@ public class ModMerchantOffers {
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.HORN_PATTERN.get()), 7, 0, 1),
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.BONEHAND_PATTERN.get()), 7, 0, 1),
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.SEVEN_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.WYL_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.HOG_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.SHIELD_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.APPLE_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.HIVES_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.HUNTER_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.HORSE_HEAD_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.PRANCING_HORSE_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.CIRCLES_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.TWO_TOWERS_PATTERN.get()), 7, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.THREE_TOWERS_PATTERN.get()), 7, 0, 1),
         };
 
         WANDERING_TRADER_TRADES = new VillagerTrades.ItemListing[] {
-                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.GOLD_CLOAK_RIGHT_DECORATION.get()), 1, 0, 1),
+                new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.GOLD_CLOAK_RIGHT_DECORATION.get()), 5, 0, 1),
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.GOLD_CLOAK_LEFT_DECORATION.get()), 5, 0, 1),
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.FANCY_CAPE_DECORATION.get()), 5, 0, 1),
                 new SimpleTrade(new ItemStack(Items.EMERALD), ItemStack.EMPTY, new ItemStack(ModItems.DRAGON_DECORATION.get()), 5, 0, 1),

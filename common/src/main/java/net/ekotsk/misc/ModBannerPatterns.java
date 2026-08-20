@@ -37,6 +37,17 @@ public class ModBannerPatterns {
     public static final RegistrySupplier<BannerPattern> BONEHAND;
     public static final RegistrySupplier<BannerPattern> HORN;
     public static final RegistrySupplier<BannerPattern> SEVEN;
+    public static final RegistrySupplier<BannerPattern> WYL;
+    public static final RegistrySupplier<BannerPattern> PRANCING_HORSE;
+    public static final RegistrySupplier<BannerPattern> HORSE_HEAD;
+    public static final RegistrySupplier<BannerPattern> HOG;
+    public static final RegistrySupplier<BannerPattern> CIRCLES;
+    public static final RegistrySupplier<BannerPattern> TWO_TOWERS;
+    public static final RegistrySupplier<BannerPattern> THREE_TOWERS;
+    public static final RegistrySupplier<BannerPattern> SHIELD;
+    public static final RegistrySupplier<BannerPattern> HUNTER;
+    public static final RegistrySupplier<BannerPattern> APPLE;
+    public static final RegistrySupplier<BannerPattern> HIVES;
 
     public static RegistrySupplier<BannerPattern> add(String name) {
         HeraldryRegistry.register(name);
@@ -76,6 +87,17 @@ public class ModBannerPatterns {
         BONEHAND = add("bonehand");
         HORN = add("horn");
         SEVEN = add("seven");
+        WYL = add("wyl");
+        PRANCING_HORSE = add("prancing_horse");
+        HORSE_HEAD = add("horse_head");
+        HOG = add("hog");
+        CIRCLES = add("circles");
+        TWO_TOWERS = add("two_towers");
+        THREE_TOWERS = add("three_towers");
+        SHIELD = add("shield");
+        HUNTER = add("hunter");
+        APPLE = add("apple");
+        HIVES = add("hives");
 
     }
 }

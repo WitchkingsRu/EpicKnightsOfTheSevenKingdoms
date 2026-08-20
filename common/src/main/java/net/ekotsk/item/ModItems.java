@@ -27,7 +27,7 @@ public class ModItems extends ModItemsProvider {
     public static ModItemTier FINE_VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 5, 10800, 12.0F, 6.0F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 6);
     public static ModItemTier WEAK_VALYRIAN_STEEL = new ModItemTier("valyrian_steel", 5, 10800, 10.0F, 5.0F, 22, Platform.isForge() ? "forge:ingots/valyrian_steel" : "c:valyrian_steel_ingots", 6);
 
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> ICE = INSTANCE.addMedievalWeaponItem("ice", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> ICE = INSTANCE.addMedievalWeaponItem("ice", new Item.Properties(), FINE_VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> BLACKFYRE = INSTANCE.addMedievalWeaponItem("blackfyre", new Item.Properties(), FINE_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> DARK_SISTER = INSTANCE.addMedievalWeaponItem("dark_sister", new Item.Properties(), FINE_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> AEGON_DAGGER = INSTANCE.addMedievalWeaponItem("aegon_dagger", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.STILETTO);
@@ -36,15 +36,15 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LAMENTATION = INSTANCE.addMedievalWeaponItem("lamentation", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LONGCLAW = INSTANCE.addMedievalWeaponItem("longclaw", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> NIGHTFALL = INSTANCE.addMedievalWeaponItem("nightfall", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ESTOC);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> ORPHANMAKER = INSTANCE.addMedievalWeaponItem("orphanmaker", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> BRIGHTROAR = INSTANCE.addMedievalWeaponItem("brightroar", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> ORPHANMAKER = INSTANCE.addMedievalWeaponItem("orphanmaker", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> RED_RAIN = INSTANCE.addMedievalWeaponItem("red_rain", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> ROBERT_HAMMER = INSTANCE.addMedievalWeaponItem("robert_hammer", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.LUCERNE_HAMMER);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> TRUTH = INSTANCE.addMedievalWeaponItem("truth", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> VIGILANCE = INSTANCE.addMedievalWeaponItem("vigilance", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> LADY_FORLORN = INSTANCE.addMedievalWeaponItem("lady_forlorn", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
     public static final @Nullable RegistrySupplier<MedievalWeaponItem> HEARTSBANE = INSTANCE.addMedievalWeaponItem("heartsbane", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.ZWEIHANDER);
-    public static final @Nullable RegistrySupplier<MedievalWeaponItem> SANDOQ = INSTANCE.addMedievalWeaponItem("sandoq", new Item.Properties(), VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
+    public static final @Nullable RegistrySupplier<MedievalWeaponItem> SANDOQ = INSTANCE.addMedievalWeaponItem("sandoq", new Item.Properties(), WEAK_VALYRIAN_STEEL, WeaponTypes.BASTARD_SWORD);
 
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_HELMET = INSTANCE.addMedievalArmorItem("lannister_helmet", ModArmorTypes.LANNISTER_HELMET, ArmorItem.Type.HELMET, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> LANNISTER_LORD_HELMET = INSTANCE.addMedievalArmorItem("lannister_lord_helmet", ModArmorTypes.LANNISTER_LORD_HELMET, ArmorItem.Type.HELMET, new Item.Properties());
@@ -149,6 +149,17 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> BONEHAND_PATTERN = INSTANCE.addIngredientItem("bonehand_pattern", () -> new BannerPatternItem(ModBannerPatternTags.BONEHAND_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> HORN_PATTERN = INSTANCE.addIngredientItem("horn_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HORN_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> SEVEN_PATTERN = INSTANCE.addIngredientItem("seven_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SEVEN_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> WYL_PATTERN = INSTANCE.addIngredientItem("wyl_pattern", () -> new BannerPatternItem(ModBannerPatternTags.WYL_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> PRANCING_HORSE_PATTERN = INSTANCE.addIngredientItem("prancing_horse_pattern", () -> new BannerPatternItem(ModBannerPatternTags.PRANCING_HORSE_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> HORSE_HEAD_PATTERN = INSTANCE.addIngredientItem("horse_head_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HORSE_HEAD_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> CIRCLES_PATTERN = INSTANCE.addIngredientItem("wreaths_pattern", () -> new BannerPatternItem(ModBannerPatternTags.CIRCLES_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> HOG_PATTERN = INSTANCE.addIngredientItem("hog_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HOG_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> SHIELD_PATTERN = INSTANCE.addIngredientItem("shield_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SHIELD_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> HUNTER_PATTERN = INSTANCE.addIngredientItem("hunter_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HUNTER_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> TWO_TOWERS_PATTERN = INSTANCE.addIngredientItem("two_towers_pattern", () -> new BannerPatternItem(ModBannerPatternTags.TWO_TOWERS_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> THREE_TOWERS_PATTERN = INSTANCE.addIngredientItem("three_towers_pattern", () -> new BannerPatternItem(ModBannerPatternTags.THREE_TOWERS_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> APPLE_PATTERN = INSTANCE.addIngredientItem("apple_pattern", () -> new BannerPatternItem(ModBannerPatternTags.APPLE_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> HIVES_PATTERN = INSTANCE.addIngredientItem("hives_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HIVES_PATTERN, new Item.Properties().stacksTo(1)));
 
     public static final RegistrySupplier<Item> BLACK_LEATHER = INSTANCE.addIngredientItem("black_leather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> BLACK_WOOLEN_FABRIC = INSTANCE.addIngredientItem("black_woolen_fabric", () -> new Item(new Item.Properties()));
