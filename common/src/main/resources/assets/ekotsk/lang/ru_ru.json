@@ -120,7 +120,10 @@
   "item.ekotsk.hand_sign_decoration": "Знак Десницы Короля",
   "item.ekotsk.gold_cloak_left_decoration": "Накидка налево",
   "item.ekotsk.gold_cloak_right_decoration": "Накидка направо",
-  "item.ekotsk.aegon_crown_decoration": "Корона Эйгона Завоевателя",
+  "item.ekotsk.aegon_crown_decoration": "Корона Эйгона I Завоевателя",
+  "item.ekotsk.hotd_aegon_crown_decoration": "Корона Эйгона I Завоевателя",
+  "item.ekotsk.jaehaerys_crown_decoration": "Корона Джейхейриса I Миротворца",
+  "item.ekotsk.hotd_jaehaerys_crown_decoration": "Корона Джейхейриса I Миротворца",
   "item.ekotsk.dragon_decoration": "Нашлемник в форме Дракона",
 
   "item.ekotsk.spear_pattern": "Выкройка флага",

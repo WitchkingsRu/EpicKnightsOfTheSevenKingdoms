@@ -27,7 +27,7 @@ public class JaehaerysCrownHelmetModel {
                 .texOffs(1, 25).mirror().addBox(-5.6F, -6.0F, -5.525F, 2.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false)
                 .texOffs(1, 25).addBox(3.6F, -6.0F, -5.525F, 2.0F, 3.0F, 0.0F, new CubeDeformation(0.0F))
                 .texOffs(0, 25).addBox(-1.5F, -6.0F, -5.525F, 3.0F, 3.0F, 0.0F, new CubeDeformation(0.0F))
-                .texOffs(0, 0).addBox(-5.5F, -5.5F, -5.5F, 11.0F, 2.0F, 11.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -3.0F, 0.0F));
+                .texOffs(0, 0).addBox(-5.5F, -5.5F, -5.5F, 11.0F, 2.0F, 11.0F, new CubeDeformation(-0.2F)), PartPose.offset(0.0F, -3.0F, 0.0F));
 
         PartDefinition cube_r1 = bone.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(31, 25).addBox(-1.0F, -1.0F, 5.725F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
                 .texOffs(0, 25).addBox(-1.5F, -1.5F, 5.525F, 3.0F, 3.0F, 0.0F, new CubeDeformation(0.0F))

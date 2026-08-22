@@ -17,8 +17,8 @@ public class JaehaerysCrownModel {
 
         PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-        PartDefinition bone = head.addOrReplaceChild("bone", CubeListBuilder.create().texOffs(4, 3).addBox(-4.0F, -7.0F, -4.0F, 8.0F, 1.0F, 8.0F, new CubeDeformation(0.2F))
-                .texOffs(4, 15).addBox(-4.1F, -6.9F, -3.9F, 8.0F, 1.4F, 8.0F, new CubeDeformation(0.0F))
+        PartDefinition bone = head.addOrReplaceChild("bone", CubeListBuilder.create().texOffs(4, 3).addBox(-4.0F, -7.0F, -4.0F, 8.0F, 1.0F, 8.0F, new CubeDeformation(0.0F))
+                .texOffs(4, 15).addBox(-4.1F, -7.1F, -3.9F, 8.0F, 1.4F, 8.0F, new CubeDeformation(0.0F))
                 .texOffs(0, 27).addBox(-4.5F, -7.5F, -4.325F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.1F))
                 .texOffs(1, 27).addBox(3.5F, -7.5F, -4.325F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.1F))
                 .texOffs(4, 27).addBox(-0.75F, -7.25F, -5.0F, 1.5F, 1.5F, 0.0F, new CubeDeformation(0.1F))
