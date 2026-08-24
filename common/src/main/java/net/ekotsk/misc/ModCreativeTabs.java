@@ -119,6 +119,7 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.AEGON_DRAGONSBANE_CROWN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.AEGON_UNWORTHY_CROWN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.MAEKAR_CROWN_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.HIGH_SEPTON_CROWN);
         append(ASOIAF_ARMOR, ModItems.DRAGON_DECORATION);
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SPEAR_PATTERN);

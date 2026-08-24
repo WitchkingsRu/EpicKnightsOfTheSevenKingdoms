@@ -76,6 +76,7 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation MAEKAR_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("maekar_crown", MaekarCrownHelmetModel::createLayer);
 
     public static final ModelLayerLocation DRAGON_DECORATION_LOCATION = INSTANCE.addDecorationModel("dragon", () -> DRAGON);
+    public static final ModelLayerLocation HIGH_SEPTON_CROWN_LOCATION = INSTANCE.addArmorModel("high_septon_crown", HighSeptonCrownModel::createLayer);
 
     public static final ModelLayerLocation FANCY_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fancy_cape", () -> FANCY_CAPE);
     public static final ModelLayerLocation NIGHT_WATCH_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("night_watch_cape", () -> NIGHT_WATCH_CAPE);
