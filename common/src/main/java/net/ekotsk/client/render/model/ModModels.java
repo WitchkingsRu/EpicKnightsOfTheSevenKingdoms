@@ -68,6 +68,12 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation JAEHAERYS_CROWN_SHOW_LOCATION = INSTANCE.addArmorModel("hotd_jaehaerys_crown", JaehaerysCrownShowModel::createLayer);
     public static final ModelLayerLocation JAEHAERYS_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("jaehaerys_crown", JaehaerysCrownHelmetModel::createLayer);
     public static final ModelLayerLocation JAEHAERYS_CROWN_SHOW_DECORATION_LOCATION = INSTANCE.addDecorationModel("hotd_jaehaerys_crown", JaehaerysCrownShowHelmetModel::createLayer);
+    public static final ModelLayerLocation AEGON_DRAGONSBANE_CROWN_LOCATION = INSTANCE.addArmorModel("aegon_dragonsbane_crown", AegonDragonsbaneCrownModel::createLayer);
+    public static final ModelLayerLocation AEGON_DRAGONSBANE_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("aegon_dragonsbane_crown", AegonDragonsbaneHelmetModel::createLayer);
+    public static final ModelLayerLocation AEGON_UNWORTHY_CROWN_LOCATION = INSTANCE.addArmorModel("aegon_unworthy_crown", AegonUnworthyCrownModel::createLayer);
+    public static final ModelLayerLocation AEGON_UNWORTHY_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("aegon_unworthy_crown", AegonUnworthyCrownHelmetModel::createLayer);
+    public static final ModelLayerLocation MAEKAR_CROWN_LOCATION = INSTANCE.addArmorModel("maekar_crown", MaekarCrownModel::createLayer);
+    public static final ModelLayerLocation MAEKAR_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("maekar_crown", MaekarCrownHelmetModel::createLayer);
 
     public static final ModelLayerLocation DRAGON_DECORATION_LOCATION = INSTANCE.addDecorationModel("dragon", () -> DRAGON);
 
