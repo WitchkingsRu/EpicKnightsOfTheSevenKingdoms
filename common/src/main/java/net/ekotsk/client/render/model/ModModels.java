@@ -74,6 +74,8 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation AEGON_UNWORTHY_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("aegon_unworthy_crown", AegonUnworthyCrownHelmetModel::createLayer);
     public static final ModelLayerLocation MAEKAR_CROWN_LOCATION = INSTANCE.addArmorModel("maekar_crown", MaekarCrownModel::createLayer);
     public static final ModelLayerLocation MAEKAR_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("maekar_crown", MaekarCrownHelmetModel::createLayer);
+    public static final ModelLayerLocation ROBERT_CROWN_LOCATION = INSTANCE.addArmorModel("robert_crown", RobertCrownModel::createLayer);
+    public static final ModelLayerLocation ROBERT_CROWN_DECORATION_LOCATION = INSTANCE.addDecorationModel("robert_crown", RobertCrownHelmetModel::createLayer);
 
     public static final ModelLayerLocation DRAGON_DECORATION_LOCATION = INSTANCE.addDecorationModel("dragon", () -> DRAGON);
     public static final ModelLayerLocation HIGH_SEPTON_CROWN_LOCATION = INSTANCE.addArmorModel("high_septon_crown", HighSeptonCrownModel::createLayer);
@@ -85,9 +87,6 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation FANCY_BOOTS_LAYER_LOCATION = INSTANCE.addArmorModel("fancy_boots", FancyBootsModel::createLayer);
     public static final ModelLayerLocation WEIRWOOD_ARROW_LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(ASOIAFMod.MOD_ID, "weirwood_arrow"), "main");
 
-//    public static void registerLayers(BiConsumer<ModelLayerLocation, Supplier<LayerDefinition>> consumer) {
-//        consumer.accept(ModModels.WEIRWOOD_ARROW_LAYER_LOCATION, ArrowLayer::createBodyLayer);
-//    }
     public static void blockEntityRender() {
         BlockEntityRenderers.register(ModBlockEntities.WEIRWOOD_SIGN.get(), SignRenderer::new);
         BlockEntityRenderers.register(ModBlockEntities.WEIRWOOD_HANGING_SIGN.get(), HangingSignRenderer::new);
