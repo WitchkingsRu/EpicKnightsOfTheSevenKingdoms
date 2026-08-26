@@ -26,13 +26,13 @@ public class RobertCrownHelmetModel {
 				.texOffs(0, 39).addBox(-5.5F, -7.2F, -5.5F, 11.0F, 2.0F, 11.0F, new CubeDeformation(-0.25F))
 				.texOffs(0, 51).addBox(-5.0F, -7.5F, -5.0F, 10.0F, 2.0F, 10.0F, new CubeDeformation(-0.1F))
 				.texOffs(0, 0).addBox(-5.5F, -5.3F, -5.5F, 11.0F, 2.0F, 11.0F, new CubeDeformation(-0.25F))
-				.texOffs(44, 59).addBox(-5.0F, -4.7F, -5.0F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.25F))
+				.texOffs(44, 59).addBox(-5.0F, -4.7F, -5.0F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.26F))
 				.texOffs(44, 57).addBox(-5.0F, -6.0F, -5.5F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.1F))
-				.texOffs(44, 59).addBox(-5.0F, -4.7F, 5.0F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.25F)), PartPose.offset(0.0F, -3.0F, 0.0F));
+				.texOffs(44, 59).addBox(-5.0F, -4.7F, 5.0F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.26F)), PartPose.offset(0.0F, -3.0F, 0.0F));
 
-		PartDefinition cube_r1 = bone.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(44, 59).addBox(-10.5F, -1.7F, -4.5F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(-9.5F, -3.0F, 5.5F, 0.0F, -1.5708F, 0.0F));
+		PartDefinition cube_r1 = bone.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(44, 59).addBox(-10.5F, -1.7F, -4.5F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.26F)), PartPose.offsetAndRotation(-9.5F, -3.0F, 5.5F, 0.0F, -1.5708F, 0.0F));
 
-		PartDefinition cube_r2 = bone.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(44, 59).addBox(-10.5F, -1.7F, -4.5F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.25F)), PartPose.offsetAndRotation(0.5F, -3.0F, 5.5F, 0.0F, -1.5708F, 0.0F));
+		PartDefinition cube_r2 = bone.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(44, 59).addBox(-10.5F, -1.7F, -4.5F, 10.0F, 1.0F, 0.0F, new CubeDeformation(-0.26F)), PartPose.offsetAndRotation(0.5F, -3.0F, 5.5F, 0.0F, -1.5708F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
