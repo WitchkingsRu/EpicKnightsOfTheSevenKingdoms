@@ -122,6 +122,8 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.ROBERT_CROWN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.STANNIS_CROWN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.RENLY_CROWN_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.STARK_CROWN_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.DRIFTWOOD_CROWN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.HIGH_SEPTON_CROWN);
         append(ASOIAF_ARMOR, ModItems.DRAGON_DECORATION);
 

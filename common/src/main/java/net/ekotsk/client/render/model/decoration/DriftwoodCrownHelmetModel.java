@@ -1,0 +1,31 @@
+package net.ekotsk.client.render.model.decoration;// Made with Blockbench 5.0.2
+// Exported for Minecraft version 1.17 or later with Mojang mappings
+// Paste this class into your mod and generate all required imports
+
+
+import net.minecraft.client.model.geom.PartPose;
+import net.minecraft.client.model.geom.builders.*;
+
+public class DriftwoodCrownHelmetModel {
+
+	public static LayerDefinition createLayer() {
+		MeshDefinition meshdefinition = new MeshDefinition();
+		PartDefinition partdefinition = meshdefinition.getRoot();
+
+		PartDefinition hat = partdefinition.addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.ZERO);
+		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.ZERO);
+		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create(), PartPose.ZERO);
+		PartDefinition left_arm = partdefinition.addOrReplaceChild("left_arm", CubeListBuilder.create(), PartPose.ZERO);
+		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create(), PartPose.ZERO);
+		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create(), PartPose.ZERO);
+
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create(), PartPose.offset(0.0F, -2.0F, 0.0F));
+
+		PartDefinition bone = head.addOrReplaceChild("bone", CubeListBuilder.create().texOffs(0, 0).addBox(-5.5F, -5.5F, -5.5F, 11.0F, 2.0F, 11.0F, new CubeDeformation(-0.05F))
+				.texOffs(0, 13).addBox(-5.5F, -4.8F, -5.5F, 11.0F, 2.0F, 11.0F, new CubeDeformation(-0.24F))
+				.texOffs(0, 26).addBox(-5.5F, -5.2F, -5.5F, 11.0F, 2.0F, 11.0F, new CubeDeformation(-0.09F))
+				.texOffs(0, 39).addBox(-6.0F, -7.6F, -6.0F, 12.0F, 5.0F, 12.0F, new CubeDeformation(-0.6F)), PartPose.offset(0.0F, -3.0F, 0.0F));
+
+		return LayerDefinition.create(meshdefinition, 64, 64);
+	}
+}
