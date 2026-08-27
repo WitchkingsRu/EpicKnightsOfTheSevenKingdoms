@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ekotsk:item/fin_decoration",
+    "layer1": "ekotsk:item/fin_decoration_overlay"
+  }
+}

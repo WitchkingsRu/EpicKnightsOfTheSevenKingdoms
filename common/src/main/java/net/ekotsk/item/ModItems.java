@@ -133,6 +133,8 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<DyeableArmorDecorationItem> GOLD_CLOAK_LEFT_DECORATION = INSTANCE.addDyeableArmorDecorationItem("gold_cloak_left_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "gold_cloak_left"), new Item.Properties(), ArmorItem.Type.CHESTPLATE, 0xFFFFFF));
     public static final RegistrySupplier<DyeableArmorDecorationItem> GOLD_CLOAK_RIGHT_DECORATION = INSTANCE.addDyeableArmorDecorationItem("gold_cloak_right_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "gold_cloak_right"), new Item.Properties(), ArmorItem.Type.CHESTPLATE, 0xFFFFFF));
     public static final RegistrySupplier<ArmorDecorationItem> DRAGON_DECORATION = INSTANCE.addArmorDecorationItem("dragon_decoration", () -> new ArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "dragon"), new Item.Properties(), ArmorItem.Type.HELMET));
+    public static final RegistrySupplier<DyeableArmorDecorationItem> WINGS_DECORATION = INSTANCE.addDyeableArmorDecorationItem("wings_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "wings"), new Item.Properties(), ArmorItem.Type.HELMET, 0xFFFFFF));
+    public static final RegistrySupplier<DyeableArmorDecorationItem> FIN_DECORATION = INSTANCE.addDyeableArmorDecorationItem("fin_decoration", () -> new DyeableArmorDecorationItem(new ResourceLocation(ASOIAFMod.MOD_ID, "fin"), new Item.Properties(), ArmorItem.Type.HELMET, 0xFFFFFF));
 
 
     public static final RegistrySupplier<Item> SPEAR_PATTERN = INSTANCE.addIngredientItem("spear_pattern", () -> new BannerPatternItem(ModBannerPatternTags.SPEAR_PATTERN, new Item.Properties().stacksTo(1)));
