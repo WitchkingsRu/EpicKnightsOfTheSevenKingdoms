@@ -106,6 +106,10 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.DORNISH_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.DORNISH_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.DORNISH_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.DORNISH_PRINCE_HELMET);
+        append(ASOIAF_ARMOR, ModItems.DORNISH_PRINCE_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.DORNISH_PRINCE_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.DORNISH_PRINCE_BOOTS);
 
         append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
