@@ -13,7 +13,7 @@ public class GOTGoldCloakArmorModel {
 				.texOffs(24, 0).addBox(-4.0F, -7.5F, -4.0F, 8.0F, 8.0F, 0.0F, new CubeDeformation(0.3F))
 				.texOffs(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.7F))
 				.texOffs(0, 56).addBox(-3.0F, -10.0F, -3.0F, 6.0F, 2.0F, 6.0F, new CubeDeformation(0.7F))
-				.texOffs(24, 59).addBox(-2.0F, -10.8F, -2.25F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.7F)), PartPose.offset(0.0F, -1.0F, 0.0F));
+				.texOffs(24, 59).addBox(-2.0F, -10.8F, -2.25F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.7F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		PartDefinition Helmet_r1 = head.addOrReplaceChild("Helmet_r1", CubeListBuilder.create().texOffs(38, 61).mirror().addBox(-4.31F, -24.6F, -4.3F, 4.0F, 0.0F, 3.0F, new CubeDeformation(0.15F)).mirror(false), PartPose.offsetAndRotation(-1.0F, 18.0F, -3.0F, 0.0F, 0.0F, 0.2182F));
 

@@ -10,7 +10,7 @@ public class GreyjoyArmorModel {
         PartDefinition hat = partdefinition.addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.ZERO);
         PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -7.0F, -4.0F, 8.0F, 7.0F, 8.0F, new CubeDeformation(0.9F))
                 .texOffs(32, 0).addBox(-4.0F, -7.0F, -4.0F, 8.0F, 7.0F, 8.0F, new CubeDeformation(0.6F))
-                .texOffs(40, 33).addBox(-3.0F, -8.5F, -3.0F, 6.0F, 1.0F, 6.0F, new CubeDeformation(0.7F)), PartPose.offset(0.0F, -1.0F, 0.0F));
+                .texOffs(40, 33).addBox(-3.0F, -8.5F, -3.0F, 6.0F, 1.0F, 6.0F, new CubeDeformation(0.7F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition cube_r1 = head.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(40, 36).addBox(-2.7F, 0.0F, -0.8F, 0.0F, 1.0F, 8.0F, new CubeDeformation(0.4F)), PartPose.offsetAndRotation(7.0F, -2.0F, -3.0F, 0.0F, 0.0F, -0.3491F));
 

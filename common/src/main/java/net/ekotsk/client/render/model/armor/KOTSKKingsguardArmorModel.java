@@ -10,7 +10,7 @@ public class KOTSKKingsguardArmorModel {
         PartDefinition hat = partdefinition.addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.ZERO);
         PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 0).addBox(-3.5F, -7.15F, -3.2F, 7.0F, 6.0F, 7.0F, new CubeDeformation(0.95F))
                 .texOffs(29, 8).addBox(-2.5F, -8.2F, -2.5F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.9F))
-                .texOffs(6, 6).addBox(-3.5F, -6.95F, -3.7F, 7.0F, 6.0F, 1.0F, new CubeDeformation(0.88F)), PartPose.offset(0.0F, -0.8F, 0.0F));
+                .texOffs(6, 6).addBox(-3.5F, -6.95F, -3.7F, 7.0F, 6.0F, 1.0F, new CubeDeformation(0.88F)), PartPose.offset(0.0F, 0.2F, 0.0F));
 
         PartDefinition mask = head.addOrReplaceChild("mask", CubeListBuilder.create(), PartPose.offset(0.0F, 24.8F, 0.0F));
 

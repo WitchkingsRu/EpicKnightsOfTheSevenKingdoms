@@ -9,7 +9,7 @@ public class HOTDKingsguardArmorModel {
         PartDefinition partdefinition = meshdefinition.getRoot();
         PartDefinition hat = partdefinition.addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.ZERO);
         PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 1).addBox(-4.0F, -7.0F, -4.0F, 8.0F, 7.0F, 8.0F, new CubeDeformation(0.83F))
-                .texOffs(32, 8).addBox(-3.5F, -8.0F, -3.5F, 7.0F, 1.0F, 7.0F, new CubeDeformation(0.7F)), PartPose.offset(0.0F, -2.0F, 0.0F));
+                .texOffs(32, 8).addBox(-3.5F, -8.0F, -3.5F, 7.0F, 1.0F, 7.0F, new CubeDeformation(0.7F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition cube_r1 = head.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(47, -5).mirror().addBox(-2.2418F, -2.2048F, -0.5F, 0.0F, 2.0F, 8.0F, new CubeDeformation(0.1F)).mirror(false), PartPose.offsetAndRotation(7.3418F, 0.2048F, -3.05F, 0.0F, 0.0F, -0.3491F));
 
