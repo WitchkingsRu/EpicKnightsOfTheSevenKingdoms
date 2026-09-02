@@ -118,6 +118,16 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> GREYJOY_LEGGINGS = INSTANCE.addMedievalArmorItem("greyjoy_leggings", ModArmorTypes.GREYJOY_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> GREYJOY_BOOTS = INSTANCE.addMedievalArmorItem("greyjoy_boots", ModArmorTypes.GREYJOY_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
 
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> RICH_GREYJOY_HELMET = INSTANCE.addMedievalArmorItem("rich_greyjoy_helmet", ModArmorTypes.RICH_GREYJOY_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> RICH_GREYJOY_CHESTPLATE = INSTANCE.addMedievalArmorItem("rich_greyjoy_chestplate", ModArmorTypes.RICH_GREYJOY_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> RICH_GREYJOY_LEGGINGS = INSTANCE.addMedievalArmorItem("rich_greyjoy_leggings", ModArmorTypes.RICH_GREYJOY_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> RICH_GREYJOY_BOOTS = INSTANCE.addMedievalArmorItem("rich_greyjoy_boots", ModArmorTypes.RICH_GREYJOY_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_OFFICER_HELMET = INSTANCE.addMedievalArmorItem("gold_cloak_officer_helmet", ModArmorTypes.GOLD_CLOAK_OFFICER_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_OFFICER_CHESTPLATE = INSTANCE.addMedievalArmorItem("gold_cloak_officer_chestplate", ModArmorTypes.GOLD_CLOAK_OFFICER_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_OFFICER_LEGGINGS = INSTANCE.addMedievalArmorItem("gold_cloak_officer_leggings", ModArmorTypes.GOLD_CLOAK_OFFICER_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties());
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> GOLD_CLOAK_OFFICER_BOOTS = INSTANCE.addMedievalArmorItem("gold_cloak_officer_boots", ModArmorTypes.GOLD_CLOAK_OFFICER_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties());
+
     public static final RegistrySupplier<WearableArmorDecorationItem> HAND_SIGN_DECORATION = INSTANCE.addWearableArmorDecorationItem("hand_sign_decoration", ModArmorTypes.HAND_SIGN, ArmorItem.Type.CHESTPLATE, new Item.Properties());
     public static final RegistrySupplier<WearableArmorDecorationItem> AEGON_CROWN_DECORATION = INSTANCE.addWearableArmorDecorationItem("aegon_crown_decoration", ModArmorTypes.AEGON_CROWN, ArmorItem.Type.HELMET, new Item.Properties());
     public static final RegistrySupplier<WearableArmorDecorationItem> HOTD_AEGON_CROWN_DECORATION = INSTANCE.addWearableArmorDecorationItem("hotd_aegon_crown_decoration", ModArmorTypes.HOTD_AEGON_CROWN, ArmorItem.Type.HELMET, new Item.Properties());
