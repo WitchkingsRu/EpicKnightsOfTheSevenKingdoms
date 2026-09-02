@@ -108,7 +108,7 @@ public class ModItems extends ModItemsProvider {
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_LEGGINGS = INSTANCE.addDyeableMedievalArmorItem("dornish_leggings", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties(),0xFF6A00);
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_BOOTS = INSTANCE.addDyeableMedievalArmorItem("dornish_boots", ModArmorTypes.DORNISH_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties(),0xFF6A00);
 
-    public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_PRINCE_HELMET = INSTANCE.addDyeableMedievalArmorItem("dornish_noble_helmet", ModArmorTypes.DORNISH_PRINCE_ARMOR, ArmorItem.Type.HELMET, new Item.Properties(), 0xFF6A00);
+    public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_PRINCE_HELMET = INSTANCE.addMedievalArmorItem("dornish_noble_helmet", ModArmorTypes.DORNISH_PRINCE_ARMOR, ArmorItem.Type.HELMET, new Item.Properties());
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_PRINCE_CHESTPLATE = INSTANCE.addDyeableMedievalArmorItem("dornish_noble_chestplate", ModArmorTypes.DORNISH_PRINCE_ARMOR, ArmorItem.Type.CHESTPLATE, new Item.Properties(), 0xFF6A00);
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_PRINCE_LEGGINGS = INSTANCE.addDyeableMedievalArmorItem("dornish_noble_leggings", ModArmorTypes.DORNISH_PRINCE_ARMOR, ArmorItem.Type.LEGGINGS, new Item.Properties(),0xFF6A00);
     public static final @Nullable RegistrySupplier<MedievalArmorItem> DORNISH_PRINCE_BOOTS = INSTANCE.addDyeableMedievalArmorItem("dornish_noble_boots", ModArmorTypes.DORNISH_PRINCE_ARMOR, ArmorItem.Type.BOOTS, new Item.Properties(),0xFF6A00);
