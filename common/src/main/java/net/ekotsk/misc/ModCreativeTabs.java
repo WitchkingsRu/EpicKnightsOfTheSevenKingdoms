@@ -121,6 +121,7 @@ public class ModCreativeTabs {
 
         append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.FUR_CAPE_DECORATION);
         append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CAPE_DECORATION);
         append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_LEFT_DECORATION);
         append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_RIGHT_DECORATION);
