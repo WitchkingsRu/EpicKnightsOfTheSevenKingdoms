@@ -71,6 +71,10 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.NORTHERN_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.NORTHERN_LEGGINGS);
         append(ASOIAF_ARMOR, ModItems.NORTHERN_BOOTS);
+        append(ASOIAF_ARMOR, ModItems.PLATE_NORTHERN_HELMET);
+        append(ASOIAF_ARMOR, ModItems.PLATE_NORTHERN_CHESTPLATE);
+        append(ASOIAF_ARMOR, ModItems.PLATE_NORTHERN_LEGGINGS);
+        append(ASOIAF_ARMOR, ModItems.PLATE_NORTHERN_BOOTS);
         append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_HELMET);
         append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_CHESTPLATE);
         append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_LEGGINGS);
@@ -121,7 +125,10 @@ public class ModCreativeTabs {
 
         append(ASOIAF_ARMOR, ModItems.HAND_SIGN_DECORATION);
         append(ASOIAF_ARMOR, ModItems.FANCY_CAPE_DECORATION);
-        append(ASOIAF_ARMOR, ModItems.FUR_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.PALE_FUR_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.WOODS_FUR_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.WHITE_FUR_CAPE_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.BLACK_FUR_CAPE_DECORATION);
         append(ASOIAF_ARMOR, ModItems.NIGHT_WATCH_CAPE_DECORATION);
         append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_LEFT_DECORATION);
         append(ASOIAF_ARMOR, ModItems.GOLD_CLOAK_RIGHT_DECORATION);

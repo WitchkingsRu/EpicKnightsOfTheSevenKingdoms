@@ -44,6 +44,7 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation DORNISH_PRINCE_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("dornish_prince_armor", DornishPrinceArmorModel::createLayer);
     public static final ModelLayerLocation RICH_GREYJOY_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("rich_greyjoy_armor", RichGreyjoyArmorModel::createLayer);
     public static final ModelLayerLocation GOLD_CLOAK_OFFICER_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("gold_cloak_officer_armor",GoldCloakOfficerArmorModel::createLayer);
+    public static final ModelLayerLocation PLATE_NORTH_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("plate_northern_armor",PlateNorthernArmorModel::createLayer);
 
     public static final ModelLayerLocation GOLD_CLOAK_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("gold_cloak_armor",GoldCloakArmorModel::createLayer);
     public static final ModelLayerLocation KOTSK_GOLD_CLOAK_ARMOR_LAYER_LOCATION = INSTANCE.addArmorModel("gold_cloak_armor_kotsk",KOTSKGoldCloakArmorModel::createLayer);
@@ -56,7 +57,10 @@ public class ModModels extends ModModelsProvider {
 
     public static final LayerDefinition HAND_SIGN = SurcoatModel.createLayer();
     public static final LayerDefinition FANCY_CAPE = CapeModel.createLayer();
-    public static final LayerDefinition FUR_CAPE = FurCapeModel.createLayer();
+    public static final LayerDefinition FUR_CAPE_PALE = FurCapeModel.createLayer();
+    public static final LayerDefinition FUR_CAPE_WOODS = FurCapeModel.createLayer();
+    public static final LayerDefinition FUR_CAPE_WHITE = FurCapeModel.createLayer();
+    public static final LayerDefinition FUR_CAPE_BLACK = FurCapeModel.createLayer();
     public static final LayerDefinition NIGHT_WATCH_CAPE = NightsWatchCapeModel.createLayer();
     public static final LayerDefinition GOLD_CLOAK_LEFT = GoldCloakLeftDecoModel.createLayer();
     public static final LayerDefinition GOLD_CLOAK_RIGHT = GoldCloakRightDecoModel.createLayer();
@@ -95,7 +99,10 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation HIGH_SEPTON_CROWN_LOCATION = INSTANCE.addArmorModel("high_septon_crown", HighSeptonCrownModel::createLayer);
 
     public static final ModelLayerLocation FANCY_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fancy_cape", () -> FANCY_CAPE);
-    public static final ModelLayerLocation FUR_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fur_cape", () -> FUR_CAPE);
+    public static final ModelLayerLocation PALE_FUR_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fur_cape_pale", () -> FUR_CAPE_PALE);
+    public static final ModelLayerLocation WOODS_FUR_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fur_cape_woods", () -> FUR_CAPE_WOODS);
+    public static final ModelLayerLocation WHITE_FUR_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fur_cape_white", () -> FUR_CAPE_WHITE);
+    public static final ModelLayerLocation BLACK_FUR_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fur_cape_black", () -> FUR_CAPE_BLACK);
     public static final ModelLayerLocation WINGS_DECORATION_LOCATION = INSTANCE.addDecorationModel("wings", () -> WINGS);
     public static final ModelLayerLocation FIN_DECORATION_LOCATION = INSTANCE.addDecorationModel("fin", () -> FIN);
     public static final ModelLayerLocation NIGHT_WATCH_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("night_watch_cape", () -> NIGHT_WATCH_CAPE);
