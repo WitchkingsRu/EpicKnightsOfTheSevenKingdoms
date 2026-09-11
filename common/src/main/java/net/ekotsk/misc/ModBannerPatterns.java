@@ -48,6 +48,10 @@ public class ModBannerPatterns {
     public static final RegistrySupplier<BannerPattern> HUNTER;
     public static final RegistrySupplier<BannerPattern> APPLE;
     public static final RegistrySupplier<BannerPattern> HIVES;
+    public static final RegistrySupplier<BannerPattern> FIST;
+    public static final RegistrySupplier<BannerPattern> WOLF;
+    public static final RegistrySupplier<BannerPattern> FLAYING_CROSS;
+    public static final RegistrySupplier<BannerPattern> FLAYED_MAN;
 
     public static RegistrySupplier<BannerPattern> add(String name) {
         HeraldryRegistry.register(name);
@@ -98,6 +102,9 @@ public class ModBannerPatterns {
         HUNTER = add("hunter");
         APPLE = add("apple");
         HIVES = add("hives");
-
+        WOLF = add("wolf");
+        FIST = add("fist");
+        FLAYING_CROSS = add("flaying_cross");
+        FLAYED_MAN = add("flayed_man");
     }
 }

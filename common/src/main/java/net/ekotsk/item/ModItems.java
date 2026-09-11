@@ -198,6 +198,10 @@ public class ModItems extends ModItemsProvider {
     public static final RegistrySupplier<Item> THREE_TOWERS_PATTERN = INSTANCE.addIngredientItem("three_towers_pattern", () -> new BannerPatternItem(ModBannerPatternTags.THREE_TOWERS_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> APPLE_PATTERN = INSTANCE.addIngredientItem("apple_pattern", () -> new BannerPatternItem(ModBannerPatternTags.APPLE_PATTERN, new Item.Properties().stacksTo(1)));
     public static final RegistrySupplier<Item> HIVES_PATTERN = INSTANCE.addIngredientItem("hives_pattern", () -> new BannerPatternItem(ModBannerPatternTags.HIVES_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> WOLF_PATTERN = INSTANCE.addIngredientItem("wolf_pattern", () -> new BannerPatternItem(ModBannerPatternTags.WOLF_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> FIST_PATTERN = INSTANCE.addIngredientItem("fist_pattern", () -> new BannerPatternItem(ModBannerPatternTags.FIST_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> FLAYING_CROSS_PATTERN = INSTANCE.addIngredientItem("flaying_cross_pattern", () -> new BannerPatternItem(ModBannerPatternTags.FLAYING_CROSS_PATTERN, new Item.Properties().stacksTo(1)));
+    public static final RegistrySupplier<Item> FLAYED_MAN_PATTERN = INSTANCE.addIngredientItem("flayed_man_pattern", () -> new BannerPatternItem(ModBannerPatternTags.FLAYED_MAN_PATTERN, new Item.Properties().stacksTo(1)));
 
     public static final RegistrySupplier<Item> BLACK_LEATHER = INSTANCE.addIngredientItem("black_leather", () -> new Item(new Item.Properties()));
     public static final RegistrySupplier<Item> BLACK_WOOLEN_FABRIC = INSTANCE.addIngredientItem("black_woolen_fabric", () -> new Item(new Item.Properties()));
