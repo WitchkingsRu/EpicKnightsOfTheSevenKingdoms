@@ -198,6 +198,8 @@
   "item.ekotsk.fist_pattern": "Banner Pattern",
   "item.ekotsk.flaying_cross_pattern": "Banner Pattern",
   "item.ekotsk.flayed_man_pattern": "Banner Pattern",
+  "item.ekotsk.lizard_pattern": "Banner Pattern",
+  "item.ekotsk.lilies_pattern": "Banner Pattern",
 
   "item.ekotsk.spear_pattern.desc": "Piercing Spear",
   "item.ekotsk.dornish_sun_pattern.desc": "Southern Sun",
@@ -240,6 +242,8 @@
   "item.ekotsk.fist_pattern.desc": "Gauntlet",
   "item.ekotsk.flaying_cross_pattern.desc": "Flaying Cross",
   "item.ekotsk.flayed_man_pattern.desc": "Flayed Man",
+  "item.ekotsk.lizard_pattern.desc": "Lizard",
+  "item.ekotsk.lilies_pattern.desc": "Three Waterlilies",
 
   "item.ekotsk.blacked_steel_ingot": "Blacked Steel Ingot",
   "item.ekotsk.blacked_steel_nugget": "Blacked Steel Nugget",

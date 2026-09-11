@@ -190,6 +190,8 @@
   "item.ekotsk.fist_pattern": "Выкройка флага",
   "item.ekotsk.flaying_cross_pattern": "Выкройка флага",
   "item.ekotsk.flayed_man_pattern": "Выкройка флага",
+  "item.ekotsk.lizard_pattern": "Выкройка флага",
+  "item.ekotsk.lilies_pattern": "Выкройка флага",
 
   "item.ekotsk.spear_pattern.desc": "Пронзающее копьё",
   "item.ekotsk.dornish_sun_pattern.desc": "Южное солнце",
@@ -232,6 +234,8 @@
   "item.ekotsk.fist_pattern.desc": "Перчатка",
   "item.ekotsk.flaying_cross_pattern.desc": "Крест для распятия",
   "item.ekotsk.flayed_man_pattern.desc": "Ободранный человек",
+  "item.ekotsk.lizard_pattern.desc": "Ящер",
+  "item.ekotsk.lilies_pattern.desc": "Три кувшинки",
 
   "item.ekotsk.blacked_steel_ingot": "Слиток чернёной стали",
   "item.ekotsk.blacked_steel_nugget": "Кусочек чернёной стали",
