@@ -42,7 +42,13 @@ public class HeraldryRegistry {
             "two_towers",
             "three_towers",
             "apple",
-            "hives"
+            "hives",
+            "wolf",
+            "fist",
+            "flaying_cross",
+            "flayed_man",
+            "lizard",
+            "lilies"
             ));
 
     public static void register(String name) {

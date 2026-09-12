@@ -8,7 +8,7 @@ public class KingsguardArmorModel {
         MeshDefinition meshdefinition = new MeshDefinition();
         PartDefinition partdefinition = meshdefinition.getRoot();
         PartDefinition hat = partdefinition.addOrReplaceChild("hat", CubeListBuilder.create(), PartPose.ZERO);
-        PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -7.5F, -4.0F, 8.0F, 7.0F, 8.0F, new CubeDeformation(0.6F)), PartPose.offset(0.0F, -1.0F, 0.0F));
+        PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -7.5F, -4.0F, 8.0F, 7.0F, 8.0F, new CubeDeformation(0.6F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
         PartDefinition cube_r1 = head.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(56, 5).mirror().addBox(-1.51F, -7.0F, -0.5F, 1.0F, 7.0F, 1.0F, new CubeDeformation(0.4F)).mirror(false), PartPose.offsetAndRotation(1.0F, -9.0F, -4.0F, -1.5708F, 0.0F, 0.0F));
 
@@ -22,7 +22,7 @@ public class KingsguardArmorModel {
 
         PartDefinition cube_r6 = head.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(34, 1).addBox(0.31F, -1.5F, -1.3F, 1.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(2.0F, -8.0F, -3.0F, 0.0F, 0.0F, 0.2618F));
 
-        PartDefinition cube_r7 = head.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(45, 12).addBox(0.603F, -3.0789F, -0.7F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.2954F, -6.4985F, -4.6953F, -0.3491F, 0.0F, 0.2618F));
+        PartDefinition cube_r7 = head.addOrReplaceChild("cube_r7", CubeListBuilder.create().texOffs(45, 12).addBox(0.603F, -3.079F, -0.7F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.2954F, -6.4985F, -4.6953F, -0.3491F, 0.0F, 0.2618F));
 
         PartDefinition cube_r8 = head.addOrReplaceChild("cube_r8", CubeListBuilder.create().texOffs(48, 5).addBox(0.313F, -2.0F, -1.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(1.9081F, -7.6646F, 4.4654F, 0.3927F, 0.0F, 0.2618F));
 
@@ -30,7 +30,7 @@ public class KingsguardArmorModel {
 
         PartDefinition cube_r10 = head.addOrReplaceChild("cube_r10", CubeListBuilder.create().texOffs(34, 1).addBox(-1.31F, -1.5F, -1.3F, 1.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-2.0F, -8.0F, -3.0F, 0.0F, 0.0F, -0.2618F));
 
-        PartDefinition cube_r11 = head.addOrReplaceChild("cube_r11", CubeListBuilder.create().texOffs(45, 12).addBox(-1.603F, -3.0789F, -0.7F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.2954F, -6.4985F, -4.6953F, -0.3491F, 0.0F, -0.2618F));
+        PartDefinition cube_r11 = head.addOrReplaceChild("cube_r11", CubeListBuilder.create().texOffs(45, 12).addBox(-1.603F, -3.079F, -0.7F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(-1.2954F, -6.4985F, -4.6953F, -0.3491F, 0.0F, -0.2618F));
 
         PartDefinition cube_r12 = head.addOrReplaceChild("cube_r12", CubeListBuilder.create().texOffs(52, 5).addBox(0.491F, -2.5F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.4F)), PartPose.offsetAndRotation(-1.0F, -6.8457F, 3.7242F, 0.3927F, 0.0F, 0.0F));
 

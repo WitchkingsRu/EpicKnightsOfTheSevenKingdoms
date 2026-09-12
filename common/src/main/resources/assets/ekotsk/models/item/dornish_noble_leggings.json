@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "ekotsk:item/dornish_noble_leggings",
+    "layer1": "ekotsk:item/dornish_noble_leggings_overlay"
+  }
+}
