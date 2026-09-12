@@ -148,6 +148,7 @@ public class ModCreativeTabs {
         append(ASOIAF_ARMOR, ModItems.DRAGON_DECORATION);
         append(ASOIAF_ARMOR, ModItems.WINGS_DECORATION);
         append(ASOIAF_ARMOR, ModItems.FIN_DECORATION);
+        append(ASOIAF_ARMOR, ModItems.STRIPE_DECORATION);
 
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.SPEAR_PATTERN);
         append(INGRIDIENTS_RESOURCE_KEY, ModItems.DORNISH_SUN_PATTERN);

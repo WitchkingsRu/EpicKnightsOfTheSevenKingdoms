@@ -57,6 +57,7 @@ public class ModModels extends ModModelsProvider {
 
     public static final LayerDefinition HAND_SIGN = SurcoatModel.createLayer();
     public static final LayerDefinition FANCY_CAPE = CapeModel.createLayer();
+    public static final LayerDefinition STRIPE = StripeModel.createLayer();
     public static final LayerDefinition FUR_CAPE_PALE = FurCapeModel.createLayer();
     public static final LayerDefinition FUR_CAPE_WOODS = FurCapeModel.createLayer();
     public static final LayerDefinition FUR_CAPE_WHITE = FurCapeModel.createLayer();
@@ -99,6 +100,7 @@ public class ModModels extends ModModelsProvider {
     public static final ModelLayerLocation HIGH_SEPTON_CROWN_LOCATION = INSTANCE.addArmorModel("high_septon_crown", HighSeptonCrownModel::createLayer);
 
     public static final ModelLayerLocation FANCY_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fancy_cape", () -> FANCY_CAPE);
+    public static final ModelLayerLocation STRIPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("stripe", () -> STRIPE);
     public static final ModelLayerLocation PALE_FUR_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fur_cape_pale", () -> FUR_CAPE_PALE);
     public static final ModelLayerLocation WOODS_FUR_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fur_cape_woods", () -> FUR_CAPE_WOODS);
     public static final ModelLayerLocation WHITE_FUR_CAPE_DECORATION_LOCATION = INSTANCE.addDecorationModel("fur_cape_white", () -> FUR_CAPE_WHITE);
