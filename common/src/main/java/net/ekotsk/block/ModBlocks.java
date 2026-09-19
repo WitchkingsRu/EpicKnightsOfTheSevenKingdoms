@@ -77,4 +77,10 @@ public class ModBlocks {
     public static final RegistrySupplier<Block> WEIRWOOD_WALL_SIGN = BLOCKS.register("weirwood_wall_sign",
             () -> new WeirwoodWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.WEIRWOOD));
 
+    public static final RegistrySupplier<Block> MOLTEN_STONE = BLOCKS.register("molten_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F)));
+    public static final RegistrySupplier<Block> SMOOTH_MOLTEN_STONE = BLOCKS.register("smooth_molten_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F)));
+    public static final RegistrySupplier<Block> POLISHED_MOLTEN_STONE = BLOCKS.register("polished_molten_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F)));
 }
