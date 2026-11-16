@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "ekotsk:block/polished_molten_stone"
+    "all": "ekotsk:block/glassed_molten_stone"
   }
 }

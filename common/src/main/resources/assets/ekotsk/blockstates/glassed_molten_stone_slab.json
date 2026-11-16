@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ekotsk:block/glassed_molten_stone_slab"
+    },
+    "type=double": {
+      "model": "ekotsk:block/glassed_molten_stone"
+    },
+    "type=top": {
+      "model": "ekotsk:block/glassed_molten_stone_slab_top"
+    }
+  }
+}

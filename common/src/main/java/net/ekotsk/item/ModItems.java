@@ -273,10 +273,26 @@ public class ModItems extends ModItemsProvider {
 
     public static final RegistrySupplier<Item> MOLTEN_STONE_BLOCK = ITEMS.register("molten_stone", () ->
             new BlockItem(ModBlocks.MOLTEN_STONE.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> SMOOTH_MOLTEN_STONE_BLOCK = ITEMS.register("smooth_molten_stone", () ->
-            new BlockItem(ModBlocks.SMOOTH_MOLTEN_STONE.get(), new Item.Properties()));
-    public static final RegistrySupplier<Item> POLISHED_MOLTEN_STONE_BLOCK = ITEMS.register("polished_molten_stone", () ->
-            new BlockItem(ModBlocks.POLISHED_MOLTEN_STONE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> MINED_MOLTEN_STONE_BLOCK = ITEMS.register("mined_molten_stone", () ->
+            new BlockItem(ModBlocks.MINED_MOLTEN_STONE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> GLASSED_MOLTEN_STONE_BLOCK = ITEMS.register("glassed_molten_stone", () ->
+            new BlockItem(ModBlocks.GLASSED_MOLTEN_STONE.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> MINED_GLASSED_MOLTEN_STONE_BLOCK = ITEMS.register("mined_glassed_molten_stone", () ->
+            new BlockItem(ModBlocks.MINED_GLASSED_MOLTEN_STONE.get(), new Item.Properties()));
+
+    public static final RegistrySupplier<Item> MOLTEN_STONE_STAIRS_BLOCK = ITEMS.register("molten_stone_stairs", () ->
+            new BlockItem(ModBlocks.MOLTEN_STONE_STAIRS.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> MOLTEN_STONE_SLAB_BLOCK = ITEMS.register("molten_stone_slab", () ->
+            new BlockItem(ModBlocks.MOLTEN_STONE_SLAB.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> MOLTEN_STONE_WALL_BLOCK = ITEMS.register("molten_stone_wall", () ->
+            new BlockItem(ModBlocks.MOLTEN_STONE_WALL.get(), new Item.Properties()));
+
+    public static final RegistrySupplier<Item> GLASSED_MOLTEN_STONE_STAIRS_BLOCK = ITEMS.register("glassed_molten_stone_stairs", () ->
+            new BlockItem(ModBlocks.GLASSED_MOLTEN_STONE_STAIRS.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> GLASSED_MOLTEN_STONE_SLAB_BLOCK = ITEMS.register("glassed_molten_stone_slab", () ->
+            new BlockItem(ModBlocks.GLASSED_MOLTEN_STONE_SLAB.get(), new Item.Properties()));
+    public static final RegistrySupplier<Item> GLASSED_MOLTEN_STONE_WALL_BLOCK = ITEMS.register("glassed_molten_stone_wall", () ->
+            new BlockItem(ModBlocks.GLASSED_MOLTEN_STONE_WALL.get(), new Item.Properties()));
 
     public static final RegistrySupplier<Item> WEIRWOOD_LONGBOW = INSTANCE.addWeirwoodBowItem("weirwood_longbow", ModWeaponTypes.WEIRWOOD_LONGBOW);
     public static final RegistrySupplier<Item> WEIRWOOD_ARROW = ITEMS.register("weirwood_arrow", () ->

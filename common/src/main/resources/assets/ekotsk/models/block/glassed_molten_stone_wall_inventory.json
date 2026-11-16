@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "ekotsk:block/glassed_molten_stone"
+  }
+}

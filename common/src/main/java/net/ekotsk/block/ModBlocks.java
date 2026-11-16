@@ -78,9 +78,30 @@ public class ModBlocks {
             () -> new WeirwoodWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.WEIRWOOD));
 
     public static final RegistrySupplier<Block> MOLTEN_STONE = BLOCKS.register("molten_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(5.0F)));
+    public static final RegistrySupplier<Block> MINED_MOLTEN_STONE = BLOCKS.register("mined_molten_stone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).strength(5.0F)));
+    public static final RegistrySupplier<Block> GLASSED_MOLTEN_STONE = BLOCKS.register("glassed_molten_stone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F)));
-    public static final RegistrySupplier<Block> SMOOTH_MOLTEN_STONE = BLOCKS.register("smooth_molten_stone",
+    public static final RegistrySupplier<Block> MINED_GLASSED_MOLTEN_STONE = BLOCKS.register("mined_glassed_molten_stone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F)));
-    public static final RegistrySupplier<Block> POLISHED_MOLTEN_STONE = BLOCKS.register("polished_molten_stone",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F)));
+
+    public static final Supplier<BlockState> MOLTEN_STONE_STATE =
+            () -> ModBlocks.MOLTEN_STONE.get().defaultBlockState();
+    public static final Supplier<BlockState> GLASSED_MOLTEN_STONE_STATE =
+            () -> ModBlocks.GLASSED_MOLTEN_STONE.get().defaultBlockState();
+
+    public static final RegistrySupplier<Block> MOLTEN_STONE_STAIRS = BLOCKS.register("molten_stone_stairs",
+            () -> new StairBlock(MOLTEN_STONE_STATE.get(), BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_STAIRS).strength(5.0F)));
+    public static final RegistrySupplier<Block> MOLTEN_STONE_SLAB = BLOCKS.register("molten_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_SLAB).strength(5.0F)));
+    public static final RegistrySupplier<Block> MOLTEN_STONE_WALL = BLOCKS.register("molten_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_WALL).strength(5.0F)));
+
+    public static final RegistrySupplier<Block> GLASSED_MOLTEN_STONE_STAIRS = BLOCKS.register("glassed_molten_stone_stairs",
+            () -> new StairBlock(GLASSED_MOLTEN_STONE_STATE.get(), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_STAIRS).strength(5.0F)));
+    public static final RegistrySupplier<Block> GLASSED_MOLTEN_STONE_SLAB = BLOCKS.register("glassed_molten_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_SLAB).strength(5.0F)));
+    public static final RegistrySupplier<Block> GLASSED_MOLTEN_STONE_WALL = BLOCKS.register("glassed_molten_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_WALL).strength(5.0F)));
 }
