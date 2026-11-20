@@ -10,12 +10,14 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 
 public class ModBlocks {
@@ -78,13 +80,13 @@ public class ModBlocks {
             () -> new WeirwoodWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.WEIRWOOD));
 
     public static final RegistrySupplier<Block> MOLTEN_STONE = BLOCKS.register("molten_stone",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(5.0F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).strength(5.0F).requiresCorrectToolForDrops()));
     public static final RegistrySupplier<Block> MINED_MOLTEN_STONE = BLOCKS.register("mined_molten_stone",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).strength(5.0F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICKS).strength(3.0F).requiresCorrectToolForDrops()));
     public static final RegistrySupplier<Block> GLASSED_MOLTEN_STONE = BLOCKS.register("glassed_molten_stone",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F).requiresCorrectToolForDrops()));
     public static final RegistrySupplier<Block> MINED_GLASSED_MOLTEN_STONE = BLOCKS.register("mined_glassed_molten_stone",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(5.0F)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).strength(3.0F).requiresCorrectToolForDrops()));
 
     public static final Supplier<BlockState> MOLTEN_STONE_STATE =
             () -> ModBlocks.MOLTEN_STONE.get().defaultBlockState();
@@ -92,16 +94,36 @@ public class ModBlocks {
             () -> ModBlocks.GLASSED_MOLTEN_STONE.get().defaultBlockState();
 
     public static final RegistrySupplier<Block> MOLTEN_STONE_STAIRS = BLOCKS.register("molten_stone_stairs",
-            () -> new StairBlock(MOLTEN_STONE_STATE.get(), BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_STAIRS).strength(5.0F)));
+            () -> new StairBlock(MOLTEN_STONE_STATE.get(), BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_STAIRS).strength(5.0F).requiresCorrectToolForDrops()));
     public static final RegistrySupplier<Block> MOLTEN_STONE_SLAB = BLOCKS.register("molten_stone_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_SLAB).strength(5.0F)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_SLAB).strength(5.0F).requiresCorrectToolForDrops()));
     public static final RegistrySupplier<Block> MOLTEN_STONE_WALL = BLOCKS.register("molten_stone_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_WALL).strength(5.0F)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_WALL).strength(5.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistrySupplier<Block> MINED_MOLTEN_STONE_STAIRS = BLOCKS.register("mined_molten_stone_stairs",
+            () -> new StairBlock(MOLTEN_STONE_STATE.get(), BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_STAIRS).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final RegistrySupplier<Block> MINED_MOLTEN_STONE_SLAB = BLOCKS.register("mined_molten_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_SLAB).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final RegistrySupplier<Block> MINED_MOLTEN_STONE_WALL = BLOCKS.register("mined_molten_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_BRICK_WALL).strength(3.0F).requiresCorrectToolForDrops()));
 
     public static final RegistrySupplier<Block> GLASSED_MOLTEN_STONE_STAIRS = BLOCKS.register("glassed_molten_stone_stairs",
-            () -> new StairBlock(GLASSED_MOLTEN_STONE_STATE.get(), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_STAIRS).strength(5.0F)));
+            () -> new StairBlock(GLASSED_MOLTEN_STONE_STATE.get(), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_STAIRS).strength(5.0F).requiresCorrectToolForDrops()));
     public static final RegistrySupplier<Block> GLASSED_MOLTEN_STONE_SLAB = BLOCKS.register("glassed_molten_stone_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_SLAB).strength(5.0F)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_SLAB).strength(5.0F).requiresCorrectToolForDrops()));
     public static final RegistrySupplier<Block> GLASSED_MOLTEN_STONE_WALL = BLOCKS.register("glassed_molten_stone_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_WALL).strength(5.0F)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_WALL).strength(5.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistrySupplier<Block> MINED_GLASSED_MOLTEN_STONE_STAIRS = BLOCKS.register("mined_glassed_molten_stone_stairs",
+            () -> new StairBlock(GLASSED_MOLTEN_STONE_STATE.get(), BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_STAIRS).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final RegistrySupplier<Block> MINED_GLASSED_MOLTEN_STONE_SLAB = BLOCKS.register("mined_glassed_molten_stone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_SLAB).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final RegistrySupplier<Block> MINED_GLASSED_MOLTEN_STONE_WALL = BLOCKS.register("mined_glassed_molten_stone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICK_WALL).strength(3.0F).requiresCorrectToolForDrops()));
+
+    public static final RegistrySupplier<Block> QOHORY_SMELTERY = BLOCKS.register("qohory_smeltery",
+            () -> new QohorySmelteryBlock(BlockBehaviour.Properties.copy(Blocks.ANVIL).noOcclusion().strength(20.0F, 1200.0F).lightLevel(litBlockEmission(13)).requiresCorrectToolForDrops()));
+    private static ToIntFunction<BlockState> litBlockEmission(int i) {
+        return (blockState) -> (Boolean)blockState.getValue(BlockStateProperties.LIT) ? i : 0;
+    }
 }

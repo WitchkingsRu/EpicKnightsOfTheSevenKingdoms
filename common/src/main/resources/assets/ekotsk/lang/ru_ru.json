@@ -290,6 +290,8 @@
   "ekotsk.whitening_template.base_slot_description": "",
   "ekotsk.whitening_template.additions_slot_description": "",
 
+  "block.ekotsk.qohory_smeltery": "Квохорская плавильня",
+
   "itemGroup.magistuarmory.asoiaf_armor": "Доспехи ПЛИО",
   "itemGroup.magistuarmory.asoiaf_weapons": "Оружия ПЛИО"
 }

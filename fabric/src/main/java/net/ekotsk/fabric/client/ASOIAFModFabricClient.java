@@ -1,10 +1,13 @@
 package net.ekotsk.fabric.client;
 
+import dev.architectury.registry.menu.MenuRegistry;
 import net.ekotsk.ASOIAFModClient;
 import net.ekotsk.block.ModBlocks;
 import net.ekotsk.client.render.model.ModModels;
 import net.ekotsk.misc.ModParticles;
 import net.ekotsk.misc.WeirwoodSapParticle;
+import net.ekotsk.screen.ModMenuTypes;
+import net.ekotsk.screen.QohorySmelteryScreen;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
@@ -24,6 +27,8 @@ public final class ASOIAFModFabricClient implements ClientModInitializer {
                 ModParticles.WEIRWOOD_SAP.get(),
                 WeirwoodSapParticle.Provider::new);
         LOGGER.info("Particles registered.");
+        MenuRegistry.registerScreenFactory(ModMenuTypes.QOHORY_SMELTERY_MENU.get(), QohorySmelteryScreen::new);
+        LOGGER.info("Screens registered.");
         LOGGER.info("Client initialized successfully.");
                 // This entrypoint is suitable for setting up client-specific logic, such as rendering.
     }

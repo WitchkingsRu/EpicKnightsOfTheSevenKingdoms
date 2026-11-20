@@ -17,6 +17,9 @@ import static net.ekotsk.block.ModBlocks.BLOCKS;
 import static net.ekotsk.item.ModItems.ITEMS;
 import static net.ekotsk.entity.ModEntityTypes.ENTITY_TYPES;
 import static net.ekotsk.misc.ModParticles.PARTICLES;
+import static net.ekotsk.recipe.ModRecipes.RECIPE_TYPES;
+import static net.ekotsk.recipe.ModRecipes.SERIALIZERS;
+import static net.ekotsk.screen.ModMenuTypes.MENUS;
 import static net.ekotsk.worldgen.ModFeatures.FEATURES;
 public final class ASOIAFMod {
     public static final String MOD_ID = "ekotsk";
@@ -30,6 +33,7 @@ public final class ASOIAFMod {
         PARTICLES.register();
         BLOCKS.register();
         ModBlockEntities.init();
+        MENUS.register();
         ModItems.INSTANCE.init();
         ITEMS.register();
         ENTITY_TYPES.register();
@@ -37,6 +41,8 @@ public final class ASOIAFMod {
         ModCreativeTabs.init();
         FEATURES.register();
         ModWorldGen.init();
+        SERIALIZERS.register();
+        RECIPE_TYPES.register();
         if (Platform.getEnv() == EnvType.CLIENT)
             ModModels.INSTANCE.init(ModItems.INSTANCE);
 

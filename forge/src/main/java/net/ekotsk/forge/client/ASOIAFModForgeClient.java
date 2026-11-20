@@ -1,11 +1,14 @@
 package net.ekotsk.forge.client;
 
+import dev.architectury.registry.menu.MenuRegistry;
 import net.ekotsk.ASOIAFModClient;
 import net.ekotsk.block.ModBlocks;
 import net.ekotsk.client.render.model.ModModels;
 import net.ekotsk.misc.ModParticles;
 import net.ekotsk.misc.ModWoodTypes;
 import net.ekotsk.misc.WeirwoodSapParticle;
+import net.ekotsk.screen.ModMenuTypes;
+import net.ekotsk.screen.QohorySmelteryScreen;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
@@ -32,6 +35,8 @@ public class ASOIAFModForgeClient {
 
     static void setup(FMLClientSetupEvent event) {
         ASOIAFModClient.clientSetup();
+        MenuRegistry.registerScreenFactory(ModMenuTypes.QOHORY_SMELTERY_MENU.get(), QohorySmelteryScreen::new);
+        LOGGER.info("Screens registered.");
     }
     static void registerParticles(RegisterParticleProvidersEvent event) {
         event.registerSpriteSet(ModParticles.WEIRWOOD_SAP.get(),

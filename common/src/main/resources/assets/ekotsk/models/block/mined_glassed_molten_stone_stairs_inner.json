@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ekotsk:block/mined_glassed_molten_stone",
+    "side": "ekotsk:block/mined_glassed_molten_stone",
+    "top": "ekotsk:block/mined_glassed_molten_stone"
+  }
+}

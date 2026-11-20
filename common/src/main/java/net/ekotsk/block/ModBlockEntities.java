@@ -14,6 +14,8 @@ public class ModBlockEntities {
             ModBlocks.WEIRWOOD_SIGN.get(), ModBlocks.WEIRWOOD_WALL_SIGN.get()).build(null));
     public static final RegistrySupplier<BlockEntityType<WeirwoodHangingSignBlockEntity>> WEIRWOOD_HANGING_SIGN = BLOCK_ENTITY_TYPES.register("weirwood_hanging_sign", () -> BlockEntityType.Builder.of(WeirwoodHangingSignBlockEntity::new,
             ModBlocks.WEIRWOOD_HANGING_SIGN.get(), ModBlocks.WEIRWOOD_WALL_HANGING_SIGN.get()).build(null));
+    public static final RegistrySupplier<BlockEntityType<QohorySmelteryBlockEntity>> QOHORY_SMELTERY_ENTITY = BLOCK_ENTITY_TYPES.register("qohory_smeltery", () -> BlockEntityType.Builder.of(QohorySmelteryBlockEntity::new, ModBlocks.QOHORY_SMELTERY.get()).build(null));
+
 
     public static void init() {
         BLOCK_ENTITY_TYPES.register();

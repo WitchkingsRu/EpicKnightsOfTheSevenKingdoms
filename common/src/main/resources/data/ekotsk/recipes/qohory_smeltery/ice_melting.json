@@ -1,0 +1,13 @@
+{
+  "type": "ekotsk:qohory_smeltery",
+  "category": "misc",
+  "ingredient": {
+    "item": "ekotsk:ice"
+  },
+  "result": {
+    "item": "ekotsk:valyrian_steel_ingot",
+    "count": 5
+  },
+  "experience": 5,
+  "cookingtime": 1000
+}
